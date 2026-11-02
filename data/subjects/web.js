@@ -1,0 +1,7564 @@
+// Course content. Question order is stable: saved mistakes refer to these indices.
+
+export const TOPICS = [
+  {
+    "id": "inet",
+    "ch": 1,
+    "t": "The Internet",
+    "ar": "الإنترنت",
+    "pts": [
+      [
+        "The <b>Internet</b> is a global system of interconnected networks — public, private, academic, government and business. Known as the <b>\"network of networks\"</b>; not to be confused with the World Wide Web.",
+        "الإنترنت نظام عالمي من الشبكات المتصلة ببعض، واسمه «شبكة الشبكات»، وهو مو نفس الويب."
+      ],
+      [
+        "Today it is based on huge <b>data centers</b> and infrastructures such as <b>Internet Exchange Points (IXPs)</b> that accelerate communications among networks.",
+        "اليوم يعتمد على مراكز بيانات ضخمة ونقاط تبادل الإنترنت IXPs اللي تسرّع التواصل بين الشبكات."
+      ],
+      [
+        "<b>ARPANET</b> (Advanced Research Projects Agency Network) – a <b>precursor</b> of the Internet; a backbone for interconnecting regional <b>academic and military</b> networks to share resources. Led by ARPA of the <b>US Department of Defense</b>.",
+        "أربانت هي الشبكة اللي سبقت الإنترنت، كانت تربط شبكات أكاديمية وعسكرية عشان تتشارك الموارد، وتتبع وزارة الدفاع الأمريكية."
+      ],
+      [
+        "The <b>TCP/IP</b> (Internet protocol suite) provides <b>end-to-end</b> data communication; the Internet uses it to transfer data between networks and devices.",
+        "مجموعة بروتوكولات TCP/IP تنقل البيانات من طرف لطرف، والإنترنت يستخدمها بين الشبكات والأجهزة."
+      ],
+      [
+        "Growth in the <b>1990s</b>: <b>Technological breakthroughs</b> (the World Wide Web by <b>Tim Berners-Lee in 1990</b>, hypertext links) · <b>Communication revolution</b> (email replaced letters) · <b>Economic and commercial impact</b> (e-commerce: Amazon, eBay).",
+        "أسباب نمو الإنترنت في التسعينات: اختراع الويب على يد تيم بيرنرز-لي سنة 1990، ثورة الإيميل، وبداية التجارة الإلكترونية مثل أمازون وإيباي."
+      ]
+    ],
+    "trap": [
+      "Internet ≠ Web. Internet = the <b>networks</b>; Web = the <b>graphical interface</b> to information on web servers.",
+      "الإنترنت هي الشبكات نفسها، والويب واجهة رسومية للمعلومات اللي على السيرفرات. لا تخلطهم."
+    ],
+    "idx": 0
+  },
+  {
+    "id": "web",
+    "ch": 1,
+    "t": "The Web & Internet Standards Bodies",
+    "ar": "الويب وجهات المعايير",
+    "pts": [
+      [
+        "<b>World Wide Web</b> – the <b>graphical user interface</b> to information stored on computers running <b>web servers</b> connected to the Internet.",
+        "الويب هو الواجهة الرسومية للمعلومات المخزنة على أجهزة تشغّل web servers متصلة بالإنترنت."
+      ],
+      [
+        "<b>IETF</b> – Internet Engineering Task Force: the <b>principal body</b> engaged in the development of new Internet protocol standard specifications.",
+        "IETF الجهة الرئيسية اللي تطوّر معايير بروتوكولات الإنترنت."
+      ],
+      [
+        "<b>RFC</b> – Requests for Comments: the entire collection of <b>documents</b> that formed the foundation for developing Internet standards and protocols.",
+        "RFC مجموعة الوثائق اللي بُنيت عليها معايير وبروتوكولات الإنترنت."
+      ],
+      [
+        "<b>IAB</b> – Internet Architecture Board: provides <b>guidance and broad direction to the IETF</b>; responsible for <b>publications for RFCs</b>.",
+        "IAB يوجّه الـ IETF ومسؤول عن نشر الـ RFCs."
+      ],
+      [
+        "<b>ICANN</b> – Internet Corporation for Assigned Numbers & Names: <b>non-profit</b>; coordinates assignment of <b>domain names, IP address numbers, protocol parameters, protocol port numbers</b>.",
+        "ICANN منظمة غير ربحية تنسّق توزيع أسماء النطاقات وعناوين IP وأرقام المنافذ."
+      ]
+    ],
+    "trap": [
+      "IAB <b>guides</b> the IETF and publishes RFCs. ICANN handles <b>domain names & IP numbers</b>.",
+      "IAB يوجّه الـ IETF، وICANN مسؤولة عن الدومينات وعناوين IP."
+    ],
+    "idx": 1
+  },
+  {
+    "id": "intra",
+    "ch": 1,
+    "t": "Intranet & Extranet",
+    "ar": "الإنترانت والإكسترانت",
+    "pts": [
+      [
+        "<b>Intranet</b> – a <b>private network</b> contained <b>within an organization</b>, used to share information and resources among <b>coworkers</b>.",
+        "الإنترانت شبكة خاصة داخل المنظمة للموظفين بس."
+      ],
+      [
+        "<b>Extranet</b> – a private network that securely shares <b>part</b> of an organization's information or operations with <b>external partners</b>.",
+        "الإكسترانت شبكة خاصة تشارك جزء من معلومات المنظمة مع شركاء من برّا بشكل آمن."
+      ]
+    ],
+    "trap": [
+      "Intranet = <b>inside</b> (coworkers). Extranet = <b>external partners</b>.",
+      "Intra = داخل للموظفين، Extra = لشركاء خارجيين."
+    ],
+    "idx": 2
+  },
+  {
+    "id": "access",
+    "ch": 1,
+    "t": "Web Standards & Accessibility",
+    "ar": "معايير الويب وإمكانية الوصول",
+    "pts": [
+      [
+        "<b>W3C</b> – World Wide Web Consortium: develops recommendations and prototype technologies related to the Web (web architecture, <b>HTML, CSS</b>, accessibility). Its specifications are called <b>Recommendations</b>.",
+        "W3C تطوّر معايير الويب مثل HTML وCSS، ومواصفاتها اسمها Recommendations."
+      ],
+      [
+        "<b>Accessible website</b> – provides accommodations for individuals with <b>visual, auditory, physical, and neurological</b> disabilities.",
+        "الموقع الـ accessible يراعي ذوي الإعاقات البصرية والسمعية والحركية والعصبية."
+      ],
+      [
+        "<b>WAI</b> (W3C's Web Accessibility Initiative) – develops standards and support materials for accessibility. <b>WCAG</b> (Web Content Accessibility Guidelines) – a methodology with a step-by-step process to evaluate conformance.",
+        "WAI مبادرة W3C للوصول، وWCAG الإرشادات اللي نقيّم فيها الموقع خطوة خطوة."
+      ],
+      [
+        "<b>ADA</b> (Americans with Disabilities Act) prohibits discrimination against people with disabilities. <b>Section 508</b> of the Rehabilitation Act requires <b>government agencies</b> to give comparable IT access.",
+        "قانون ADA يمنع التمييز ضد ذوي الإعاقة، وSection 508 يلزم الجهات الحكومية توفّر وصول مكافئ للتقنية."
+      ],
+      [
+        "<b>Universal Design</b> – design of products and environments to be usable by <b>all people</b>, to the greatest extent possible, <b>without the need for adaptation</b> or specialized design.",
+        "التصميم الشامل: منتج يستخدمه كل الناس بدون ما يحتاج تعديل أو تصميم خاص."
+      ],
+      [
+        "<b>Reliability</b> of web information – ask: Is the organization <b>credible</b>? How <b>recent</b>? Are there <b>links to additional resources</b>? Is it <b>Wikipedia</b>?",
+        "عشان تعرف إن المعلومة موثوقة: هل الجهة موثوقة؟ هل المعلومة حديثة؟ فيه روابط لمصادر؟ هل هي ويكيبيديا؟"
+      ]
+    ],
+    "trap": [
+      "Section 508 = <b>government agencies</b>. WCAG = <b>guidelines</b>; WAI = the <b>initiative</b>.",
+      "Section 508 للجهات الحكومية. WCAG هي الإرشادات وWAI هي المبادرة."
+    ],
+    "idx": 3
+  },
+  {
+    "id": "net",
+    "ch": 1,
+    "t": "Network Overview",
+    "ar": "الشبكات",
+    "pts": [
+      [
+        "<b>Network</b> – two or more computers connected together for the purpose of <b>communicating and sharing resources</b>.",
+        "الشبكة: جهازين أو أكثر متصلين للتواصل ومشاركة الموارد."
+      ],
+      [
+        "<b>LAN</b> – Local Area Network: usually confined to a <b>single building</b> or group of buildings.",
+        "LAN شبكة محلية في مبنى واحد أو كم مبنى."
+      ],
+      [
+        "<b>WAN</b> – Wide Area Network: uses public or commercial communications networks to connect computers in <b>widely dispersed geographical areas</b>.",
+        "WAN شبكة واسعة تربط أجهزة في مناطق جغرافية متباعدة."
+      ],
+      [
+        "<b>Internet infrastructure</b> – the <b>physical and logical</b> systems that enable internet communication: cables, cellular towers, servers, IXPs, data centers, individual computers.",
+        "البنية التحتية للإنترنت: الأنظمة الفيزيائية والمنطقية مثل الكيابل والأبراج والسيرفرات ومراكز البيانات."
+      ]
+    ],
+    "idx": 4
+  },
+  {
+    "id": "cs",
+    "ch": 1,
+    "t": "The Client/Server Model",
+    "ar": "نموذج العميل والخادم",
+    "pts": [
+      [
+        "Client/Server describes a relationship between two programs. <b>Client</b> requests a service (file, database access). <b>Server</b> fulfills the request and transmits results over a network.",
+        "العميل يطلب خدمة، والخادم ينفّذ الطلب ويرسل النتيجة عبر الشبكة."
+      ],
+      [
+        "On the Internet: <b>Client = Web Browser</b>, <b>Server = Web Server</b>.",
+        "في الإنترنت: العميل هو المتصفح، والخادم هو web server."
+      ],
+      [
+        "<b>Web client</b>: connected to the Internet <b>when needed</b>; runs browser software (Internet Explorer, Firefox); uses <b>HTTP</b>; requests and receives web pages.",
+        "العميل يتصل بالإنترنت وقت الحاجة، يشغّل متصفح، ويطلب الصفحات بـ HTTP."
+      ],
+      [
+        "<b>Web server</b>: <b>continually connected</b>; runs web server software (<b>Apache</b>, <b>Internet Information Server</b>); uses HTTP; responds and transmits <b>status code</b>, web page, and associated files.",
+        "الخادم متصل دايماً، يشغّل برنامج مثل Apache أو IIS، ويرد بـ status code والصفحة وملفاتها."
+      ]
+    ],
+    "trap": [
+      "Server = <b>continually</b> connected. Client = connected <b>when needed</b>.",
+      "الخادم متصل طول الوقت، والعميل وقت الحاجة بس."
+    ],
+    "idx": 5
+  },
+  {
+    "id": "proto",
+    "ch": 1,
+    "t": "Internet Protocols: FTP, HTTP, E-mail, MIME",
+    "ar": "البروتوكولات",
+    "pts": [
+      [
+        "<b>Protocols</b> – rules that describe the methods clients and servers use to communicate. <b>No single protocol</b> makes the Internet work.",
+        "البروتوكولات قواعد تحدد كيف العميل والخادم يتواصلون، وما فيه بروتوكول واحد يكفي."
+      ],
+      [
+        "<b>FTP</b> (File Transfer Protocol) – rules to exchange files between computers. Web developers use FTP to <b>upload web page files to web servers</b>; also to download programs and files.",
+        "FTP لنقل الملفات، والمطورين يرفعون فيه ملفات الموقع للسيرفر."
+      ],
+      [
+        "<b>HTTP</b> (Hypertext Transfer Protocol) – rules for exchanging files (text, images, sound, video) on the Web. Browsers send HTTP <b>requests</b>; servers send HTTP <b>responses</b>.",
+        "HTTP لتبادل ملفات الويب: المتصفح يرسل request والسيرفر يرد بـ response."
+      ],
+      [
+        "FTP vs HTTP: <b>small files</b> → HTTP faster (4 packets vs FTP's 6 before data). FTP can <b>resume transfers natively</b>; HTTP needs range requests. Use FTP for large/batch transfers; HTTP for web content (HTTPS for security).",
+        "HTTP أسرع للملفات الصغيرة، وFTP يقدر يكمّل التحميل لو انقطع. FTP للملفات الكبيرة، وHTTP لمحتوى الويب."
+      ],
+      [
+        "E-mail: <b>sending</b> – <b>SMTP</b> (Simple Mail Transfer Protocol). <b>Receiving</b> – <b>POP3</b> (Post Office Protocol) and <b>IMAP</b> (Internet Mail Access Protocol).",
+        "الإيميل: الإرسال بـ SMTP، والاستقبال بـ POP3 أو IMAP."
+      ],
+      [
+        "<b>MIME</b> (Multi-Purpose Internet Mail Extension) – extends email to include more than plain text: <b>images, audio, video, attachments</b>.",
+        "MIME يخلي الإيميل يحمل صور وصوت وفيديو ومرفقات، مو بس نص."
+      ]
+    ],
+    "trap": [
+      "<b>S</b>MTP = <b>S</b>end. POP3 / IMAP = receive.",
+      "SMTP للإرسال (S = Send)، وPOP3 وIMAP للاستقبال."
+    ],
+    "idx": 6
+  },
+  {
+    "id": "tcpip",
+    "ch": 1,
+    "t": "TCP/IP, IP Address & DNS",
+    "ar": "TCP/IP والعناوين والـ DNS",
+    "pts": [
+      [
+        "<b>TCP/IP</b> has been adopted as the <b>official communication protocol</b> of the Internet; TCP and IP have different functions that work together.",
+        "TCP/IP هو البروتوكول الرسمي للإنترنت، والجزئين يشتغلون مع بعض."
+      ],
+      [
+        "<b>TCP</b> – ensures the <b>integrity</b> of communication; breaks files and messages into units called <b>packets</b>.",
+        "TCP يضمن سلامة الاتصال، ويقسّم الملفات لحزم packets."
+      ],
+      [
+        "<b>IP</b> – controls how data is sent; <b>routes a packet</b> to the correct destination address; forwarded to the next closest <b>router</b> until it arrives.",
+        "IP يوجّه الحزمة لعنوانها، وتنتقل من router لـ router لين توصل."
+      ],
+      [
+        "<b>IP address</b> – each device has a unique numeric address of <b>four groups of numbers called octets</b> (e.g. 216.58.194.46).",
+        "عنوان IP رقم فريد لكل جهاز، من أربع مجموعات اسمها octets."
+      ],
+      [
+        "<b>Domain name</b> locates an organization on the Internet. <b>DNS</b> (Domain Name System) associates <b>domain names with IP addresses</b> (google.com → 173.194.116.72).",
+        "اسم النطاق يحدد مكان الجهة، والـ DNS يربط اسم النطاق بعنوان IP."
+      ]
+    ],
+    "trap": [
+      "TCP = <b>integrity + packets</b>. IP = <b>routing</b>. DNS = <b>name → IP</b>.",
+      "TCP يقسّم ويضمن السلامة، IP يوجّه، وDNS يحوّل الاسم لعنوان IP."
+    ],
+    "idx": 7
+  },
+  {
+    "id": "uri",
+    "ch": 1,
+    "t": "URI, URL & Top-Level Domains",
+    "ar": "العناوين والنطاقات",
+    "pts": [
+      [
+        "<b>URI</b> (Uniform Resource Identifier) – identifies a resource on the Internet.",
+        "URI يعرّف أي مورد على الإنترنت."
+      ],
+      [
+        "<b>URL</b> (Uniform Resource Locator) – a <b>type of URI</b> which represents the <b>network location</b> of a resource (web page, graphic file, MP3 file).",
+        "URL نوع من الـ URI يحدد مكان المورد على الشبكة."
+      ],
+      [
+        "<b>TLD</b> (Top-Level Domain) identifies the <b>right-most part</b> of the domain name. Generic TLDs: .com, .org, .net, .mil, .gov, .edu, .int, .aero, .museum, .info …",
+        "الـ TLD هو آخر جزء على اليمين في اسم النطاق، مثل .com و.edu."
+      ],
+      [
+        "<b>ccTLD</b> (Country Code TLD) – <b>two-character</b> codes originally intended for the country (.sa, .ae, .au, .ca, .uk). In practice it is easy to get one that is not local.",
+        "ccTLD رمز دولة من حرفين مثل .sa، وفي الواقع تقدر تاخذه حتى لو مو من الدولة."
+      ]
+    ],
+    "trap": [
+      "Every URL is a URI, but URI is the <b>general</b> term.",
+      "كل URL هو URI، بس الـ URI أعم."
+    ],
+    "idx": 8
+  },
+  {
+    "id": "markup",
+    "ch": 1,
+    "t": "Markup Languages",
+    "ar": "لغات الترميز",
+    "pts": [
+      [
+        "<b>Markup languages</b> – sets of directions (called <b>tags</b>) that tell the browser how to display and manage a web document.",
+        "لغات الترميز أوامر اسمها tags تقول للمتصفح كيف يعرض الصفحة."
+      ],
+      [
+        "<b>SGML</b> – Standard Generalized Markup Language: a standard for <b>specifying a markup language</b> or tag set.",
+        "SGML معيار لتعريف لغات الترميز نفسها."
+      ],
+      [
+        "<b>HTML</b> – Hypertext Markup Language: the set of markup symbols placed in a file intended for display on a <b>web browser</b>.",
+        "HTML رموز ترميز في ملف عشان ينعرض في المتصفح."
+      ],
+      [
+        "<b>XML</b> – eXtensible Markup Language: describes, delivers, and exchanges <b>structured information</b>. <b>Not</b> intended to replace HTML; extends it by <b>separating data from presentation</b>.",
+        "XML لوصف وتبادل البيانات المنظمة، وما جا يستبدل HTML بل يفصل البيانات عن العرض."
+      ],
+      [
+        "<b>XHTML</b> – reformulation of <b>HTML 4.0 as an application of XML</b>; combines HTML's formatting with XML's structure and extensibility.",
+        "XHTML هو HTML 4 مكتوب بقواعد XML."
+      ],
+      [
+        "<b>HTML5</b> – the next version of HTML4 and XHTML (then HTML 5.1, 5.2). Popular uses: e-commerce, mobile access, blogs, wikis, social networking, RSS, podcasts, Web 2.0, cloud computing.",
+        "HTML5 النسخة اللي بعد HTML4 وXHTML."
+      ]
+    ],
+    "trap": [
+      "XML does <b>not replace</b> HTML — it <b>separates data from presentation</b>.",
+      "XML ما يستبدل HTML، يفصل البيانات عن طريقة العرض."
+    ],
+    "idx": 9
+  },
+  {
+    "id": "hover",
+    "ch": 2,
+    "t": "HTML Overview, HTML5 & DTD",
+    "ar": "مقدمة HTML والـ DTD",
+    "pts": [
+      [
+        "HTML identifies structural elements (paragraphs, headings, lists), places media, and describes forms. The browser <b>interprets</b> the markup and <b>renders</b> the page. The <b>W3C</b> sets HTML standards.",
+        "HTML يحدد عناصر الصفحة، والمتصفح يفسّرها ويعرضها، وW3C هي اللي تضع معاييرها."
+      ],
+      [
+        "HTML permits <b>platform-independent</b> display: any browser on any OS can display the page.",
+        "HTML ما يعتمد على نظام معيّن، أي متصفح على أي نظام يعرض الصفحة."
+      ],
+      [
+        "<b>HTML5</b>: newest version, supported by modern browsers, intended to be <b>backwards compatible</b>, adds new elements and functionality, <b>native video and audio</b>.",
+        "HTML5 أحدث نسخة، متوافقة مع القديم، وفيها عناصر جديدة وفيديو وصوت مدمج."
+      ],
+      [
+        "<b>DTD</b> (Document Type Definition) – the <b>doctype statement</b> identifies the <b>version of HTML</b>; placed at the <b>top</b> of the document. HTML5 DTD: `<!DOCTYPE html>`",
+        "الـ DTD سطر الـ doctype يحدد نسخة HTML ويكون أول سطر. في HTML5 هو `<!DOCTYPE html>`."
+      ],
+      [
+        "Every page includes the <b>DTD</b> and the <b>html, head, title, meta, body</b> elements. Coding style: <b>lowercase</b> letters and <b>quotes around attribute values</b>.",
+        "كل صفحة فيها: DTD وhtml وhead وtitle وmeta وbody. ونكتب بحروف صغيرة ونحط القيم بين علامات تنصيص."
+      ]
+    ],
+    "trap": [
+      "DTD tells the <b>HTML version</b>, not the language (that's `lang`).",
+      "الـ DTD يحدد نسخة HTML، أما لغة الصفحة فهي lang."
+    ],
+    "idx": 10
+  },
+  {
+    "id": "elements",
+    "ch": 2,
+    "t": "Elements, html, head & body",
+    "ar": "العناصر وهيكل الصفحة",
+    "pts": [
+      [
+        "Each markup code is an <b>element</b> (tag). Most are a <b>pair</b>: opening and closing tag, enclosed in <b>angle brackets</b> &lt; &gt;.",
+        "كل كود عنصر، وأغلبها زوج: وسم فتح ووسم إغلاق بين أقواس زاوية."
+      ],
+      [
+        "Some tags are <b>stand-alone</b> (self-contained, <b>void element</b> in HTML5), e.g. `<br>`. Most tags can be modified with <b>attributes</b>.",
+        "بعض الوسوم مفردة بدون إغلاق (void) مثل br، وأغلب الوسوم تقبل attributes."
+      ],
+      [
+        "`html` element: indicates the document is HTML; opening tag below the DTD, closing tag at the very end. `lang` attribute gives the spoken language: `lang=\"en\"` (used by <b>search engines and screen readers</b>).",
+        "عنصر html يغلّف الصفحة كلها، وفيه lang لتحديد لغة الصفحة، وتستفيد منه محركات البحث وقارئات الشاشة."
+      ],
+      [
+        "<b>Head</b> – information that <b>describes</b> the document. <b>Body</b> – text and elements that <b>display</b> in the page.",
+        "الـ head معلومات عن الصفحة، والـ body اللي ينعرض فعلاً."
+      ],
+      [
+        "`title` – text in the browser <b>title bar</b>; used when pages are <b>bookmarked and printed</b>.",
+        "الـ title يظهر في شريط عنوان المتصفح ويُستخدم في المفضلة والطباعة."
+      ],
+      [
+        "`meta` – describes a characteristic such as <b>character encoding</b>; a <b>void</b> element using the `charset` attribute: `<meta charset=\"utf-8\">`",
+        "الـ meta يصف خصائص الصفحة مثل الترميز، وهو void ويستخدم charset."
+      ]
+    ],
+    "trap": [
+      "`title` and `meta` go in the <b>head</b>, not the body. `meta` has <b>no closing tag</b>.",
+      "title وmeta مكانهم داخل head، وmeta ما له وسم إغلاق."
+    ],
+    "idx": 11
+  },
+  {
+    "id": "text",
+    "ch": 2,
+    "t": "Headings, Paragraphs, br & Blockquote",
+    "ar": "العناوين والفقرات",
+    "pts": [
+      [
+        "<b>Headings</b> `h1`–`h6`: <b>block display</b> with white space above and below. <b>Largest = h1</b>, smallest = h6.",
+        "العناوين من h1 لـ h6، تنعرض كبلوك بمسافة فوق وتحت، وh1 الأكبر وh6 الأصغر."
+      ],
+      [
+        "Accessibility: use headings to <b>outline the structure</b> hierarchically (h1, h2, h3…). Screen-reader users can list the headings to jump to topics.",
+        "للوصول: رتّب العناوين بشكل هرمي، لأن قارئ الشاشة يعرض قائمة العناوين للمستخدم."
+      ],
+      [
+        "`p` – groups sentences and sections of text; <b>block display</b>.",
+        "الفقرة p تجمع الجمل، وتنعرض كبلوك."
+      ],
+      [
+        "`align` attribute – horizontal alignment: <b>left, center, right</b>, e.g. `align=\"center\"`.",
+        "align لمحاذاة العنصر: يسار، وسط، أو يمين."
+      ],
+      [
+        "`br` – <b>line break</b>; a <b>void</b> tag; next element or text displays on a new line.",
+        "br سطر جديد، وسم مفرد بدون إغلاق."
+      ],
+      [
+        "`blockquote` – <b>indents</b> a block of text for special emphasis; block display.",
+        "blockquote يزيح النص للداخل عشان يبرزه."
+      ]
+    ],
+    "trap": [
+      "h<b>1</b> is the <b>largest</b> heading, h6 the smallest.",
+      "h1 هو الأكبر مو الأصغر."
+    ],
+    "idx": 12
+  },
+  {
+    "id": "phrase",
+    "ch": 2,
+    "t": "Phrase Elements & Proper Nesting",
+    "ar": "عناصر النص المضمّن والتداخل الصحيح",
+    "pts": [
+      [
+        "Phrase elements indicate <b>context and meaning</b>; <b>inline display</b>; each is a <b>container</b> (opening and closing tags required).",
+        "عناصر الـ phrase توضح معنى النص، تنعرض inline داخل السطر، ولازم لها فتح وإغلاق."
+      ],
+      [
+        "`strong` – <b>strong importance</b> (bold). `b` – bold with <b>no extra importance</b>. `em` – <b>emphasized</b> (italics). `i` – italic with no extra importance.",
+        "strong أهمية قوية، وb عريض بدون أهمية. em تأكيد مائل، وi مائل بدون أهمية."
+      ],
+      [
+        "`abbr` – abbreviation (title attribute for full name). `cite` – citation. `dfn` – definition. `code`, `kbd`, `samp` – program code / user input / sample output (fixed-space). `var` – variable.",
+        "abbr للاختصار، cite للاقتباس، dfn للتعريف، code للكود، kbd لإدخال المستخدم، samp لمخرجات البرنامج، var للمتغير."
+      ],
+      [
+        "`mark` – <b>highlighted</b> text. `small` – legal disclaimers (fine print). `sub` – <b>subscript</b> below baseline. `sup` – <b>superscript</b> above baseline.",
+        "mark تظليل، small للنص الصغير، sub تحت السطر مثل H₂O، وsup فوق السطر مثل x²."
+      ],
+      [
+        "<b>Proper nesting</b>: close tags in <b>reverse order</b> of opening: `<p><i>...<strong>888</strong></i></p>`",
+        "التداخل الصحيح: آخر وسم تفتحه أول وسم تقفله."
+      ]
+    ],
+    "trap": [
+      "`<strong>` = importance; `<b>` = just bold. Nesting: <b>last opened, first closed</b>.",
+      "strong فيه أهمية وb مجرد شكل. وفي التداخل: آخر واحد ينفتح أول واحد ينقفل."
+    ],
+    "idx": 13
+  },
+  {
+    "id": "lists",
+    "ch": 2,
+    "t": "Lists: ol, ul, dl",
+    "ar": "القوائم",
+    "pts": [
+      [
+        "<b>Ordered list</b> `ol` – numbering or lettering system; each item in `li`. The `type` attribute sets the numbering scheme; <b>default is numerals</b>.",
+        "القائمة المرقمة ol، وكل عنصر li، والـ type يحدد نوع الترقيم والافتراضي أرقام."
+      ],
+      [
+        "`type` values: 1, A, a, I, i — e.g. `<ol type=\"A\">` for uppercase letters.",
+        "قيم type: أرقام، حروف كبيرة، حروف صغيرة، أرقام رومانية."
+      ],
+      [
+        "`start` – begin with a value other than 1 (`start=\"10\"`). HTML5 `reversed` (`reversed=\"reversed\"`) – <b>descending</b> order.",
+        "start يبدأ من رقم غير 1، وreversed يعكس الترتيب تنازلي."
+      ],
+      [
+        "<b>Unordered list</b> `ul` – a <b>bullet</b> (list marker) before each entry; items in `li`.",
+        "القائمة غير المرقمة ul تحط نقطة قبل كل عنصر."
+      ],
+      [
+        "<b>Description list</b> `dl` (formerly definition list) – terms and descriptions or FAQ. `dt` contains a <b>term</b>; `dd` contains the <b>description</b> (indented).",
+        "قائمة الوصف dl: dt للمصطلح، وdd لوصفه ويكون مزاح للداخل."
+      ]
+    ],
+    "trap": [
+      "Description list uses `dt`/`dd`, <b>not</b> `li`.",
+      "قائمة الوصف تستخدم dt وdd، ما فيها li."
+    ],
+    "idx": 14
+  },
+  {
+    "id": "struct",
+    "ch": 2,
+    "t": "Special Characters, div & HTML5 Structure",
+    "ar": "الرموز الخاصة والهيكل",
+    "pts": [
+      [
+        "<b>Special characters</b> (entities): `&quot;` quotation mark · `&#39;` apostrophe · `&copy;` © · `&amp;` & · `&nbsp;` non-breaking space · `&mdash;` long dash · `&#124;` vertical bar.",
+        "الرموز الخاصة تُكتب بكود: `&copy;` لعلامة الحقوق، `&amp;` لعلامة &، و`&nbsp;` للمسافة."
+      ],
+      [
+        "`div` – a structural block area or <b>division</b> with space above and below; can contain other block elements including other divs.",
+        "div قسم أو صندوق في الصفحة، ويقدر يحتوي divs ثانية."
+      ],
+      [
+        "`header` – contains the page's <b>headings</b>. `nav` – <b>main navigation</b>. `main` – <b>main content</b>. `footer` – the page <b>footer</b>.",
+        "عناصر HTML5: header للعناوين، nav للتنقل، main للمحتوى الرئيسي، footer للتذييل."
+      ]
+    ],
+    "trap": [
+      "`&nbsp;` = <b>non-breaking space</b>, `&amp;` = ampersand.",
+      "`&nbsp;` مسافة، و`&amp;` علامة &."
+    ],
+    "idx": 15
+  },
+  {
+    "id": "links",
+    "ch": 2,
+    "t": "Hyperlinks, Comments & Validation",
+    "ar": "الروابط والتعليقات والتحقق",
+    "pts": [
+      [
+        "Anchor element `a` specifies a hyperlink; text between `<a>` and `</a>` is displayed; the `href` attribute holds the <b>file name or URL</b>.",
+        "عنصر a للروابط، والنص بين الوسمين هو اللي يظهر، وhref فيه الرابط."
+      ],
+      [
+        "<b>Absolute</b> link – to a <b>different website</b>, uses the protocol: `<a href=\"http://yahoo.com\">Yahoo</a>`",
+        "الرابط المطلق لموقع ثاني، ويكتب فيه http."
+      ],
+      [
+        "<b>Relative</b> link – to pages on <b>your own site</b>, no protocol: `<a href=\"index.html\">Home</a>`",
+        "الرابط النسبي لصفحات موقعك، بدون http."
+      ],
+      [
+        "<b>E-mail</b> link – launches the default mail program: `<a href=\"mailto:me@site.com\">`",
+        "رابط الإيميل يبدأ بـ mailto: ويفتح برنامج البريد."
+      ],
+      [
+        "<b>Site map</b> – represents the structure of pages in a website visually; each page is a <b>box</b>.",
+        "خريطة الموقع رسم لهيكل الصفحات، وكل صفحة مربع."
+      ],
+      [
+        "<b>Comment</b> – text <b>not processed</b> by the browser: `<!-- comment -->`. <b>Valid code</b> → more <b>consistent browser display</b>; check with the <b>W3C validator</b> (validator.w3.org).",
+        "التعليق ما يقراه المتصفح. والكود الصحيح يخلي العرض ثابت بين المتصفحات، ونفحصه بأداة W3C."
+      ]
+    ],
+    "trap": [
+      "Absolute = <b>with</b> http, other site. Relative = <b>no</b> http, own site.",
+      "المطلق فيه http، والنسبي بدونه."
+    ],
+    "idx": 16
+  },
+  {
+    "id": "tables",
+    "ch": 25,
+    "t": "HTML Tables",
+    "ar": "الجداول",
+    "pts": [
+      [
+        "Tables organize <b>tabular information</b>; composed of <b>rows and columns</b> (like a spreadsheet). Each cell is at the intersection of a row and column.",
+        "الجداول لتنظيم البيانات في صفوف وأعمدة مثل الإكسل، وكل خلية عند تقاطع صف وعمود."
+      ],
+      [
+        "`<table>` contains the table · `<tr>` contains a <b>table row</b> · `<td>` contains a <b>table cell</b> · `<caption>` configures a <b>description</b> of the table.",
+        "table للجدول، tr للصف، td للخلية، وcaption لعنوان الجدول."
+      ],
+      [
+        "`<th>` – <b>table header</b> cell: column or row headings (displayed <b>bold and centered</b> by default).",
+        "th خلية عنوان، تنعرض عريضة وفي الوسط."
+      ],
+      [
+        "Attributes: <b>border</b>, <b>colspan</b>, <b>rowspan</b> are current; align, bgcolor, cellpadding, cellspacing, summary, width, valign are <b>obsolete</b>; height is deprecated. <b>Use CSS</b> to configure table characteristics.",
+        "السمات الحالية: border وcolspan وrowspan. والباقي مثل bgcolor وwidth صار obsolete، ونستخدم CSS بدالها."
+      ],
+      [
+        "`colspan=\"2\"` – a cell spans <b>two columns</b> (e.g. the \"Birthday List\" header). `rowspan=\"2\"` – a cell spans <b>two rows</b>.",
+        "colspan يدمج الخلية على عمودين، وrowspan يدمجها على صفين."
+      ]
+    ],
+    "trap": [
+      "<b>col</b>span = across <b>columns</b> (wide); <b>row</b>span = down <b>rows</b> (tall).",
+      "colspan يمدّ الخلية بالعرض، وrowspan يمدّها بالطول."
+    ],
+    "idx": 17
+  },
+  {
+    "id": "tacc",
+    "ch": 25,
+    "t": "Table Accessibility & Row Groups",
+    "ar": "وصول الجداول وتقسيمها",
+    "pts": [
+      [
+        "Use <b>th</b> elements to indicate column or row headings; use the <b>caption</b> element to provide a text title for the table.",
+        "استخدم th للعناوين، وcaption لعنوان الجدول."
+      ],
+      [
+        "<b>Complex tables</b>: associate each cell with its header — `<th>` gets an `id` attribute, `<td>` gets a `headers` attribute with that id.",
+        "في الجداول المعقدة: th ناخذ لها id، وtd نحط فيها headers بنفس القيمة."
+      ],
+      [
+        "Row groups: `<thead>` – table <b>head</b> rows · `<tbody>` – table <b>body</b> rows · `<tfoot>` – table <b>footer</b> rows (e.g. Total).",
+        "تقسيم الصفوف: thead للرأس، tbody للجسم، tfoot للتذييل مثل المجموع."
+      ]
+    ],
+    "trap": [
+      "`id` goes on the <b>th</b>; `headers` goes on the <b>td</b>.",
+      "الـ id على th، والـ headers على td."
+    ],
+    "idx": 18
+  },
+  {
+    "id": "forms",
+    "ch": 25,
+    "t": "Forms Overview & the form Element",
+    "ar": "النماذج",
+    "pts": [
+      [
+        "<b>Form</b> – an element that contains and organizes <b>form controls</b> (text boxes, check boxes, buttons) that accept information from visitors. Used to <b>accept information</b> and <b>provide interactivity</b> (search, order, newsletter, survey, add to cart).",
+        "الفورم يحتوي عناصر إدخال تاخذ معلومات من الزائر، مثل البحث والطلب والاستبيان."
+      ],
+      [
+        "Two components: (1) the <b>HTML form</b> – the user interface; (2) <b>server-side processing</b> – works with the data: sends e-mail, writes a file, updates a database.",
+        "الفورم له جزئين: الواجهة بـ HTML، والمعالجة على السيرفر اللي ترسل إيميل أو تحفظ في قاعدة بيانات."
+      ],
+      [
+        "`<form>` contains the form elements (<b>container</b>) · `<input>` text boxes, radio buttons, check boxes, buttons (<b>stand-alone</b>) · `<textarea>` scrolling text box (container) · `<select>` drop-down list (container) · `<option>` an option in the select (container).",
+        "form حاوية، input وسم مفرد، textarea مربع نص كبير، select قائمة منسدلة، وoption خيار فيها."
+      ],
+      [
+        "form attributes: `action` – <b>where</b> the data is sent (`action=\"process.php\"`) · `method` – <b>how</b>: <b>get</b> (default, data passed in the URL) or <b>post</b> (more secure, data in the HTTP entity body) · `name` · `id`.",
+        "action وين تنرسل البيانات، وmethod كيف: get الافتراضي والبيانات في الرابط، أو post أأمن والبيانات في جسم الطلب."
+      ]
+    ],
+    "trap": [
+      "<b>get</b> = default, data in the <b>URL</b>. <b>post</b> = more secure.",
+      "get الافتراضي والبيانات تطلع في الرابط، وpost أأمن."
+    ],
+    "idx": 19
+  },
+  {
+    "id": "inputs",
+    "ch": 25,
+    "t": "Input Types: text, submit, reset, password, checkbox, radio, image",
+    "ar": "أنواع الإدخال",
+    "pts": [
+      [
+        "The main attribute of `<input>` is <b>type</b>: text, submit, reset, password, checkbox, radio, image, email, tel, range, number, date, color.",
+        "أهم سمة في input هي type، وهي اللي تحدد نوعه."
+      ],
+      [
+        "`type=\"text\"` – accepts text (name, id, <b>size</b>, <b>maxlength</b>, value). `type=\"password\"` – text <b>hidden as it is entered</b>.",
+        "text لإدخال نص، وpassword نص مخفي وأنت تكتب."
+      ],
+      [
+        "`type=\"submit\"` – submits the form: triggers the <b>action</b> and sends the <b>name=value pair</b> of each element to the web server. `type=\"reset\"` – resets fields to their <b>initial values</b>.",
+        "submit يرسل الفورم وكل عنصر يروح كزوج name=value. reset يرجّع الحقول لقيمها الأولى."
+      ],
+      [
+        "`type=\"checkbox\"` – select <b>one or more</b> of a group (attribute <b>checked</b>).",
+        "checkbox تختار واحد أو أكثر."
+      ],
+      [
+        "`type=\"radio\"` – select <b>exactly one</b> from a group. Each radio button in a group has the <b>same name</b> and a <b>unique value</b>.",
+        "radio تختار واحد بس، وكل أزرار المجموعة لها نفس name وvalue مختلف."
+      ],
+      [
+        "`<input type=\"image\" src=\"submit.png\" alt=\"Submit\">` – uses an <b>image as a submit button</b>.",
+        "input من نوع image صورة تشتغل كزر إرسال."
+      ]
+    ],
+    "trap": [
+      "Radio group is tied together by the same <b>name</b>, not the value.",
+      "أزرار الراديو تترابط بالـ name مو بالـ value."
+    ],
+    "idx": 20
+  },
+  {
+    "id": "h5in",
+    "ch": 25,
+    "t": "HTML5 Inputs & the label Element",
+    "ar": "مدخلات HTML5 والـ label",
+    "pts": [
+      [
+        "`type=\"email\"` – text in <b>e-mail address format</b>. `type=\"tel\"` – <b>telephone number</b> format. Common attributes: name, id, size, maxlength, value, <b>placeholder</b>, <b>required</b>.",
+        "email لصيغة الإيميل، وtel لرقم الجوال، ولهم placeholder وrequired."
+      ],
+      [
+        "`type=\"range\"` – <b>slider</b> control (min, max). `type=\"number\"` – <b>spinner</b>. `type=\"date\"` – <b>calendar</b>. `type=\"color\"` – <b>color well</b>.",
+        "range شريط سحب، number عداد، date تقويم، وcolor منتقي ألوان."
+      ],
+      [
+        "`<label>` associates a text label with a form control: `<label for=\"email\">Email:</label> <input type=\"text\" id=\"email\">` — the label's <b>for</b> matches the input's <b>id</b>.",
+        "label يربط نص بعنصر الإدخال، وقيمة for لازم تساوي id العنصر."
+      ],
+      [
+        "The form display and functioning <b>varies with browser support</b>.",
+        "شكل عناصر HTML5 يختلف حسب دعم المتصفح."
+      ]
+    ],
+    "trap": [
+      "label `for` = input <b>id</b> (not name).",
+      "for في label يطابق id مو name."
+    ],
+    "idx": 21
+  },
+  {
+    "id": "select",
+    "ch": 25,
+    "t": "textarea, select, option & datalist",
+    "ar": "مربع النص والقوائم",
+    "pts": [
+      [
+        "`<textarea>` – <b>scrolling text box</b>; attributes name, id, <b>cols</b>, <b>rows</b>: `<textarea rows=\"5\" cols=\"40\"></textarea>`",
+        "textarea مربع نص يتمرر، وله rows وcols."
+      ],
+      [
+        "`<select>` – select list (also: select box, <b>drop-down list</b>, drop-down box, option box); choose one or more of predetermined choices. Attributes: name, id, <b>size</b>, <b>multiple</b>.",
+        "select قائمة منسدلة، وتقدر بـ multiple تختار أكثر من واحد."
+      ],
+      [
+        "`<option>` – an option in the list; attributes <b>value</b>, <b>selected</b>.",
+        "option خيار في القائمة، وله value وselected."
+      ],
+      [
+        "`<datalist>` – used with `<input list=\"id\">` + `<option>`; the user <b>can type</b> a value and is <b>not forced</b> to choose from the list → best for <b>suggestions / autocomplete</b>. `<select>` → user cannot type; best for <b>fixed choices</b>.",
+        "datalist تكتب بنفسك ويقترح عليك (autocomplete)، وselect لازم تختار من خيارات ثابتة."
+      ]
+    ],
+    "trap": [
+      "datalist: user <b>can type</b>; select: <b>cannot</b>.",
+      "في datalist تقدر تكتب، وفي select ما تقدر."
+    ],
+    "idx": 22
+  },
+  {
+    "id": "fieldset",
+    "ch": 25,
+    "t": "fieldset & legend",
+    "ar": "تجميع عناصر الفورم",
+    "pts": [
+      [
+        "`<fieldset>` – container tag; creates a <b>visual group</b> of form elements.",
+        "fieldset يجمع عناصر الفورم في مربع."
+      ],
+      [
+        "`<legend>` – container tag; creates a <b>text label within the fieldset</b>: `<fieldset><legend>Customer Information</legend> ...</fieldset>`",
+        "legend عنوان المجموعة داخل الـ fieldset."
+      ],
+      [
+        "Grouping with fieldset and legend increases the <b>accessibility</b> of the form.",
+        "التجميع هذا يحسّن الوصول للفورم."
+      ]
+    ],
+    "idx": 23
+  },
+  {
+    "id": "server",
+    "ch": 25,
+    "t": "Server-Side Processing",
+    "ar": "المعالجة على السيرفر",
+    "pts": [
+      [
+        "The browser requests pages; the web server locates the files and sends them; the browser <b>renders</b> them.",
+        "المتصفح يطلب، السيرفر يرسل الملفات، والمتصفح يعرضها."
+      ],
+      [
+        "<b>CGI</b> (Common Gateway Interface) – a <b>protocol</b> for a web server to pass a user's request to an <b>application program</b> and accept information to send back.",
+        "CGI بروتوكول يخلي السيرفر يمرر الطلب لبرنامج ويرجّع النتيجة."
+      ],
+      [
+        "<b>Server-side scripting</b> – script embedded in a page saved as <b>.php</b> (PHP), <b>.asp</b> (Active Server Pages), <b>.cfm</b> (ColdFusion), <b>.jsp</b> (JavaServer Pages), <b>.aspx</b> (ASP.Net). Uses <b>direct execution</b> by the web server or an extension module.",
+        "السكربتات على السيرفر تنحفظ بامتدادات مثل php وasp وjsp وaspx، والسيرفر ينفذها مباشرة."
+      ],
+      [
+        "Steps: (1) page invokes processing by a <b>form or hyperlink</b> → (2) web server <b>executes the script</b> → (3) script accesses database, file, or process → (4) server returns a page with the info or confirmation.",
+        "الخطوات: الفورم يطلب، السيرفر ينفذ السكربت، السكربت يوصل للبيانات، والسيرفر يرجّع صفحة."
+      ],
+      [
+        "Uses: search a database, place an order, send a page to a friend, subscribe to a newsletter. Technologies: JSP, ColdFusion, <b>PHP</b>, Ruby on Rails, .NET, ASP. Free remotely hosted scripts exist (in return for an ad).",
+        "استخدامات: البحث والطلب والاشتراك. والتقنيات: PHP وJSP وRuby on Rails و.NET."
+      ]
+    ],
+    "trap": [
+      "CGI is a <b>protocol</b>, not a language.",
+      "CGI بروتوكول مو لغة برمجة."
+    ],
+    "idx": 24
+  },
+  {
+    "id": "cssov",
+    "ch": 3,
+    "t": "CSS Overview & Advantages",
+    "ar": "مقدمة CSS ومميزاتها",
+    "pts": [
+      [
+        "A <b>style sheet</b> is a collection of <b>style rules</b> applied to HTML elements: font, color, alignment, margin, border, padding, positioning.",
+        "الـ style sheet مجموعة قواعد تتحكم في شكل العناصر."
+      ],
+      [
+        "<b>Cascading</b> means <b>multiple style rules can be applied to the same element</b>; the browser follows a cascading order to finalize the style.",
+        "Cascading يعني أكثر من قاعدة ممكن تنطبق على نفس العنصر، والمتصفح يرتبها بترتيب معيّن."
+      ],
+      [
+        "Advantages: greater <b>typography and page layout control</b> · <b>style is separate from structure</b> · styles stored in a <b>separate document</b> (change one file instead of every page) · potentially <b>smaller documents</b> · <b>easier site maintenance</b>.",
+        "المميزات: تحكم أكبر بالخطوط والتخطيط، فصل الشكل عن الهيكل، تعدّل ملف واحد بدل كل الصفحات، ملفات أصغر، وصيانة أسهل."
+      ]
+    ],
+    "trap": [
+      "Cascading = <b>multiple rules on the same element</b>.",
+      "Cascading معناها أكثر من قاعدة على نفس العنصر."
+    ],
+    "idx": 25
+  },
+  {
+    "id": "csstypes",
+    "ch": 3,
+    "t": "Types of CSS & Syntax",
+    "ar": "أنواع CSS وطريقة كتابته",
+    "pts": [
+      [
+        "Four methods: <b>Inline</b>, <b>Embedded</b>, <b>External</b>, <b>Imported</b>.",
+        "أربع طرق: inline وembedded وexternal وimported."
+      ],
+      [
+        "<b>Inline</b> – in the <b>body</b>, as the `style` attribute of a tag; applies only to <b>that element</b>: `<h1 style=\"color:#ff0000\">`. Multiple properties separated by <b>;</b>",
+        "Inline داخل الوسم نفسه بسمة style، ويأثر على هالعنصر بس."
+      ],
+      [
+        "<b>Embedded</b> (internal) – in a `<style>` element in the <b>head</b>; applies to the <b>entire page</b>.",
+        "Embedded داخل style في head، ويأثر على الصفحة كلها."
+      ],
+      [
+        "<b>External</b> – a separate text file with <b>.css</b> extension, associated with a `<link>` element in the head. <b>Imported</b> – brought in with the `@import` directive.",
+        "External ملف .css منفصل نربطه بـ link، وImported نجيبه بـ @import."
+      ],
+      [
+        "Syntax: a style sheet is composed of <b>rules</b>; each rule = <b>selector</b> + <b>declaration</b> (property: value). `body { color: white; background-color: orchid; }` — spaces and the ending semicolon are optional.",
+        "كل قاعدة فيها selector وdeclaration، والـ declaration خاصية وقيمة."
+      ]
+    ],
+    "trap": [
+      "Embedded = `<style>` in <b>head</b>. External = `<link>` to a .css file.",
+      "Embedded بـ style في الهيد، وExternal بـ link لملف css."
+    ],
+    "idx": 26
+  },
+  {
+    "id": "color",
+    "ch": 3,
+    "t": "Color on Web Pages",
+    "ar": "الألوان",
+    "pts": [
+      [
+        "`background-color` – the background color of an element. `color` – the <b>text (foreground)</b> color.",
+        "background-color لون الخلفية، وcolor لون النص."
+      ],
+      [
+        "Monitors display color as intensities of <b>red, green, and blue</b> (RGB); values from <b>0 to 255</b>, represented in <b>hexadecimal</b> (base 16).",
+        "الشاشة تعرض الألوان من أحمر وأخضر وأزرق، كل واحد من 0 لـ 255، ونكتبها بالـ hex."
+      ],
+      [
+        "`#` indicates hex; pairs range <b>00 to FF</b>; <b>three pairs</b> describe an RGB color: `#000000` black, `#FFFFFF` white, `#FF0000` red, `#00FF00` green, `#0000FF` blue, `#CCCCCC` grey.",
+        "# تعني hex، وكل زوج من 00 لـ FF، وثلاث أزواج تكوّن اللون."
+      ],
+      [
+        "<b>Web-safe color palette</b> – <b>216</b> colors that display most similarly on Mac and PC; hex values 00, 33, 66, 99, CC, FF.",
+        "الألوان الآمنة 216 لون، قيمها 00 و33 و66 و99 وCC وFF."
+      ],
+      [
+        "CSS color syntax: color name `red` · hex `#FF0000` · <b>shorthand hex</b> `#F00` · decimal `rgb(255,0,0)` · <b>HSL</b> `hsl(0, 100%, 50%)` (new to CSS3).",
+        "طرق كتابة اللون: الاسم، hex، hex مختصر، rgb، وhsl."
+      ],
+      [
+        "Accessibility: choose text and background colors with <b>sufficient contrast</b>; verify with a contrast checker.",
+        "لازم يكون فيه تباين كافي بين النص والخلفية."
+      ]
+    ],
+    "trap": [
+      "`color` = <b>text</b> color, not background.",
+      "color لون النص، مو الخلفية."
+    ],
+    "idx": 27
+  },
+  {
+    "id": "csstext",
+    "ch": 3,
+    "t": "Configuring Text with CSS",
+    "ar": "تنسيق النص",
+    "pts": [
+      [
+        "`font-weight` – boldness (normal, bold, bolder, lighter, 100–900) · `font-style` – normal, <b>italic</b>, oblique · `font-size` – pt, px, <b>em</b>, %, xx-small…xx-large.",
+        "font-weight للسماكة، font-style للميلان، font-size للحجم."
+      ],
+      [
+        "`font-family` – typeface; families: <b>serif</b> (Times New Roman, Georgia), <b>sans-serif</b> (Arial, Verdana), <b>monospace</b> (Courier New), <b>cursive</b>, <b>fantasy</b>. Not everyone has the same fonts → list fonts and end with a <b>generic family</b>.",
+        "font-family نوع الخط، ونكتب قائمة خطوط وآخرها عائلة عامة لأن مو كل الأجهزة فيها نفس الخطوط."
+      ],
+      [
+        "Accessibility: use <b>em or percentage</b> font sizes — easily enlarged by users.",
+        "استخدم em أو النسبة المئوية عشان المستخدم يقدر يكبّر الخط."
+      ],
+      [
+        "`line-height: 200%` → double spacing · `text-align` (center, justify, left, right) · `text-indent` – indents the <b>first line</b> · `text-decoration: none` → link not underlined · `text-transform` (none, capitalize, uppercase, lowercase).",
+        "line-height المسافة بين الأسطر، text-align المحاذاة، text-indent إزاحة أول سطر، text-decoration الخط تحت النص، text-transform حالة الحروف."
+      ],
+      [
+        "`letter-spacing` – between characters · `word-spacing` – between words · `white-space` · `width` · `margin` (`body {margin:0}` with no unit when 0) · `margin-left` / `margin-right`.",
+        "letter-spacing بين الحروف، وword-spacing بين الكلمات، وmargin الهوامش."
+      ],
+      [
+        "`text-shadow: 3px 2px 5px #666;` = <b>horizontal offset</b> (positive → right), <b>vertical offset</b> (positive → below), <b>blur radius</b> (optional, default 0 = sharp), <b>color</b>.",
+        "text-shadow: الإزاحة الأفقية، ثم العمودية، ثم التمويه (اختياري)، ثم اللون."
+      ]
+    ],
+    "trap": [
+      "text-shadow order: <b>horizontal, vertical, blur, color</b>.",
+      "ترتيب text-shadow: أفقي، عمودي، تمويه، لون."
+    ],
+    "idx": 28
+  },
+  {
+    "id": "selectors",
+    "ch": 3,
+    "t": "CSS Selectors & span",
+    "ar": "المحددات والـ span",
+    "pts": [
+      [
+        "Selector types: <b>element</b> (`h1`), <b>class</b>, <b>id</b>, <b>descendant</b>.",
+        "أنواع المحددات: عنصر، class، id، وdescendant."
+      ],
+      [
+        "<b>Class</b> selector – apply to <b>certain elements</b>, not tied to one element type. Configure with <b>.classname</b>: `.feature { color: #C70000; }` → `<li class=\"feature\">`",
+        "الـ class تبدأ بنقطة، ونستخدمها لأكثر من عنصر."
+      ],
+      [
+        "<b>Id</b> selector – apply a rule <b>uniquely to a single area</b>. Configure with <b>#idname</b>: `#new { color:#FF0000; }` → `<p id=\"new\">`",
+        "الـ id تبدأ بـ #، وتكون لعنصر واحد فريد."
+      ],
+      [
+        "<b>Descendant</b> (AKA <b>contextual</b>) selector – an element within the context of its container: `div p { color: blue; }`, `#content p {...}`. Advantage: <b>reduces the number of classes and ids</b> needed.",
+        "الـ descendant يحدد عنصر داخل عنصر ثاني، مثل p داخل div، ويقلل عدد الـ classes والـ ids."
+      ],
+      [
+        "`<span>` – formats an area <b>inline</b> within another element (p, blockquote, li, div); unlike div, <b>no extra space above or below</b>.",
+        "span لتنسيق جزء داخل السطر، وبعكس div ما يضيف مسافة."
+      ]
+    ],
+    "trap": [
+      "<b>.</b> = class (many). <b>#</b> = id (unique).",
+      "النقطة للـ class، والـ # للـ id."
+    ],
+    "idx": 29
+  },
+  {
+    "id": "external",
+    "ch": 3,
+    "t": "External Styles, Centering, Cascade & Validation",
+    "ar": "الملف الخارجي والأولوية",
+    "pts": [
+      [
+        "External style sheet: extension <b>.css</b>, contains <b>only style rules</b>, <b>no HTML tags</b>; multiple pages can share the same file (site.css).",
+        "ملف CSS الخارجي فيه قواعد بس بدون أي HTML، وكذا صفحة تستخدم نفس الملف."
+      ],
+      [
+        "`<link rel=\"stylesheet\" href=\"color.css\">` – a <b>void</b> tag in the <b>head</b>; `rel` is <b>stylesheet</b>, `href` is the file name.",
+        "نربطه بـ link في الهيد، rel=stylesheet وhref اسم الملف."
+      ],
+      [
+        "Centering page content: `#container { margin-left: auto; margin-right: auto; width: 80%; }`",
+        "توسيط المحتوى: margin يسار ويمين auto مع width."
+      ],
+      [
+        "<b>The Cascade</b> (precedence, lowest → highest): <b>Browser defaults → External → Embedded → Inline</b>. The closer to the element, the stronger.",
+        "ترتيب الأولوية من الأضعف: إعدادات المتصفح، ثم الخارجي، ثم المضمّن، ثم inline الأقوى."
+      ],
+      [
+        "Validate CSS with the <b>W3C CSS Validator</b> (jigsaw.w3.org/css-validator).",
+        "نتحقق من CSS بأداة W3C."
+      ]
+    ],
+    "trap": [
+      "<b>Inline</b> wins over embedded and external.",
+      "الـ inline هو الأقوى ويغلب الباقين."
+    ],
+    "idx": 30
+  },
+  {
+    "id": "graphics",
+    "ch": 4,
+    "t": "hr & Image Types: GIF, JPEG, PNG",
+    "ar": "الخط الأفقي وأنواع الصور",
+    "pts": [
+      [
+        "`hr` – horizontal rule; visually <b>separates areas</b> of a page; a <b>void</b> tag.",
+        "hr خط أفقي يفصل أجزاء الصفحة، وسم مفرد."
+      ],
+      [
+        "<b>GIF</b> (Graphics Interchange Format) – simple images and <b>logos</b>; <b>max 256 colors</b>; one color transparent; <b>can be animated</b>; <b>lossless</b>; can be interlaced.",
+        "GIF للصور البسيطة والشعارات، 256 لون بالكثير، لون شفاف واحد، يتحرك، وضغطه بدون فقد."
+      ],
+      [
+        "<b>JPEG</b> (Joint Photographic Experts Group) – best for <b>photographs</b>; up to <b>16.7 million colors</b>; <b>lossy</b>; <b>cannot be animated</b>; <b>cannot be transparent</b>; progressive JPEG ≈ interlaced.",
+        "JPEG للصور الفوتوغرافية، 16.7 مليون لون، ضغطه فيه فقد، ما يتحرك ولا يصير شفاف."
+      ],
+      [
+        "<b>PNG</b> (Portable Network Graphic) – millions of colors; <b>multiple levels of transparency</b>; interlacing; <b>lossless</b>; combines the best of GIF & JPEG.",
+        "PNG ملايين الألوان، شفافية بمستويات، ضغط بدون فقد، ويجمع مميزات GIF وJPEG."
+      ]
+    ],
+    "trap": [
+      "JPEG = <b>lossy</b>, no animation, no transparency. GIF = 256 colors, animated.",
+      "JPEG ضغطه فيه فقد ولا يتحرك ولا يصير شفاف. GIF 256 لون ويتحرك."
+    ],
+    "idx": 31
+  },
+  {
+    "id": "img",
+    "ch": 4,
+    "t": "The Image Element & Image Links",
+    "ar": "عنصر الصورة",
+    "pts": [
+      [
+        "`img` configures graphics (photos, banners, logos, buttons); a <b>void</b> element. `<img src=\"logo.gif\" height=\"200\" width=\"500\" alt=\"My Company Name\">`",
+        "img لعرض الصور، وسم مفرد."
+      ],
+      [
+        "`src` – <b>file name</b> of the graphic · `alt` – <b>alternate text</b> description · `height` / `width` – in <b>pixels</b>.",
+        "src اسم ملف الصورة، alt النص البديل، height وwidth بالبكسل."
+      ],
+      [
+        "Accessibility – <b>required</b>: `alt` conveys meaning/intent, <b>not the file name</b>; use `alt=\"\"` for purely <b>decorative</b> images. <b>Recommended</b>: if navigation uses image links, provide <b>text links at the bottom</b>.",
+        "الـ alt إلزامي ويوصف معنى الصورة مو اسم الملف، وللصور الزخرفية نخليه فاضي. ولو التنقل بصور نحط روابط نصية تحت."
+      ],
+      [
+        "<b>Image hyperlink</b> – an `a` element <b>contains</b> an `img` element. Some browsers add a border to image links.",
+        "الصورة الرابط: نحط img داخل a."
+      ],
+      [
+        "<b>Thumbnail</b> – a small image that links to a larger version: wrap `<a>` around `<img>`.",
+        "الصورة المصغرة: صورة صغيرة تودي للنسخة الكبيرة."
+      ]
+    ],
+    "trap": [
+      "`alt` is <b>required</b>; decorative images get `alt=\"\"`, not the file name.",
+      "alt إلزامي، والصورة الزخرفية alt فاضي."
+    ],
+    "idx": 32
+  },
+  {
+    "id": "figmeter",
+    "ch": 4,
+    "t": "figure, figcaption, meter & progress",
+    "ar": "عناصر HTML5 المرئية",
+    "pts": [
+      [
+        "`figure` – contains a <b>self-contained</b> unit of content such as an image, with one optional `figcaption` (the caption).",
+        "figure يحتوي محتوى مستقل مثل صورة، ومعه figcaption للتعليق."
+      ],
+      [
+        "`meter` – a <b>visual gauge</b> of a numeric value within a <b>known range</b> (handy bar chart). Attributes: `value`, `min`, `max`.",
+        "meter مقياس لقيمة داخل مدى معروف، وله value وmin وmax."
+      ],
+      [
+        "`progress` – a bar for a value within a range. Attributes: `value` and `max`.",
+        "progress شريط تقدم، وله value وmax."
+      ]
+    ],
+    "trap": [
+      "`meter` has <b>min</b>; `progress` uses only <b>value & max</b>.",
+      "meter فيه min، وprogress بس value وmax."
+    ],
+    "idx": 33
+  },
+  {
+    "id": "imap",
+    "ch": 4,
+    "t": "Image Maps & Favicon",
+    "ar": "خرائط الصور والأيقونة",
+    "pts": [
+      [
+        "<b>Image map</b> – an image used as <b>one or more hyperlinks</b>. `area` defines a specific area: <b>rectangle, circle, or polygon</b>, with `href`, `shape`, `coords`.",
+        "خريطة الصورة: صورة فيها أكثر من رابط. area يحدد منطقة مستطيل أو دائرة أو مضلع."
+      ],
+      [
+        "Rectangle: `shape=\"rect\"`; `coords` = <b>upper-left</b> (from left, from top) then <b>lower-right</b> (from left, from top).",
+        "المستطيل: الإحداثيات الزاوية العلوية اليسرى ثم السفلية اليمنى."
+      ],
+      [
+        "Configure a descriptive `alt` for <b>each area</b> element for accessibility.",
+        "لازم alt لكل area."
+      ],
+      [
+        "<b>Favicon</b> – a <b>square</b> image associated with a page, usually `favicon.ico`; shows in the address bar, tab, or bookmarks.",
+        "الـ favicon أيقونة مربعة تظهر في التبويب والمفضلة."
+      ],
+      [
+        "Configure with `<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">` — `rel` is <b>icon</b>, `href` is the file, `type` is the <b>MIME type</b> (default image/x-icon).",
+        "نضيفها بـ link: rel=icon، href للملف، type نوع MIME."
+      ]
+    ],
+    "trap": [
+      "Favicon uses `<link>` (in head), <b>not</b> `<img>`.",
+      "الأيقونة بـ link مو img."
+    ],
+    "idx": 34
+  },
+  {
+    "id": "optimize",
+    "ch": 4,
+    "t": "Image Optimization & Guidelines",
+    "ar": "تحسين الصور وإرشاداتها",
+    "pts": [
+      [
+        "<b>Image optimization</b> – the lowest file size that still renders good quality: <b>balancing quality and file size</b>. Reduce file size and reduce dimensions to the actual displayed size. Tools: <b>GIMP</b> (free), Photoshop, Pixlr (free).",
+        "تحسين الصورة: أقل حجم مع جودة كويسة. نصغّر الحجم والأبعاد للمقاس الفعلي."
+      ],
+      [
+        "File names: <b>all lowercase</b>; <b>no punctuation or spaces</b>; don't change extensions; <b>short but descriptive</b> (`dogbday.gif`).",
+        "أسماء الملفات: حروف صغيرة، بدون مسافات أو رموز، قصيرة وواضحة."
+      ],
+      [
+        "Organize: place images in their <b>own folder</b>; code the path in `src` (`images/logo.gif`).",
+        "حط الصور في مجلد خاص واكتب المسار في src."
+      ],
+      [
+        "Sources: create yourself (GIMP, Photoshop), free sites, purchase, digital photos, scans, hire a designer.",
+        "مصادر الصور: تصممها، مواقع مجانية، تشتريها، تصوّر، أو توظف مصمم."
+      ],
+      [
+        "Guidelines: <b>reuse images</b>, file size vs quality, <b>load time</b>, appropriate resolution, <b>specify dimensions</b>, brightness and contrast.",
+        "إرشادات: أعد استخدام الصور، انتبه لوقت التحميل، وحدد الأبعاد."
+      ],
+      [
+        "The <b>number one reason</b> visitors leave web pages is <b>too long of a download time</b>.",
+        "السبب الأول لخروج الزوار: بطء تحميل الصفحة."
+      ]
+    ],
+    "trap": [
+      "#1 reason visitors leave = <b>long download time</b>.",
+      "أول سبب لخروج الزائر هو بطء التحميل."
+    ],
+    "idx": 35
+  }
+];
+
+export const Q = [
+  [
+    1,
+    "inet",
+    "The Internet is commonly known as:",
+    [
+      "The network of networks",
+      "The World Wide Web",
+      "The web browser",
+      "The domain name system"
+    ],
+    "الإنترنت يسمى «شبكة الشبكات» لأنه شبكات كثيرة مربوطة ببعض، وهو مو نفس الويب.",
+    "The Internet is the network of networks; it is not the same as the Web.",
+    0,
+    0
+  ],
+  [
+    1,
+    "inet",
+    "Which statement is TRUE?",
+    [
+      "The Internet and the World Wide Web are not the same thing",
+      "The Internet and the Web are identical",
+      "The Web was created before the Internet",
+      "The Web is a type of network cable"
+    ],
+    "الإنترنت هو البنية (الشبكات)، والويب واجهة رسومية للمعلومات فوقه، فهم مو نفس الشي.",
+    "The Internet is the network infrastructure; the Web is a graphical interface on top of it.",
+    0,
+    0
+  ],
+  [
+    1,
+    "inet",
+    "ARPANET was:",
+    [
+      "A precursor network of the Internet",
+      "The first web browser",
+      "A markup language",
+      "A domain name registrar"
+    ],
+    "ARPANET هي الشبكة اللي سبقت الإنترنت وكانت أساسه.",
+    "ARPANET was the precursor of the Internet.",
+    0,
+    0
+  ],
+  [
+    1,
+    "inet",
+    "ARPANET was led by ARPA, part of:",
+    [
+      "The US Department of Defense",
+      "The W3C",
+      "ICANN",
+      "A private university"
+    ],
+    "ARPA تابعة لوزارة الدفاع الأمريكية.",
+    "ARPA was part of the US Department of Defense.",
+    0,
+    0
+  ],
+  [
+    1,
+    "inet",
+    "ARPANET was initially intended to interconnect:",
+    [
+      "Regional academic and military networks",
+      "Home computers only",
+      "Mobile phones",
+      "Online shops"
+    ],
+    "كان الهدف ربط شبكات أكاديمية وعسكرية إقليمية عشان يتشاركون الموارد.",
+    "It initially interconnected regional academic and military networks to share resources.",
+    0,
+    0
+  ],
+  [
+    1,
+    "inet",
+    "The Internet uses which protocol suite to transfer data between networks?",
+    [
+      "TCP/IP",
+      "SMTP",
+      "FTP",
+      "MIME"
+    ],
+    "الإنترنت ينقل البيانات بين الشبكات بمجموعة بروتوكولات TCP/IP.",
+    "The Internet uses the TCP/IP suite.",
+    0,
+    0
+  ],
+  [
+    1,
+    "inet",
+    "Who introduced the World Wide Web in 1990?",
+    [
+      "Tim Berners-Lee",
+      "Bill Gates",
+      "ARPA",
+      "ICANN"
+    ],
+    "تيم بيرنرز-لي قدّم الويب سنة 1990.",
+    "Tim Berners-Lee introduced the Web in 1990.",
+    0,
+    0
+  ],
+  [
+    1,
+    "inet",
+    "Which is NOT listed as a reason for Internet growth in the 1990s?",
+    [
+      "Invention of the smartphone",
+      "Technological breakthroughs (the Web)",
+      "Communication revolution (email)",
+      "Economic and commercial impact (e-commerce)"
+    ],
+    "أسباب نمو التسعينات: الويب، الإيميل، والتجارة الإلكترونية. الجوال الذكي جا بعدين.",
+    "1990s growth came from the Web, e-mail, e-commerce — not smartphones.",
+    0,
+    0
+  ],
+  [
+    1,
+    "inet",
+    "Infrastructures that help accelerate communications among networks are called:",
+    [
+      "Internet Exchange Points (IXPs)",
+      "Domain names",
+      "Web browsers",
+      "RFCs"
+    ],
+    "IXPs بنى تحتية تسرّع التواصل بين الشبكات.",
+    "Internet Exchange Points (IXPs) accelerate communication among networks.",
+    0,
+    0
+  ],
+  [
+    1,
+    "web",
+    "The World Wide Web is:",
+    [
+      "The graphical user interface to information on web servers connected to the Internet",
+      "A global system of cables",
+      "The protocol that routes packets",
+      "An organization that assigns domain names"
+    ],
+    "الويب هو الواجهة الرسومية للمعلومات المخزنة على خوادم ويب متصلة بالإنترنت.",
+    "The Web is the graphical user interface to information on web servers.",
+    0,
+    0
+  ],
+  [
+    1,
+    "web",
+    "The principal body engaged in developing new Internet protocol standard specifications is:",
+    [
+      "IETF",
+      "ICANN",
+      "W3C",
+      "IAB"
+    ],
+    "IETF هي الجهة الأساسية اللي تطور مواصفات بروتوكولات الإنترنت.",
+    "The IETF develops Internet protocol standards.",
+    0,
+    0
+  ],
+  [
+    1,
+    "web",
+    "The collection of documents that formed the foundation for Internet standards is called:",
+    [
+      "RFC (Requests for Comments)",
+      "DTD",
+      "WCAG",
+      "URI"
+    ],
+    "وثائق RFC هي أساس معايير الإنترنت.",
+    "RFCs formed the foundation for Internet standards.",
+    0,
+    0
+  ],
+  [
+    1,
+    "web",
+    "Which organization provides guidance and broad direction to the IETF and is responsible for RFC publications?",
+    [
+      "IAB",
+      "ICANN",
+      "W3C",
+      "WAI"
+    ],
+    "IAB يوجّه الـ IETF ومسؤول عن نشر الـ RFCs.",
+    "The IAB guides the IETF and is responsible for RFC publication.",
+    0,
+    0
+  ],
+  [
+    1,
+    "web",
+    "ICANN coordinates the assignment of:",
+    [
+      "Domain names, IP addresses, protocol parameters and port numbers",
+      "HTML standards",
+      "Accessibility guidelines",
+      "Web browsers"
+    ],
+    "ICANN تنسّق أسماء النطاقات وعناوين IP ومعاملات البروتوكولات وأرقام المنافذ.",
+    "ICANN coordinates domain names, IP addresses, protocol parameters, and ports.",
+    0,
+    0
+  ],
+  [
+    1,
+    "web",
+    "ICANN is a:",
+    [
+      "Non-profit organization",
+      "Government agency",
+      "Web browser company",
+      "Hardware manufacturer"
+    ],
+    "ICANN منظمة غير ربحية.",
+    "ICANN is a non-profit organization.",
+    0,
+    0
+  ],
+  [
+    1,
+    "intra",
+    "A private network within an organization used to share information among coworkers is:",
+    [
+      "An intranet",
+      "An extranet",
+      "The Internet",
+      "A WAN"
+    ],
+    "الشبكة الخاصة داخل المؤسسة لمشاركة المعلومات بين الموظفين = intranet.",
+    "A private internal network for coworkers is an intranet.",
+    0,
+    0
+  ],
+  [
+    1,
+    "intra",
+    "A private network that securely shares part of an organization's information with external partners is:",
+    [
+      "An extranet",
+      "An intranet",
+      "A LAN",
+      "A DNS"
+    ],
+    "الشبكة الخاصة اللي تشارك جزء من معلومات المؤسسة بأمان مع شركاء خارجيين = extranet.",
+    "A private network sharing part of an organization's info with partners is an extranet.",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "The organization that develops web standards such as HTML and CSS is:",
+    [
+      "W3C",
+      "IETF",
+      "ICANN",
+      "ARPA"
+    ],
+    "W3C هي اللي تطور معايير الويب مثل HTML وCSS.",
+    "The W3C develops web standards like HTML and CSS.",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "W3C specifications are called:",
+    [
+      "Recommendations",
+      "RFCs",
+      "Protocols",
+      "Domains"
+    ],
+    "مواصفات W3C اسمها Recommendations.",
+    "W3C specifications are called Recommendations.",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "An accessible website provides accommodations for individuals with:",
+    [
+      "Visual, auditory, physical, and neurological disabilities",
+      "Slow internet only",
+      "Old browsers only",
+      "Large screens only"
+    ],
+    "الموقع المتاح يراعي الإعاقات البصرية والسمعية والجسدية والعصبية.",
+    "Accessible sites accommodate visual, auditory, physical and neurological disabilities.",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "WAI stands for:",
+    [
+      "Web Accessibility Initiative",
+      "World Access Internet",
+      "Web Application Interface",
+      "Wide Area Internet"
+    ],
+    "WAI = Web Accessibility Initiative، مبادرة من W3C.",
+    "WAI = Web Accessibility Initiative (a W3C initiative).",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "Which describes a methodology with a step-by-step process to evaluate accessibility conformance?",
+    [
+      "WCAG",
+      "ADA",
+      "RFC",
+      "MIME"
+    ],
+    "WCAG تعطي منهجية خطوة بخطوة لتقييم توافق الموقع مع معايير الوصول.",
+    "WCAG provides a step-by-step methodology to evaluate accessibility conformance.",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "Section 508 of the Rehabilitation Act requires:",
+    [
+      "Government agencies to give people with disabilities comparable access to IT",
+      "All websites to use HTML5",
+      "ISPs to provide free Internet",
+      "Browsers to support PNG"
+    ],
+    "Section 508 يلزم الجهات الحكومية تعطي ذوي الإعاقة وصول مماثل لتقنية المعلومات.",
+    "Section 508 requires government agencies to provide comparable IT access.",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "The Americans with Disabilities Act (ADA):",
+    [
+      "Prohibits discrimination against people with disabilities",
+      "Defines HTML tags",
+      "Assigns IP addresses",
+      "Created ARPANET"
+    ],
+    "ADA يمنع التمييز ضد ذوي الإعاقة.",
+    "The ADA prohibits discrimination against people with disabilities.",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "Design of products usable by all people without the need for adaptation is:",
+    [
+      "Universal Design",
+      "Responsive Design",
+      "Client/Server design",
+      "Markup design"
+    ],
+    "تصميم منتجات يستخدمها الكل بدون تعديل = Universal Design.",
+    "Products usable by all without adaptation is Universal Design.",
+    0,
+    0
+  ],
+  [
+    1,
+    "access",
+    "Which is NOT one of the questions to ask about reliability of web information?",
+    [
+      "Does the site use many images?",
+      "Is the organization credible?",
+      "How recent is the information?",
+      "Are there links to additional resources?"
+    ],
+    "أسئلة الموثوقية: هل الجهة موثوقة؟ هل المعلومة حديثة؟ هل الروابط شغالة؟ وهل هي ويكيبيديا؟ عدد الصور مو منها.",
+    "Reliability questions cover credibility, recency, links, Wikipedia — not image count.",
+    0,
+    0
+  ],
+  [
+    1,
+    "net",
+    "A network is:",
+    [
+      "Two or more computers connected to communicate and share resources",
+      "A single computer with a browser",
+      "A web page",
+      "A type of protocol"
+    ],
+    "الشبكة جهازين أو أكثر مربوطين عشان يتواصلون ويتشاركون الموارد.",
+    "A network is two or more connected computers sharing resources.",
+    0,
+    0
+  ],
+  [
+    1,
+    "net",
+    "A network usually confined to a single building or group of buildings is a:",
+    [
+      "LAN",
+      "WAN",
+      "Internet",
+      "Extranet"
+    ],
+    "LAN شبكة محصورة في مبنى أو مجموعة مباني.",
+    "A LAN is confined to a building or group of buildings.",
+    0,
+    0
+  ],
+  [
+    1,
+    "net",
+    "A network connecting computers in widely dispersed geographical areas is a:",
+    [
+      "WAN",
+      "LAN",
+      "Intranet",
+      "PAN"
+    ],
+    "WAN تربط أجهزة في مناطق جغرافية متباعدة.",
+    "A WAN connects widely dispersed areas.",
+    0,
+    0
+  ],
+  [
+    1,
+    "net",
+    "Internet infrastructure refers to:",
+    [
+      "The physical and logical systems that enable internet communication",
+      "Only web browsers",
+      "Only HTML documents",
+      "Only domain names"
+    ],
+    "البنية التحتية للإنترنت = الأنظمة الفيزيائية والمنطقية اللي تخلي التواصل ممكن.",
+    "Internet infrastructure is the physical and logical systems enabling communication.",
+    0,
+    0
+  ],
+  [
+    1,
+    "cs",
+    "In the client/server model, the client:",
+    [
+      "Requests some type of service from the server",
+      "Fulfills requests from other computers",
+      "Is always connected",
+      "Stores all websites"
+    ],
+    "العميل هو اللي يطلب خدمة من الخادم.",
+    "The client requests a service from the server.",
+    0,
+    0
+  ],
+  [
+    1,
+    "cs",
+    "In the Internet client/server model, the client is the:",
+    [
+      "Web browser",
+      "Web server",
+      "Router",
+      "DNS"
+    ],
+    "في نموذج الإنترنت العميل هو متصفح الويب.",
+    "In the Internet client/server model, the client is the browser.",
+    0,
+    0
+  ],
+  [
+    1,
+    "cs",
+    "Which is TRUE about a web server?",
+    [
+      "It is continually connected to the Internet",
+      "It is connected only when needed",
+      "It runs Firefox",
+      "It only sends email"
+    ],
+    "خادم الويب متصل بالإنترنت طول الوقت.",
+    "A web server is continually connected to the Internet.",
+    0,
+    0
+  ],
+  [
+    1,
+    "cs",
+    "Which is an example of web server software?",
+    [
+      "Apache",
+      "Firefox",
+      "Internet Explorer",
+      "GIMP"
+    ],
+    "Apache (وIIS) أمثلة على برامج خوادم الويب.",
+    "Apache (and IIS) are web server software.",
+    0,
+    0
+  ],
+  [
+    1,
+    "cs",
+    "A web server responds to a request and transmits:",
+    [
+      "A status code, the web page, and associated files",
+      "Only an IP address",
+      "Only an email",
+      "A DTD only"
+    ],
+    "الخادم يرد بكود حالة + الصفحة + الملفات المرتبطة.",
+    "The server returns a status code, the page, and associated files.",
+    0,
+    0
+  ],
+  [
+    1,
+    "cs",
+    "Web clients and web servers communicate using:",
+    [
+      "HTTP",
+      "SMTP",
+      "POP3",
+      "MIME"
+    ],
+    "المتصفح والخادم يتواصلون بـ HTTP.",
+    "Browsers and servers communicate using HTTP.",
+    0,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "Protocols are:",
+    [
+      "Rules that describe how clients and servers communicate over a network",
+      "Web pages",
+      "Hardware devices",
+      "Programming languages"
+    ],
+    "البروتوكولات قواعد تحدد كيف يتواصل العميل والخادم.",
+    "Protocols are rules for client/server communication.",
+    1,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "Web developers commonly upload web page files to web servers using:",
+    [
+      "FTP",
+      "SMTP",
+      "IMAP",
+      "DNS"
+    ],
+    "المطورين يرفعون ملفات الموقع للخادم بـ FTP.",
+    "Developers upload files using FTP.",
+    1,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "Web browsers send ___ requests and web servers send ___ responses.",
+    [
+      "HTTP; HTTP",
+      "FTP; SMTP",
+      "SMTP; POP",
+      "IP; TCP"
+    ],
+    "المتصفح يرسل HTTP request والخادم يرد HTTP response.",
+    "Browsers send HTTP requests; servers send HTTP responses.",
+    1,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "For small files, which is generally faster and why?",
+    [
+      "HTTP – fewer handshake steps (4 packets vs FTP's 6)",
+      "FTP – more packets",
+      "FTP – it is newer",
+      "They are always identical"
+    ],
+    "للملفات الصغيرة HTTP أسرع لأن خطوات المصافحة أقل (4 حزم مقابل 6 في FTP).",
+    "For small files HTTP is faster: fewer handshake packets (4 vs 6).",
+    1,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "Which protocol can resume transfers natively?",
+    [
+      "FTP",
+      "HTTP",
+      "SMTP",
+      "MIME"
+    ],
+    "FTP يقدر يكمل النقل المقطوع بشكل أصلي، وHTTP يحتاج range requests.",
+    "FTP resumes natively; HTTP needs range requests.",
+    1,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "Which protocol is used to SEND e-mail?",
+    [
+      "SMTP",
+      "POP3",
+      "IMAP",
+      "FTP"
+    ],
+    "إرسال الإيميل بـ SMTP.",
+    "SMTP sends e-mail.",
+    0,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "Which protocols are used to RECEIVE e-mail?",
+    [
+      "POP3 and IMAP",
+      "SMTP and FTP",
+      "HTTP and TCP",
+      "MIME and DNS"
+    ],
+    "استلام الإيميل بـ POP3 أو IMAP.",
+    "POP3 and IMAP receive e-mail.",
+    0,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "Which standard allows email to include images, audio, video and attachments?",
+    [
+      "MIME",
+      "SMTP",
+      "TCP",
+      "HTML"
+    ],
+    "MIME يسمح للإيميل يحتوي صور وصوت وفيديو ومرفقات.",
+    "MIME lets e-mail include media and attachments.",
+    0,
+    0
+  ],
+  [
+    1,
+    "proto",
+    "When is FTP the better choice?",
+    [
+      "Large file transfers, batch uploads, or when resuming is critical",
+      "Web content delivery of small pages",
+      "Sending email",
+      "Routing packets"
+    ],
+    "FTP أحسن للملفات الكبيرة والرفع الجماعي أو لما الاستكمال مهم.",
+    "FTP is better for large/batch transfers or when resuming matters.",
+    0,
+    0
+  ],
+  [
+    1,
+    "tcpip",
+    "The official communication protocol of the Internet is:",
+    [
+      "TCP/IP",
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
+    "البروتوكول الرسمي للإنترنت TCP/IP.",
+    "TCP/IP is the Internet's official protocol.",
+    1,
+    0
+  ],
+  [
+    1,
+    "tcpip",
+    "The purpose of TCP is to:",
+    [
+      "Ensure the integrity of communication and break messages into packets",
+      "Route packets to the destination",
+      "Translate domain names",
+      "Display web pages"
+    ],
+    "TCP يضمن سلامة التواصل ويقسم الرسائل لحزم.",
+    "TCP ensures integrity and breaks messages into packets.",
+    1,
+    0
+  ],
+  [
+    1,
+    "tcpip",
+    "Which protocol routes a packet to the correct destination address?",
+    [
+      "IP",
+      "TCP",
+      "SMTP",
+      "FTP"
+    ],
+    "IP يوجّه الحزمة لعنوان الوجهة الصح.",
+    "IP routes packets to the destination address.",
+    1,
+    0
+  ],
+  [
+    1,
+    "tcpip",
+    "A hardware device designed to move network traffic is a:",
+    [
+      "Router",
+      "Browser",
+      "Server software",
+      "Validator"
+    ],
+    "الراوتر جهاز هاردوير يحرك ترافيك الشبكة.",
+    "A router moves network traffic.",
+    1,
+    0
+  ],
+  [
+    1,
+    "tcpip",
+    "An IP address consists of four groups of numbers called:",
+    [
+      "Octets",
+      "Packets",
+      "Domains",
+      "Tags"
+    ],
+    "عنوان IP أربع مجموعات أرقام اسمها octets.",
+    "An IP address has four groups called octets.",
+    1,
+    0
+  ],
+  [
+    1,
+    "tcpip",
+    "The Domain Name System (DNS):",
+    [
+      "Associates domain names with IP addresses",
+      "Sends email",
+      "Breaks files into packets",
+      "Validates HTML"
+    ],
+    "DNS يربط أسماء النطاقات بعناوين IP.",
+    "DNS associates domain names with IP addresses.",
+    0,
+    0
+  ],
+  [
+    1,
+    "tcpip",
+    "A domain name:",
+    [
+      "Locates an organization or entity on the Internet",
+      "Is the same as an HTML tag",
+      "Is a type of image",
+      "Is a protocol"
+    ],
+    "اسم النطاق يحدد مكان الجهة على الإنترنت.",
+    "A domain name locates an entity on the Internet.",
+    0,
+    0
+  ],
+  [
+    1,
+    "uri",
+    "URI stands for:",
+    [
+      "Uniform Resource Identifier",
+      "Universal Router Interface",
+      "Uniform Request Internet",
+      "Unified Resource Index"
+    ],
+    "URI = Uniform Resource Identifier.",
+    "URI = Uniform Resource Identifier.",
+    1,
+    0
+  ],
+  [
+    1,
+    "uri",
+    "A URL is:",
+    [
+      "A type of URI that represents the network location of a resource",
+      "A domain name only",
+      "A protocol for email",
+      "An HTML element"
+    ],
+    "URL نوع من URI يمثل مكان المورد على الشبكة.",
+    "A URL is a URI giving the resource's network location.",
+    1,
+    0
+  ],
+  [
+    1,
+    "uri",
+    "A top-level domain identifies:",
+    [
+      "The right-most part of the domain name",
+      "The left-most part of the domain name",
+      "The IP address",
+      "The file name"
+    ],
+    "الـ TLD هو آخر جزء يمين في اسم النطاق.",
+    "The TLD is the right-most part of the domain.",
+    1,
+    0
+  ],
+  [
+    1,
+    "uri",
+    "Which is a country code TLD?",
+    [
+      ".sa",
+      ".com",
+      ".org",
+      ".edu"
+    ],
+    "`.sa` رمز دولة من حرفين (ccTLD).",
+    "`.sa` is a two-letter country-code TLD.",
+    1,
+    0
+  ],
+  [
+    1,
+    "uri",
+    "Country code TLDs are:",
+    [
+      "Two-character codes originally intended to indicate the country",
+      "Three-character codes for companies",
+      "Numbers in an IP address",
+      "Only for governments"
+    ],
+    "ccTLD رموز من حرفين تدل على الدولة.",
+    "ccTLDs are two-character country codes.",
+    1,
+    0
+  ],
+  [
+    1,
+    "uri",
+    "Which is a generic TLD?",
+    [
+      ".edu",
+      ".uk",
+      ".ca",
+      ".ae"
+    ],
+    "`.edu` نطاق عام (gTLD) مثل `.com` و`.gov`.",
+    "`.edu` is a generic TLD.",
+    0,
+    0
+  ],
+  [
+    1,
+    "markup",
+    "Markup languages consist of directions, usually called:",
+    [
+      "Tags",
+      "Packets",
+      "Protocols",
+      "Octets"
+    ],
+    "لغات الترميز فيها تعليمات اسمها tags.",
+    "Markup directions are called tags.",
+    1,
+    0
+  ],
+  [
+    1,
+    "markup",
+    "SGML is:",
+    [
+      "A standard for specifying a markup language or tag set",
+      "A protocol for email",
+      "A type of image",
+      "A web server"
+    ],
+    "SGML معيار لتعريف لغة ترميز أو مجموعة tags.",
+    "SGML is a standard for specifying a markup language.",
+    1,
+    0
+  ],
+  [
+    1,
+    "markup",
+    "XML is intended to:",
+    [
+      "Extend HTML by separating data from presentation",
+      "Replace HTML completely",
+      "Transfer files",
+      "Route packets"
+    ],
+    "XML يكمّل HTML بفصل البيانات عن العرض، ما يستبدله.",
+    "XML extends HTML by separating data from presentation.",
+    1,
+    0
+  ],
+  [
+    1,
+    "markup",
+    "XHTML was developed by the W3C as:",
+    [
+      "A reformulation of HTML 4.0 as an application of XML",
+      "A replacement for TCP/IP",
+      "An image format",
+      "A browser"
+    ],
+    "XHTML إعادة صياغة HTML 4.0 كتطبيق من XML.",
+    "XHTML reformulates HTML 4.0 as an XML application.",
+    1,
+    0
+  ],
+  [
+    1,
+    "markup",
+    "HTML5 is:",
+    [
+      "The next version of HTML4 and XHTML",
+      "A version of XML for databases",
+      "An email protocol",
+      "A network type"
+    ],
+    "HTML5 النسخة اللي بعد HTML4 وXHTML.",
+    "HTML5 is the next version of HTML4 and XHTML.",
+    1,
+    0
+  ],
+  [
+    1,
+    "markup",
+    "HTML is:",
+    [
+      "The set of markup symbols placed in a file intended for display on a web browser",
+      "A protocol for transferring files",
+      "A database",
+      "An operating system"
+    ],
+    "HTML رموز ترميز في ملف معمول للعرض في المتصفح.",
+    "HTML is markup symbols for display in a browser.",
+    0,
+    0
+  ],
+  [
+    2,
+    "hover",
+    "Who sets the standards for HTML?",
+    [
+      "The World Wide Web Consortium (W3C)",
+      "ICANN",
+      "IETF",
+      "Microsoft"
+    ],
+    "W3C هي اللي تحدد معايير HTML.",
+    "The W3C sets HTML standards.",
+    1,
+    0
+  ],
+  [
+    2,
+    "hover",
+    "\"Any browser on any operating system can display the page\" describes HTML as:",
+    [
+      "Platform-independent",
+      "Platform-dependent",
+      "Lossy",
+      "Proprietary"
+    ],
+    "أي متصفح على أي نظام يعرض الصفحة = platform-independent.",
+    "Display on any browser/OS = platform-independent.",
+    1,
+    0
+  ],
+  [
+    2,
+    "hover",
+    "Which is a feature of HTML5?",
+    [
+      "Native video and audio",
+      "No backwards compatibility",
+      "Only works in old browsers",
+      "Removes all elements"
+    ],
+    "من مزايا HTML5: فيديو وصوت أصلي (native) وتوافق مع القديم.",
+    "HTML5 features include native video and audio.",
+    1,
+    0
+  ],
+  [
+    2,
+    "hover",
+    "The Document Type Definition (DTD):",
+    [
+      "Identifies the version of HTML in the document",
+      "Sets the page title",
+      "Sets the character encoding",
+      "Creates a hyperlink"
+    ],
+    "الـ DTD يحدد نسخة HTML في الملف.",
+    "The DTD identifies the HTML version.",
+    1,
+    0
+  ],
+  [
+    2,
+    "hover",
+    "Where is the DTD placed?",
+    [
+      "At the top of the web page document",
+      "Inside the body",
+      "At the end of the file",
+      "Inside the title"
+    ],
+    "الـ DTD أول سطر في الصفحة.",
+    "The DTD goes at the top of the document.",
+    1,
+    0
+  ],
+  [
+    2,
+    "hover",
+    "The HTML5 DTD is:",
+    [
+      "`<!DOCTYPE html>`",
+      "`<!DOCTYPE html5>`",
+      "`<html version=\"5\">`",
+      "`<meta doctype=\"html\">`"
+    ],
+    "DTD حق HTML5 هو `<!DOCTYPE html>`.",
+    "The HTML5 DTD is `<!DOCTYPE html>`.",
+    0,
+    0
+  ],
+  [
+    2,
+    "hover",
+    "Every web page includes the DTD and which elements?",
+    [
+      "html, head, title, meta, body",
+      "html, nav, footer, img",
+      "head, h1, p, br",
+      "body, div, a, img"
+    ],
+    "كل صفحة فيها DTD والعناصر `html` و`head` و`title` و`meta` و`body`.",
+    "Every page has the DTD plus html, head, title, meta, body.",
+    0,
+    0
+  ],
+  [
+    2,
+    "hover",
+    "The coding style followed in the course is to:",
+    [
+      "Use lowercase letters and place quotes around attribute values",
+      "Use uppercase letters only",
+      "Never use quotes",
+      "Write everything on one line"
+    ],
+    "أسلوب الكورس: حروف صغيرة وعلامات تنصيص حول قيم الخصائص.",
+    "Course style: lowercase and quoted attribute values.",
+    0,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "Most HTML elements are coded as:",
+    [
+      "A pair of opening and closing tags",
+      "A single tag only",
+      "A comment",
+      "An attribute"
+    ],
+    "أغلب العناصر زوج: وسم فتح ووسم إغلاق.",
+    "Most elements use an opening and closing tag pair.",
+    1,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "Tags are enclosed in:",
+    [
+      "Angle brackets < >",
+      "Square brackets [ ]",
+      "Curly braces { }",
+      "Parentheses ( )"
+    ],
+    "الوسوم بين `< >`.",
+    "Tags are enclosed in angle brackets.",
+    1,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "A stand-alone tag with no closing tag is called in HTML5 a:",
+    [
+      "Void element",
+      "Container element",
+      "Block element",
+      "Phrase element"
+    ],
+    "الوسم المستقل بدون إغلاق اسمه void element في HTML5.",
+    "A stand-alone tag is a void element in HTML5.",
+    1,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "Which is a void element?",
+    [
+      "`<br>`",
+      "`<p>`",
+      "`<title>`",
+      "`<strong>`"
+    ],
+    "`<br>` void element ما له إغلاق.",
+    "`<br>` is a void element.",
+    1,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "The `lang` attribute of the html element specifies:",
+    [
+      "The spoken language of the document",
+      "The HTML version",
+      "The character encoding",
+      "The page title"
+    ],
+    "`lang` يحدد اللغة المنطوقة للصفحة.",
+    "`lang` specifies the document's spoken language.",
+    1,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "Which can access the `lang` attribute?",
+    [
+      "Search engines and screen readers",
+      "Only FTP clients",
+      "Only email programs",
+      "Only routers"
+    ],
+    "محركات البحث وقارئات الشاشة تستفيد من `lang`.",
+    "Search engines and screen readers use `lang`.",
+    0,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "The head section contains:",
+    [
+      "Information that describes the web page document",
+      "Text that displays on the page",
+      "Only images",
+      "Only hyperlinks"
+    ],
+    "الـ head فيه معلومات تصف الصفحة.",
+    "The head describes the document.",
+    0,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "The body section contains:",
+    [
+      "Text and elements that display in the web page",
+      "The DTD",
+      "Only meta tags",
+      "The title bar text"
+    ],
+    "الـ body فيه النص والعناصر اللي تنعرض.",
+    "The body contains displayed content.",
+    0,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "The text in the `title` element appears in:",
+    [
+      "The title bar of the browser window",
+      "The body of the page as a heading",
+      "The footer",
+      "The status code"
+    ],
+    "نص `title` يطلع في شريط عنوان المتصفح.",
+    "Title text appears in the browser's title bar.",
+    0,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "The `title` text is also accessed when pages are:",
+    [
+      "Bookmarked and printed",
+      "Validated",
+      "Uploaded with FTP",
+      "Compressed"
+    ],
+    "ويُستخدم بعد لما تحفظ الصفحة في المفضلة أو تطبعها.",
+    "Title is also used for bookmarks and printing.",
+    0,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "Which tag sets the character encoding?",
+    [
+      "`<meta charset=\"utf-8\">`",
+      "`<title charset=\"utf-8\">`",
+      "`<html encoding=\"utf-8\">`",
+      "`<body charset=\"utf-8\">`"
+    ],
+    "`<meta charset=\"utf-8\">` يحدد ترميز الحروف.",
+    "`<meta charset=\"utf-8\">` sets character encoding.",
+    0,
+    0
+  ],
+  [
+    2,
+    "elements",
+    "The internal representation of letters, numbers, and symbols in a file is:",
+    [
+      "Character encoding",
+      "Markup",
+      "DTD",
+      "Protocol"
+    ],
+    "التمثيل الداخلي للحروف والأرقام والرموز = character encoding.",
+    "Internal representation of characters is character encoding.",
+    0,
+    0
+  ],
+  [
+    2,
+    "text",
+    "How many levels of heading elements are there?",
+    [
+      "6 (h1 to h6)",
+      "3",
+      "5",
+      "10"
+    ],
+    "فيه 6 مستويات عناوين من `h1` إلى `h6`.",
+    "There are six heading levels, h1–h6.",
+    1,
+    0
+  ],
+  [
+    2,
+    "text",
+    "Which heading displays the largest text?",
+    [
+      "`<h1>`",
+      "`<h6>`",
+      "`<h3>`",
+      "All the same"
+    ],
+    "`<h1>` أكبر عنوان.",
+    "`<h1>` is the largest.",
+    1,
+    0
+  ],
+  [
+    2,
+    "text",
+    "Heading text is rendered as:",
+    [
+      "Block display with white space above and below",
+      "Inline display",
+      "Hidden text",
+      "A list"
+    ],
+    "العناوين block display مع مسافة فوق وتحت.",
+    "Headings render as block display with space above and below.",
+    1,
+    0
+  ],
+  [
+    2,
+    "text",
+    "For accessibility, headings should be used to:",
+    [
+      "Outline the structure of the page hierarchically",
+      "Make text bold only",
+      "Insert images",
+      "Create links"
+    ],
+    "العناوين تبني هيكل هرمي للصفحة، وقارئ الشاشة يعرض قائمة فيها.",
+    "Headings outline the page hierarchy for accessibility.",
+    1,
+    0
+  ],
+  [
+    2,
+    "text",
+    "The `<p>` element:",
+    [
+      "Groups sentences and sections of text together",
+      "Creates a line break",
+      "Creates a hyperlink",
+      "Inserts an image"
+    ],
+    "`<p>` يجمع الجمل كفقرة.",
+    "`<p>` groups text into a paragraph.",
+    1,
+    0
+  ],
+  [
+    2,
+    "text",
+    "To center an element using the attribute from the slides:",
+    [
+      "`align=\"center\"`",
+      "`center=\"yes\"`",
+      "`position=\"middle\"`",
+      "`lang=\"center\"`"
+    ],
+    "التوسيط بالخاصية `align=\"center\"` حسب السلايد.",
+    "Centering uses `align=\"center\"` per the slides.",
+    0,
+    0
+  ],
+  [
+    2,
+    "text",
+    "The `<br>` element:",
+    [
+      "Causes the next element or text to display on a new line",
+      "Draws a horizontal line",
+      "Makes text bold",
+      "Indents text"
+    ],
+    "`<br>` ينقل اللي بعده لسطر جديد.",
+    "`<br>` moves following content to a new line.",
+    0,
+    0
+  ],
+  [
+    2,
+    "text",
+    "Which element indents a block of text for special emphasis?",
+    [
+      "`<blockquote>`",
+      "`<br>`",
+      "`<em>`",
+      "`<hr>`"
+    ],
+    "`<blockquote>` يزيح كتلة نص للتأكيد أو الاقتباس.",
+    "`<blockquote>` indents a block for emphasis.",
+    0,
+    0
+  ],
+  [
+    2,
+    "text",
+    "Which elements use block display?",
+    [
+      "h1, p, blockquote",
+      "strong, em, b",
+      "a, img, br",
+      "sub, sup, mark"
+    ],
+    "العناوين و`p` و`blockquote` كلها block display.",
+    "h1, p, blockquote are block display.",
+    0,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Phrase elements are displayed:",
+    [
+      "Inline, right in line with the text",
+      "As blocks with space above and below",
+      "Only in the head",
+      "As separate pages"
+    ],
+    "عناصر الـ phrase تنعرض inline داخل السطر.",
+    "Phrase elements display inline.",
+    1,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Phrase elements are container elements, so:",
+    [
+      "An opening and a closing tag must be used",
+      "They have no closing tag",
+      "They must be inside head",
+      "They cannot contain text"
+    ],
+    "عناصر الـ phrase حاويات، لازم فتح وإغلاق.",
+    "Phrase elements are containers needing both tags.",
+    1,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Which element indicates text of strong importance?",
+    [
+      "`<strong>`",
+      "`<b>`",
+      "`<i>`",
+      "`<small>`"
+    ],
+    "`<strong>` نص له أهمية قوية.",
+    "`<strong>` marks strong importance.",
+    1,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "`<b>` displays text in bold:",
+    [
+      "With no extra importance",
+      "With strong importance",
+      "As a heading",
+      "As a link"
+    ],
+    "`<b>` غامق بس بدون أهمية إضافية.",
+    "`<b>` is bold with no extra importance.",
+    1,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Which element causes text to be emphasized (usually italics)?",
+    [
+      "`<em>`",
+      "`<i>`",
+      "`<mark>`",
+      "`<var>`"
+    ],
+    "`<em>` تأكيد، عادة مائل.",
+    "`<em>` emphasizes (usually italics).",
+    1,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Which element highlights text?",
+    [
+      "`<mark>`",
+      "`<em>`",
+      "`<cite>`",
+      "`<abbr>`"
+    ],
+    "`<mark>` يظلل النص.",
+    "`<mark>` highlights text.",
+    0,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "To display the 2 in H₂O below the baseline, use:",
+    [
+      "`<sub>`",
+      "`<sup>`",
+      "`<small>`",
+      "`<code>`"
+    ],
+    "`<sub>` تحت السطر مثل H₂O.",
+    "`<sub>` displays below the baseline.",
+    0,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "To display the 2 in x² above the baseline, use:",
+    [
+      "`<sup>`",
+      "`<sub>`",
+      "`<mark>`",
+      "`<kbd>`"
+    ],
+    "`<sup>` فوق السطر مثل x².",
+    "`<sup>` displays above the baseline.",
+    0,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Which element identifies user text to be typed?",
+    [
+      "`<kbd>`",
+      "`<samp>`",
+      "`<var>`",
+      "`<dfn>`"
+    ],
+    "`<kbd>` نص المفروض المستخدم يكتبه.",
+    "`<kbd>` marks user input text.",
+    0,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Which element is used for legal disclaimers and notices (fine print)?",
+    [
+      "`<small>`",
+      "`<sub>`",
+      "`<abbr>`",
+      "`<strong>`"
+    ],
+    "`<small>` للنصوص القانونية والتنبيهات الصغيرة.",
+    "`<small>` is for fine print.",
+    0,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Which element identifies an abbreviation?",
+    [
+      "`<abbr>`",
+      "`<cite>`",
+      "`<dfn>`",
+      "`<samp>`"
+    ],
+    "`<abbr>` للاختصار، ومعه title.",
+    "`<abbr>` marks an abbreviation.",
+    0,
+    0
+  ],
+  [
+    2,
+    "phrase",
+    "Which code is properly nested?",
+    [
+      "`<p><i>text <strong>888</strong></i></p>`",
+      "`<p><i>text <strong>888</i></strong></p>`",
+      "`<p><i>text <strong>888</strong></p></i>`",
+      "`<i><p>text</i></p>`"
+    ],
+    "التداخل الصح: آخر وسم فتحته أول واحد تقفله.",
+    "Proper nesting: last opened, first closed.",
+    0,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "Which element creates an ordered list?",
+    [
+      "`<ol>`",
+      "`<ul>`",
+      "`<dl>`",
+      "`<li>`"
+    ],
+    "`<ol>` قائمة مرقمة.",
+    "`<ol>` creates an ordered list.",
+    1,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "Each item in an ordered or unordered list is contained in:",
+    [
+      "`<li>`",
+      "`<dt>`",
+      "`<dd>`",
+      "`<item>`"
+    ],
+    "كل عنصر قائمة داخل `<li>`.",
+    "Each list item is in `<li>`.",
+    1,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "The default numbering scheme of an ordered list is:",
+    [
+      "Numerals",
+      "Uppercase letters",
+      "Roman numerals",
+      "Bullets"
+    ],
+    "الترقيم الافتراضي أرقام.",
+    "Default numbering is numerals.",
+    1,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "To create an ordered list with uppercase letters:",
+    [
+      "`<ol type=\"A\">`",
+      "`<ol type=\"a\">`",
+      "`<ol start=\"A\">`",
+      "`<ul type=\"A\">`"
+    ],
+    "`type=\"A\"` حروف كبيرة.",
+    "`type=\"A\"` uses uppercase letters.",
+    1,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "To make an ordered list begin at 10:",
+    [
+      "`<ol start=\"10\">`",
+      "`<ol type=\"10\">`",
+      "`<ol begin=\"10\">`",
+      "`<ol value=\"10\">`"
+    ],
+    "`start=\"10\"` يبدأ الترقيم من 10.",
+    "`start=\"10\"` begins at 10.",
+    1,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "The HTML5 attribute that shows list markers in descending order is:",
+    [
+      "`reversed`",
+      "`start`",
+      "`type`",
+      "`desc`"
+    ],
+    "`reversed` يخلي الترقيم تنازلي.",
+    "`reversed` numbers in descending order.",
+    0,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "An unordered list displays:",
+    [
+      "A bullet (list marker) before each entry",
+      "Numbers before each entry",
+      "Terms and descriptions",
+      "Nothing"
+    ],
+    "`ul` يحط نقطة قبل كل عنصر.",
+    "An unordered list shows bullets.",
+    0,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "A description list is useful for:",
+    [
+      "Terms and descriptions, or FAQ and answers",
+      "Numbered steps",
+      "Images",
+      "Navigation links only"
+    ],
+    "قائمة الوصف للمصطلحات وأوصافها أو الأسئلة وأجوبتها.",
+    "Description lists suit terms/descriptions or FAQs.",
+    0,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "In a description list, the term is contained in ___ and its description in ___.",
+    [
+      "`<dt>`; `<dd>`",
+      "`<dd>`; `<dt>`",
+      "`<li>`; `<dt>`",
+      "`<dl>`; `<li>`"
+    ],
+    "المصطلح في `<dt>` والوصف في `<dd>`.",
+    "Term in `<dt>`, description in `<dd>`.",
+    0,
+    0
+  ],
+  [
+    2,
+    "lists",
+    "Which description-list element indents the text?",
+    [
+      "`<dd>`",
+      "`<dt>`",
+      "`<dl>`",
+      "`<li>`"
+    ],
+    "`<dd>` هو اللي ينزاح للداخل.",
+    "`<dd>` is indented.",
+    0,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "The special character code for the copyright symbol © is:",
+    [
+      "`&copy;`",
+      "`&amp;`",
+      "`&quot;`",
+      "`&nbsp;`"
+    ],
+    "رمز © هو `&copy;`.",
+    "© is `&copy;`.",
+    1,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "The special character code for the ampersand & is:",
+    [
+      "`&amp;`",
+      "`&copy;`",
+      "`&and;`",
+      "`&#124;`"
+    ],
+    "رمز & هو `&amp;`.",
+    "& is `&amp;`.",
+    1,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "`&nbsp;` displays:",
+    [
+      "A non-breaking (empty) space",
+      "A long dash",
+      "A quotation mark",
+      "A vertical bar"
+    ],
+    "`&nbsp;` مسافة ما تنكسر.",
+    "`&nbsp;` is a non-breaking space.",
+    1,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "`&quot;` displays:",
+    [
+      "A quotation mark",
+      "An apostrophe",
+      "A copyright symbol",
+      "An ampersand"
+    ],
+    "`&quot;` علامة تنصيص.",
+    "`&quot;` is a quotation mark.",
+    1,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "`&mdash;` displays:",
+    [
+      "A long dash",
+      "A vertical bar",
+      "A space",
+      "A copyright symbol"
+    ],
+    "`&mdash;` شرطة طويلة.",
+    "`&mdash;` is a long dash.",
+    1,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "The `div` element:",
+    [
+      "Configures a structural block area (division) that can contain other block elements",
+      "Creates an inline highlight",
+      "Creates a hyperlink",
+      "Inserts an image"
+    ],
+    "`div` منطقة هيكلية (block) تحتوي عناصر ثانية.",
+    "`div` is a structural block area.",
+    0,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "Which HTML5 element contains the page's main navigation?",
+    [
+      "`<nav>`",
+      "`<header>`",
+      "`<main>`",
+      "`<footer>`"
+    ],
+    "`<nav>` للتنقل الرئيسي.",
+    "`<nav>` holds main navigation.",
+    0,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "Which HTML5 element contains the page's main content?",
+    [
+      "`<main>`",
+      "`<nav>`",
+      "`<header>`",
+      "`<div>`"
+    ],
+    "`<main>` للمحتوى الرئيسي.",
+    "`<main>` holds main content.",
+    0,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "Which HTML5 element contains the document's headings?",
+    [
+      "`<header>`",
+      "`<head>`",
+      "`<footer>`",
+      "`<main>`"
+    ],
+    "`<header>` فيه عناوين الصفحة، وهو غير `<head>`.",
+    "`<header>` holds headings (not `<head>`).",
+    0,
+    0
+  ],
+  [
+    2,
+    "struct",
+    "Which HTML5 element contains the page footer?",
+    [
+      "`<footer>`",
+      "`<bottom>`",
+      "`<nav>`",
+      "`<end>`"
+    ],
+    "`<footer>` تذييل الصفحة.",
+    "`<footer>` is the page footer.",
+    0,
+    0
+  ],
+  [
+    2,
+    "links",
+    "Which element creates a hyperlink?",
+    [
+      "`<a>`",
+      "`<link>`",
+      "`<href>`",
+      "`<url>`"
+    ],
+    "`<a>` يسوي رابط.",
+    "`<a>` creates a hyperlink.",
+    1,
+    0
+  ],
+  [
+    2,
+    "links",
+    "The `href` attribute of the anchor element indicates:",
+    [
+      "The file name or URL",
+      "The link color",
+      "The page title",
+      "The image size"
+    ],
+    "`href` فيه اسم الملف أو الـ URL.",
+    "`href` holds the file name or URL.",
+    1,
+    0
+  ],
+  [
+    2,
+    "links",
+    "An absolute hyperlink is used to:",
+    [
+      "Link to a different website",
+      "Link to pages on your own site",
+      "Send email",
+      "Insert an image"
+    ],
+    "الرابط المطلق لموقع ثاني.",
+    "Absolute links go to other websites.",
+    1,
+    0
+  ],
+  [
+    2,
+    "links",
+    "Which is an absolute hyperlink?",
+    [
+      "`<a href=\"http://yahoo.com\">Yahoo</a>`",
+      "`<a href=\"index.html\">Home</a>`",
+      "`<a href=\"mailto:me@site.com\">Mail</a>`",
+      "`<a href=\"#top\">Top</a>`"
+    ],
+    "المطلق فيه `http://`.",
+    "An absolute link includes `http://`.",
+    1,
+    0
+  ],
+  [
+    2,
+    "links",
+    "A relative hyperlink is used to:",
+    [
+      "Link to pages on your own site",
+      "Link to a different website",
+      "Download from FTP only",
+      "Validate code"
+    ],
+    "الرابط النسبي لصفحات داخل موقعك.",
+    "Relative links point to your own pages.",
+    1,
+    0
+  ],
+  [
+    2,
+    "links",
+    "Does a relative link use the http protocol in the href value?",
+    [
+      "No",
+      "Yes, always",
+      "Only for images",
+      "Only in HTML5"
+    ],
+    "النسبي ما فيه `http`.",
+    "Relative links omit http.",
+    0,
+    0
+  ],
+  [
+    2,
+    "links",
+    "Which creates an e-mail hyperlink?",
+    [
+      "`<a href=\"mailto:me@site.com\">`",
+      "`<a href=\"email:me@site.com\">`",
+      "`<a mail=\"me@site.com\">`",
+      "`<a href=\"smtp:me@site.com\">`"
+    ],
+    "رابط الإيميل `mailto:`.",
+    "E-mail links use `mailto:`.",
+    0,
+    0
+  ],
+  [
+    2,
+    "links",
+    "A site map represents:",
+    [
+      "The structure of pages in a website visually, each page as a box",
+      "The IP addresses of a site",
+      "The CSS of a site",
+      "The server software"
+    ],
+    "الـ site map رسم لهيكل صفحات الموقع، كل صفحة مربع.",
+    "A site map visualizes page structure, each page a box.",
+    0,
+    0
+  ],
+  [
+    2,
+    "links",
+    "An HTML comment is written as:",
+    [
+      "`<!-- comment -->`",
+      "`// comment`",
+      "`/* comment */`",
+      "`# comment`"
+    ],
+    "التعليق `<!-- comment -->`.",
+    "Comments are `<!-- comment -->`.",
+    0,
+    0
+  ],
+  [
+    2,
+    "links",
+    "An HTML comment is:",
+    [
+      "Text that is not processed by the web browser",
+      "Text shown in bold",
+      "Text in the title bar",
+      "A hidden link"
+    ],
+    "التعليق نص المتصفح ما يعالجه.",
+    "Comments are not processed by the browser.",
+    0,
+    0
+  ],
+  [
+    2,
+    "links",
+    "The benefit of writing valid HTML code is:",
+    [
+      "More consistent browser display",
+      "Smaller images",
+      "Faster email",
+      "More colors"
+    ],
+    "الكود الصحيح يخلي العرض متناسق بين المتصفحات.",
+    "Valid code gives more consistent display.",
+    0,
+    0
+  ],
+  [
+    2,
+    "links",
+    "Which tool checks HTML for syntax errors?",
+    [
+      "W3C Validator (validator.w3.org)",
+      "GIMP",
+      "Apache",
+      "FTP"
+    ],
+    "أداة W3C Validator تفحص أخطاء HTML.",
+    "The W3C Validator checks HTML syntax.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "The `<hr>` element:",
+    [
+      "Configures a horizontal line that visually separates areas of a page",
+      "Creates a hyperlink",
+      "Makes a heading",
+      "Creates a line break"
+    ],
+    "`<hr>` خط أفقي يفصل أجزاء الصفحة.",
+    "`<hr>` draws a horizontal separator line.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "The `<hr>` tag is coded as:",
+    [
+      "A void tag",
+      "A pair of tags",
+      "A comment",
+      "An attribute"
+    ],
+    "`<hr>` void.",
+    "`<hr>` is a void tag.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Which image format is best for simple images and logos?",
+    [
+      "GIF",
+      "JPEG",
+      "BMP",
+      "MP3"
+    ],
+    "GIF أفضل للصور البسيطة والشعارات.",
+    "GIF is best for simple images and logos.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "The maximum number of colors in a GIF is:",
+    [
+      "256",
+      "16.7 million",
+      "1024",
+      "Unlimited"
+    ],
+    "GIF بالكثير 256 لون.",
+    "GIF supports at most 256 colors.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Which image format can be animated?",
+    [
+      "GIF",
+      "JPEG",
+      "Both GIF and JPEG",
+      "Neither"
+    ],
+    "GIF يتحرك، وJPEG ما يتحرك.",
+    "GIF can be animated; JPEG cannot.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Which image format is best for photographs?",
+    [
+      "JPEG",
+      "GIF",
+      "ICO",
+      "TXT"
+    ],
+    "JPEG أفضل للصور الفوتوغرافية.",
+    "JPEG is best for photos.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "JPEG uses:",
+    [
+      "Lossy compression",
+      "Lossless compression",
+      "No compression",
+      "Animation compression"
+    ],
+    "JPEG ضغطه مع فقد (lossy).",
+    "JPEG uses lossy compression.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Which format CANNOT be made transparent?",
+    [
+      "JPEG",
+      "GIF",
+      "PNG",
+      "None of them"
+    ],
+    "JPEG ما يدعم الشفافية.",
+    "JPEG cannot be transparent.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Up to how many colors does JPEG support?",
+    [
+      "16.7 million",
+      "256",
+      "1 million",
+      "65,000"
+    ],
+    "JPEG لين 16.7 مليون لون.",
+    "JPEG supports up to 16.7 million colors.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Which format supports multiple levels of transparency?",
+    [
+      "PNG",
+      "GIF",
+      "JPEG",
+      "None"
+    ],
+    "PNG يدعم مستويات شفافية متعددة.",
+    "PNG supports multiple transparency levels.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Which format combines the best of GIF & JPEG?",
+    [
+      "PNG",
+      "BMP",
+      "GIF",
+      "TIFF"
+    ],
+    "PNG يجمع مزايا GIF وJPEG.",
+    "PNG combines the best of GIF and JPEG.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Which formats use lossless compression?",
+    [
+      "GIF and PNG",
+      "JPEG only",
+      "JPEG and PNG",
+      "GIF and JPEG"
+    ],
+    "GIF وPNG ضغطهم بدون فقد (lossless).",
+    "GIF and PNG are lossless.",
+    0,
+    0
+  ],
+  [
+    4,
+    "graphics",
+    "Progressive JPEG is similar to:",
+    [
+      "Interlaced display",
+      "Animation",
+      "Transparency",
+      "Lossless compression"
+    ],
+    "Progressive JPEG يشبه العرض المتداخل (interlaced): يطلع تدريجياً.",
+    "Progressive JPEG is like interlaced display.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "The `<img>` element is:",
+    [
+      "A void element",
+      "A container element",
+      "A block element with a closing tag",
+      "A head element"
+    ],
+    "`<img>` void element.",
+    "`<img>` is a void element.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "The `src` attribute of `<img>` specifies:",
+    [
+      "The file name of the graphic",
+      "The alternate text",
+      "The width",
+      "The link"
+    ],
+    "`src` اسم ملف الصورة.",
+    "`src` gives the image file name.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "The `alt` attribute of `<img>` configures:",
+    [
+      "Alternate text description",
+      "The image source",
+      "The image border",
+      "The image height"
+    ],
+    "`alt` نص بديل يوصف الصورة.",
+    "`alt` provides alternate text.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "The `height` and `width` attributes of an image are in:",
+    [
+      "Pixels",
+      "Centimeters",
+      "Points",
+      "Percent only"
+    ],
+    "`height` و`width` بالبكسل.",
+    "Image height/width are in pixels.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "For a purely decorative image, the alt attribute should be:",
+    [
+      "`alt=\"\"`",
+      "The file name",
+      "Omitted completely",
+      "`alt=\"decoration.gif\"`"
+    ],
+    "الصورة الزخرفية `alt=\"\"` فاضي عشان قارئ الشاشة يتجاهلها.",
+    "Decorative images use `alt=\"\"`.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "The alt text should convey:",
+    [
+      "The meaning/intent of the image, not the file name",
+      "The image file name",
+      "The image size",
+      "The date of the image"
+    ],
+    "الـ alt يوصل معنى الصورة، مو اسم الملف.",
+    "Alt text conveys meaning, not the file name.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "If site navigation uses image links, it is recommended to:",
+    [
+      "Provide simple text links at the bottom of the page",
+      "Remove all alt attributes",
+      "Use only GIF images",
+      "Use larger images"
+    ],
+    "إذا التنقل بالصور، حط روابط نصية بسيطة تحت الصفحة.",
+    "With image navigation, add text links at the bottom.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "To create an image hyperlink:",
+    [
+      "An anchor element contains an image element",
+      "An image element contains an anchor",
+      "Use `<img href=\"...\">`",
+      "Use `<link>`"
+    ],
+    "رابط الصورة: `img` داخل `a`.",
+    "An image link is an img inside an anchor.",
+    0,
+    0
+  ],
+  [
+    4,
+    "img",
+    "A thumbnail image is:",
+    [
+      "A small image configured to link to a larger version of that image",
+      "A favicon",
+      "An animated GIF",
+      "An image map"
+    ],
+    "الـ thumbnail صورة صغيرة ترتبط بنسخة أكبر منها.",
+    "A thumbnail links to a larger version.",
+    0,
+    0
+  ],
+  [
+    4,
+    "figmeter",
+    "The `<figure>` element contains:",
+    [
+      "A self-contained unit of content, such as an image, with an optional figcaption",
+      "Only text paragraphs",
+      "Navigation links",
+      "Meta information"
+    ],
+    "`<figure>` وحدة مستقلة مثل صورة مع تعليق اختياري.",
+    "`<figure>` holds self-contained content with an optional caption.",
+    0,
+    0
+  ],
+  [
+    4,
+    "figmeter",
+    "The caption of a figure is placed in:",
+    [
+      "`<figcaption>`",
+      "`<caption>`",
+      "`<alt>`",
+      "`<title>`"
+    ],
+    "التعليق في `<figcaption>`.",
+    "The caption goes in `<figcaption>`.",
+    0,
+    0
+  ],
+  [
+    4,
+    "figmeter",
+    "The element that displays a visual gauge of a numeric value within a known range is:",
+    [
+      "`<meter>`",
+      "`<progress>`",
+      "`<hr>`",
+      "`<figure>`"
+    ],
+    "`<meter>` مقياس بصري لقيمة ضمن مدى معروف.",
+    "`<meter>` shows a gauge for a value within a known range.",
+    0,
+    0
+  ],
+  [
+    4,
+    "figmeter",
+    "Which attributes configure the `<meter>` element?",
+    [
+      "value, min, max",
+      "src, alt",
+      "href, shape",
+      "rel, type"
+    ],
+    "خصائص `meter`: value وmin وmax.",
+    "`meter` uses value, min, max.",
+    0,
+    0
+  ],
+  [
+    4,
+    "figmeter",
+    "The `<progress>` element is configured with:",
+    [
+      "value and max",
+      "min and max only",
+      "src and alt",
+      "href and coords"
+    ],
+    "`progress` يستخدم value وmax.",
+    "`progress` uses value and max.",
+    0,
+    0
+  ],
+  [
+    4,
+    "figmeter",
+    "Which element provides a handy way to display a bar chart on a web page?",
+    [
+      "`<meter>`",
+      "`<hr>`",
+      "`<map>`",
+      "`<link>`"
+    ],
+    "`<meter>` طريقة سهلة لعرض رسم بياني بالأعمدة.",
+    "`<meter>` is a handy bar-chart display.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "An image map is:",
+    [
+      "An image that can be used as one or more hyperlinks",
+      "A list of images",
+      "A site map",
+      "A favicon"
+    ],
+    "خريطة الصورة: صورة تشتغل كرابط أو أكثر.",
+    "An image map is an image used as one or more hyperlinks.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "The element that defines a specific clickable area on an image map is:",
+    [
+      "`<area>`",
+      "`<map>`",
+      "`<a>`",
+      "`<region>`"
+    ],
+    "`<area>` يحدد منطقة قابلة للضغط.",
+    "`<area>` defines a clickable region.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "Which shapes can an area be?",
+    [
+      "Rectangle, circle, or polygon",
+      "Only rectangle",
+      "Square and triangle only",
+      "Any image file"
+    ],
+    "الأشكال: مستطيل، دائرة، أو مضلع.",
+    "Area shapes: rectangle, circle, polygon.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "Which attributes are used with the area element?",
+    [
+      "href, shape, coords",
+      "src, width, height",
+      "rel, type",
+      "start, reversed"
+    ],
+    "خصائص area: href وshape وcoords.",
+    "Area uses href, shape, coords.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "For a rectangular image map, the coords indicate:",
+    [
+      "Upper-left corner then lower-right corner positions",
+      "The center and radius",
+      "Only the width and height",
+      "The file size"
+    ],
+    "في المستطيل: الإحداثيات أعلى يسار ثم أسفل يمين.",
+    "Rect coords: upper-left corner, then lower-right corner.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "For accessibility, each area element should have:",
+    [
+      "A descriptive alt attribute",
+      "A border",
+      "A favicon",
+      "A caption"
+    ],
+    "كل `area` لازم يكون لها `alt` وصفي عشان قارئ الشاشة.",
+    "Each area needs a descriptive alt attribute.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "A favicon is usually named:",
+    [
+      "`favicon.ico`",
+      "`icon.gif`",
+      "`logo.png`",
+      "`index.ico`"
+    ],
+    "الـ favicon اسمه عادة `favicon.ico`.",
+    "A favicon is usually named `favicon.ico`.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "Which tag associates a favicon with a web page?",
+    [
+      "`<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">`",
+      "`<img src=\"favicon.ico\">`",
+      "`<a href=\"favicon.ico\">`",
+      "`<meta icon=\"favicon.ico\">`"
+    ],
+    "نربطه بـ `<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">`.",
+    "Link it with `<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">`.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "In the favicon link tag, the value of the `rel` attribute is:",
+    [
+      "icon",
+      "favicon",
+      "image",
+      "stylesheet"
+    ],
+    "قيمة `rel` هي `icon`.",
+    "The rel value is `icon`.",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "The `type` attribute in the favicon link describes:",
+    [
+      "The MIME type of the image (default image/x-icon)",
+      "The file size",
+      "The image dimensions",
+      "The language"
+    ],
+    "`type` يوصف نوع MIME للصورة، والافتراضي image/x-icon.",
+    "`type` gives the image MIME type (image/x-icon).",
+    0,
+    0
+  ],
+  [
+    4,
+    "imap",
+    "A favicon may display in:",
+    [
+      "The address bar, tab, or favorites/bookmarks list",
+      "The page footer",
+      "The body as a heading",
+      "An email"
+    ],
+    "الـ favicon يطلع في شريط العنوان أو التبويب أو المفضلة.",
+    "Favicons show in the address bar, tab, or bookmarks.",
+    0,
+    0
+  ],
+  [
+    4,
+    "optimize",
+    "Image optimization means:",
+    [
+      "Creating the lowest file size that still renders good quality",
+      "Making the image as large as possible",
+      "Adding animation",
+      "Converting all images to GIF"
+    ],
+    "تحسين الصورة: أقل حجم ملف مع جودة عرض زينة.",
+    "Optimization: smallest file size with good quality.",
+    0,
+    0
+  ],
+  [
+    4,
+    "optimize",
+    "Which is a free image editing tool mentioned?",
+    [
+      "GIMP",
+      "Adobe Photoshop",
+      "Apache",
+      "Internet Explorer"
+    ],
+    "GIMP وPixlr أدوات مجانية لتعديل الصور.",
+    "GIMP (and Pixlr) are free image editors.",
+    0,
+    0
+  ],
+  [
+    4,
+    "optimize",
+    "Which image file name is best?",
+    [
+      "`dogbday.gif`",
+      "`i1.gif`",
+      "`myimagewithmydogonmybirthday.gif`",
+      "`Dog Birthday!.GIF`"
+    ],
+    "`dogbday.gif` قصير وواضح وبحروف صغيرة بدون مسافات.",
+    "`dogbday.gif` is short, descriptive, lowercase, no spaces.",
+    0,
+    0
+  ],
+  [
+    4,
+    "optimize",
+    "Which is a rule for naming image files?",
+    [
+      "Use all lowercase letters with no spaces or punctuation",
+      "Use spaces between words",
+      "Change the extension to .web",
+      "Use uppercase letters only"
+    ],
+    "قاعدة التسمية: حروف صغيرة بدون مسافات أو علامات ترقيم.",
+    "Name images in lowercase with no spaces or punctuation.",
+    0,
+    0
+  ],
+  [
+    4,
+    "optimize",
+    "It is recommended to organize images by:",
+    [
+      "Placing them in their own folder and coding the path in src",
+      "Putting them inside the HTML file",
+      "Naming them all image.gif",
+      "Storing them on the client"
+    ],
+    "حط الصور في مجلد خاص واكتب المسار في `src`.",
+    "Keep images in their own folder and code the path in src.",
+    0,
+    0
+  ],
+  [
+    4,
+    "optimize",
+    "To optimize an image, you should reduce its dimensions to:",
+    [
+      "The actual width and height displayed on the web page",
+      "Double the display size",
+      "1 × 1 pixel",
+      "The camera's original size"
+    ],
+    "صغّر أبعاد الصورة لمقاسها الفعلي اللي ينعرض بالصفحة.",
+    "Resize images to their actual displayed dimensions.",
+    0,
+    0
+  ],
+  [
+    4,
+    "optimize",
+    "The number one reason visitors leave web pages is:",
+    [
+      "Too long of a download time",
+      "Too many headings",
+      "Using PNG images",
+      "Using lowercase file names"
+    ],
+    "أول سبب يخلي الزائر يطلع: بطء التحميل.",
+    "The top reason visitors leave is slow download time.",
+    0,
+    0
+  ],
+  [
+    4,
+    "optimize",
+    "Which is a guideline for using images?",
+    [
+      "Reuse images and specify dimensions",
+      "Never specify dimensions",
+      "Use the largest file size possible",
+      "Avoid alt text"
+    ],
+    "إرشادات: أعد استخدام الصور وحدد أبعادها.",
+    "Reuse images and specify their dimensions.",
+    0,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "Tables on web pages are used to:",
+    [
+      "Organize tabular information",
+      "Create hyperlinks",
+      "Insert images",
+      "Submit forms"
+    ],
+    "الجداول لتنظيم البيانات الجدولية.",
+    "Tables organize tabular information.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "Which element contains a table row?",
+    [
+      "`<tr>`",
+      "`<td>`",
+      "`<th>`",
+      "`<row>`"
+    ],
+    "`<tr>` صف في الجدول.",
+    "`<tr>` is a table row.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "Which element contains a table cell?",
+    [
+      "`<td>`",
+      "`<tr>`",
+      "`<tc>`",
+      "`<cell>`"
+    ],
+    "`<td>` خلية في الجدول.",
+    "`<td>` is a table cell.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "Which element configures a description (title) of the table?",
+    [
+      "`<caption>`",
+      "`<title>`",
+      "`<legend>`",
+      "`<thead>`"
+    ],
+    "`<caption>` عنوان أو وصف الجدول.",
+    "`<caption>` describes the table.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "Text inside a `<th>` element is displayed by default as:",
+    [
+      "Bold and centered",
+      "Italic and left-aligned",
+      "Underlined",
+      "Hidden"
+    ],
+    "نص `<th>` افتراضياً عريض وفي الوسط.",
+    "`<th>` text is bold and centered by default.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "Which table attribute is still valid (not obsolete)?",
+    [
+      "colspan",
+      "bgcolor",
+      "cellpadding",
+      "align"
+    ],
+    "`colspan` و`rowspan` و`border` ما زالت صالحة، والباقي نسويه بـ CSS.",
+    "colspan (with rowspan, border) is still valid.",
+    0,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "The recommended way to configure table characteristics like width and background is:",
+    [
+      "CSS",
+      "Obsolete HTML attributes",
+      "JavaScript only",
+      "The caption element"
+    ],
+    "الطريقة الموصى بها لعرض الجدول وخلفيته: CSS.",
+    "Use CSS for table width and background.",
+    0,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "To make one cell span two columns:",
+    [
+      "`<td colspan=\"2\">`",
+      "`<td rowspan=\"2\">`",
+      "`<tr colspan=\"2\">`",
+      "`<td span=\"2\">`"
+    ],
+    "`colspan=\"2\"` يخلي الخلية تمتد عمودين.",
+    "`colspan=\"2\"` spans two columns.",
+    0,
+    0
+  ],
+  [
+    25,
+    "tables",
+    "To make one cell span two rows:",
+    [
+      "`<td rowspan=\"2\">`",
+      "`<td colspan=\"2\">`",
+      "`<tr rowspan=\"2\">`",
+      "`<th rows=\"2\">`"
+    ],
+    "`rowspan=\"2\"` يخلي الخلية تمتد صفين.",
+    "`rowspan=\"2\"` spans two rows.",
+    0,
+    0
+  ],
+  [
+    25,
+    "tacc",
+    "To increase table accessibility, use:",
+    [
+      "th elements for headings and the caption element for a title",
+      "Only td elements",
+      "bgcolor attributes",
+      "Images instead of text"
+    ],
+    "لزيادة الوصول: `th` للعناوين و`caption` لعنوان الجدول.",
+    "Use th for headings and caption for the title.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tacc",
+    "In complex tables, a header cell is associated with data cells using:",
+    [
+      "id on the th and headers on the td",
+      "headers on the th and id on the td",
+      "name on both",
+      "class on both"
+    ],
+    "في الجداول المعقدة: `id` على الـ `th` و`headers` على الـ `td`.",
+    "Complex tables: id on th, headers on td.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tacc",
+    "Which element groups the table head rows?",
+    [
+      "`<thead>`",
+      "`<head>`",
+      "`<th>`",
+      "`<header>`"
+    ],
+    "`<thead>` يجمع صفوف رأس الجدول (مو `head`).",
+    "`<thead>` groups header rows.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tacc",
+    "Which element groups the table body rows?",
+    [
+      "`<tbody>`",
+      "`<body>`",
+      "`<tr>`",
+      "`<main>`"
+    ],
+    "`<tbody>` يجمع صفوف جسم الجدول.",
+    "`<tbody>` groups body rows.",
+    1,
+    0
+  ],
+  [
+    25,
+    "tacc",
+    "A \"Total\" row at the bottom of a table belongs in:",
+    [
+      "`<tfoot>`",
+      "`<footer>`",
+      "`<thead>`",
+      "`<caption>`"
+    ],
+    "صف «المجموع» تحت يكون في `<tfoot>`.",
+    "A total row belongs in `<tfoot>`.",
+    1,
+    0
+  ],
+  [
+    25,
+    "forms",
+    "An HTML form is:",
+    [
+      "An element that contains and organizes form controls that accept information from visitors",
+      "A type of table",
+      "A CSS file",
+      "A server-side script"
+    ],
+    "الفورم عنصر يحتوي وينظم عناصر التحكم اللي تستقبل معلومات الزوار.",
+    "A form contains and organizes input controls.",
+    1,
+    0
+  ],
+  [
+    25,
+    "forms",
+    "The two components of using forms are:",
+    [
+      "The HTML form (user interface) and server-side processing",
+      "HTML and images",
+      "CSS and tables",
+      "The browser and the monitor"
+    ],
+    "مكوّنين: واجهة الفورم في HTML، والمعالجة على السيرفر.",
+    "Forms need the HTML UI and server-side processing.",
+    1,
+    0
+  ],
+  [
+    25,
+    "forms",
+    "Which element is a stand-alone (void) tag?",
+    [
+      "`<input>`",
+      "`<form>`",
+      "`<textarea>`",
+      "`<select>`"
+    ],
+    "`<input>` وسم مفرد (void)، والباقي حاويات.",
+    "`<input>` is a void element.",
+    1,
+    0
+  ],
+  [
+    25,
+    "forms",
+    "The form attribute that specifies WHERE the data is sent is:",
+    [
+      "action",
+      "method",
+      "name",
+      "id"
+    ],
+    "`action` يحدد وين تروح البيانات.",
+    "`action` specifies where data is sent.",
+    1,
+    0
+  ],
+  [
+    25,
+    "forms",
+    "The form attribute that specifies HOW the data is sent is:",
+    [
+      "method",
+      "action",
+      "type",
+      "href"
+    ],
+    "`method` يحدد كيف تنرسل البيانات.",
+    "`method` specifies how data is sent.",
+    1,
+    0
+  ],
+  [
+    25,
+    "forms",
+    "The default value of the method attribute is:",
+    [
+      "get",
+      "post",
+      "put",
+      "send"
+    ],
+    "القيمة الافتراضية لـ method هي `get`.",
+    "The default method is get.",
+    0,
+    0
+  ],
+  [
+    25,
+    "forms",
+    "With method=\"get\", form data is passed:",
+    [
+      "In the URL",
+      "In the HTTP entity body",
+      "By email only",
+      "It is not sent"
+    ],
+    "مع `get` البيانات تنحط في الرابط.",
+    "With get, data goes in the URL.",
+    0,
+    0
+  ],
+  [
+    25,
+    "forms",
+    "Which method is more secure because data is passed in the HTTP entity body?",
+    [
+      "post",
+      "get",
+      "link",
+      "href"
+    ],
+    "`post` أأمن لأن البيانات في جسم رسالة HTTP.",
+    "post is more secure: data is in the entity body.",
+    0,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "The main attribute used with the `<input>` element is:",
+    [
+      "type",
+      "src",
+      "href",
+      "rows"
+    ],
+    "الخاصية الأساسية لـ `input` هي `type`.",
+    "The main input attribute is type.",
+    1,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "Which input type hides text as it is entered?",
+    [
+      "password",
+      "hidden-text",
+      "text",
+      "secret"
+    ],
+    "`type=\"password\"` يخفي النص وقت الكتابة.",
+    "password hides typed text.",
+    1,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "When a submit button is clicked, it sends to the web server:",
+    [
+      "The name=value pair for each form element",
+      "Only the button's label",
+      "The page's CSS",
+      "Nothing"
+    ],
+    "زر الإرسال يرسل زوج name=value لكل عنصر.",
+    "Submit sends name=value pairs.",
+    1,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "A reset button:",
+    [
+      "Resets the form fields to their initial values",
+      "Submits the form",
+      "Deletes the page",
+      "Reloads the browser"
+    ],
+    "زر reset يرجع الحقول لقيمها الأولى.",
+    "Reset restores initial values.",
+    1,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "Which control lets the user select ONE OR MORE items from a group?",
+    [
+      "Check box",
+      "Radio button",
+      "Reset button",
+      "Password box"
+    ],
+    "checkbox تختار واحد أو أكثر.",
+    "Check boxes allow one or more selections.",
+    1,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "Which control lets the user select EXACTLY ONE item from a group?",
+    [
+      "Radio button",
+      "Check box",
+      "Textarea",
+      "Datalist"
+    ],
+    "radio تختار واحد بالضبط.",
+    "Radio buttons allow exactly one.",
+    0,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "Radio buttons in the same group must share the same:",
+    [
+      "name",
+      "value",
+      "id",
+      "size"
+    ],
+    "أزرار الراديو في نفس المجموعة لازم بنفس `name`.",
+    "Radio buttons in a group share the same name.",
+    0,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "True or False: in a radio group, the value attribute is used by the browser to process the buttons as a group.",
+    [
+      "False – the name attribute groups them",
+      "True",
+      "True, only in HTML5",
+      "False – the id groups them"
+    ],
+    "خطأ: اللي يجمعهم `name` مو `value`.",
+    "False — the name attribute groups them.",
+    0,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "A survey question has 10 possible responses and only one can be selected. Which control?",
+    [
+      "Radio buttons (or a select list)",
+      "Check boxes",
+      "Password box",
+      "Reset button"
+    ],
+    "اختيار واحد من 10 → radio (أو select).",
+    "One of 10 responses → radio buttons or a select list.",
+    0,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "Which attribute pre-selects a check box or radio button?",
+    [
+      "checked",
+      "selected",
+      "value",
+      "default"
+    ],
+    "`checked` يختار checkbox أو radio مسبقاً.",
+    "`checked` pre-selects a checkbox/radio.",
+    0,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "Which attributes limit the visible width and the number of characters of a text box?",
+    [
+      "size and maxlength",
+      "rows and cols",
+      "min and max",
+      "width and height"
+    ],
+    "`size` العرض الظاهر و`maxlength` أقصى عدد حروف.",
+    "size sets visible width; maxlength limits characters.",
+    0,
+    0
+  ],
+  [
+    25,
+    "inputs",
+    "Which creates an image used as a submit button?",
+    [
+      "`<input type=\"image\" src=\"submit.png\" alt=\"Submit\">`",
+      "`<img type=\"submit\" src=\"submit.png\">`",
+      "`<input type=\"submit\" src=\"submit.png\">`",
+      "`<button src=\"submit.png\">`"
+    ],
+    "`type=\"image\"` يخلي الصورة زر إرسال.",
+    "`type=\"image\"` makes an image submit button.",
+    0,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "Which input type accepts text in e-mail address format?",
+    [
+      "email",
+      "mail",
+      "text",
+      "tel"
+    ],
+    "`type=\"email\"` يقبل صيغة إيميل.",
+    "`email` accepts e-mail format.",
+    1,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "Which input type accepts a telephone number?",
+    [
+      "tel",
+      "phone",
+      "number",
+      "text"
+    ],
+    "`type=\"tel\"` لرقم الهاتف.",
+    "`tel` accepts phone numbers.",
+    1,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "A slider control is created with:",
+    [
+      "`type=\"range\"`",
+      "`type=\"slider\"`",
+      "`type=\"number\"`",
+      "`type=\"scroll\"`"
+    ],
+    "`range` = شريط تمرير (slider).",
+    "`range` creates a slider.",
+    1,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "A spinner control is created with:",
+    [
+      "`type=\"number\"`",
+      "`type=\"range\"`",
+      "`type=\"spin\"`",
+      "`type=\"date\"`"
+    ],
+    "`number` = spinner بأسهم.",
+    "`number` creates a spinner.",
+    1,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "A calendar control is created with:",
+    [
+      "`type=\"date\"`",
+      "`type=\"calendar\"`",
+      "`type=\"time\"`",
+      "`type=\"color\"`"
+    ],
+    "`date` = تقويم.",
+    "`date` creates a calendar.",
+    1,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "A color well control is created with:",
+    [
+      "`type=\"color\"`",
+      "`type=\"palette\"`",
+      "`type=\"range\"`",
+      "`type=\"hex\"`"
+    ],
+    "`color` = اختيار لون.",
+    "`color` creates a color well.",
+    0,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "The `<label>` element:",
+    [
+      "Associates a text label with a form control",
+      "Creates a drop-down list",
+      "Groups form elements",
+      "Submits the form"
+    ],
+    "`<label>` يربط نص بعنصر الفورم.",
+    "`<label>` associates text with a control.",
+    0,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "For `<label for=\"email\">`, the matching input must have:",
+    [
+      "`id=\"email\"`",
+      "`name=\"email\"`",
+      "`type=\"email\"`",
+      "`value=\"email\"`"
+    ],
+    "قيمة `for` لازم تطابق `id` الحقل.",
+    "label for must match the input's id.",
+    0,
+    0
+  ],
+  [
+    25,
+    "h5in",
+    "Which attributes are common to the HTML5 email and tel text boxes?",
+    [
+      "placeholder and required",
+      "rows and cols",
+      "colspan and rowspan",
+      "rel and href"
+    ],
+    "`placeholder` و`required` مشتركة بين email وtel.",
+    "placeholder and required are common to email and tel.",
+    0,
+    0
+  ],
+  [
+    25,
+    "select",
+    "Which element configures a scrolling text box?",
+    [
+      "`<textarea>`",
+      "`<input type=\"text\">`",
+      "`<select>`",
+      "`<scroll>`"
+    ],
+    "`<textarea>` صندوق نص متعدد الأسطر.",
+    "`<textarea>` is a scrolling text box.",
+    1,
+    0
+  ],
+  [
+    25,
+    "select",
+    "Which attributes set the size of a textarea?",
+    [
+      "rows and cols",
+      "size and maxlength",
+      "width and height",
+      "min and max"
+    ],
+    "حجمه بـ `rows` و`cols`.",
+    "Its size uses rows and cols.",
+    1,
+    0
+  ],
+  [
+    25,
+    "select",
+    "Another name for a select list is:",
+    [
+      "Drop-down list",
+      "Text area",
+      "Fieldset",
+      "Color well"
+    ],
+    "الـ select اسمه بعد drop-down list.",
+    "A select list is a drop-down list.",
+    1,
+    0
+  ],
+  [
+    25,
+    "select",
+    "Which attribute allows selecting more than one item in a select list?",
+    [
+      "multiple",
+      "checked",
+      "many",
+      "size"
+    ],
+    "`multiple` يسمح بأكثر من اختيار.",
+    "`multiple` allows multiple selections.",
+    1,
+    0
+  ],
+  [
+    25,
+    "select",
+    "Which attribute pre-selects an option in a select list?",
+    [
+      "selected",
+      "checked",
+      "default",
+      "value"
+    ],
+    "`selected` يختار option مسبقاً.",
+    "`selected` pre-selects an option.",
+    1,
+    0
+  ],
+  [
+    25,
+    "select",
+    "With a datalist, the user:",
+    [
+      "Can type a value and is not forced to choose from the list",
+      "Cannot type a value",
+      "Must choose exactly one option",
+      "Cannot see suggestions"
+    ],
+    "الـ datalist اقتراحات: تقدر تكتب قيمة مو بالقائمة.",
+    "With datalist the user can type any value.",
+    0,
+    0
+  ],
+  [
+    25,
+    "select",
+    "Which is best for fixed choices?",
+    [
+      "`<select>`",
+      "`<datalist>`",
+      "`<textarea>`",
+      "`<input type=\"text\">`"
+    ],
+    "للخيارات الثابتة `select`.",
+    "Use select for fixed choices.",
+    0,
+    0
+  ],
+  [
+    25,
+    "select",
+    "A datalist is connected to an input using the input's:",
+    [
+      "list attribute",
+      "for attribute",
+      "name attribute",
+      "href attribute"
+    ],
+    "نربط الـ datalist بـ `list` في الـ input.",
+    "An input's list attribute connects the datalist.",
+    0,
+    0
+  ],
+  [
+    25,
+    "fieldset",
+    "The `<fieldset>` element:",
+    [
+      "Creates a visual group of form elements",
+      "Creates a text label inside a group",
+      "Submits the form",
+      "Creates a table"
+    ],
+    "`fieldset` يجمع عناصر الفورم بصرياً بإطار.",
+    "fieldset visually groups form elements.",
+    1,
+    0
+  ],
+  [
+    25,
+    "fieldset",
+    "The `<legend>` element:",
+    [
+      "Creates a text label within the fieldset",
+      "Creates a table caption",
+      "Creates a drop-down",
+      "Resets the form"
+    ],
+    "`legend` عنوان داخل الـ fieldset.",
+    "legend labels the fieldset.",
+    1,
+    0
+  ],
+  [
+    25,
+    "fieldset",
+    "Which is correct?",
+    [
+      "`<fieldset><legend>Customer Information</legend>...</fieldset>`",
+      "`<legend><fieldset>Customer</fieldset></legend>`",
+      "`<fieldset legend=\"Customer\">`",
+      "`<form legend=\"Customer\">`"
+    ],
+    "الـ `legend` يكون داخل `fieldset`.",
+    "legend goes inside fieldset.",
+    1,
+    0
+  ],
+  [
+    25,
+    "server",
+    "CGI (Common Gateway Interface) is:",
+    [
+      "A protocol for a web server to pass a user's request to an application program",
+      "A programming language",
+      "An HTML element",
+      "A type of image"
+    ],
+    "CGI بروتوكول يمرر طلب المستخدم من السيرفر لبرنامج تطبيقي.",
+    "CGI passes requests from the web server to an application.",
+    1,
+    0
+  ],
+  [
+    25,
+    "server",
+    "Which file extension indicates a PHP server-side script?",
+    [
+      ".php",
+      ".css",
+      ".html",
+      ".jpg"
+    ],
+    "`.php` سكربت PHP على السيرفر.",
+    "`.php` marks a PHP script.",
+    1,
+    0
+  ],
+  [
+    25,
+    "server",
+    "The .jsp extension refers to:",
+    [
+      "JavaServer Pages",
+      "JavaScript Pages",
+      "Java Style Pages",
+      "JSON Pages"
+    ],
+    "`.jsp` = JavaServer Pages.",
+    "`.jsp` = JavaServer Pages.",
+    1,
+    0
+  ],
+  [
+    25,
+    "server",
+    "The .aspx extension refers to:",
+    [
+      "ASP.Net",
+      "Adobe ColdFusion",
+      "PHP",
+      "Ruby"
+    ],
+    "`.aspx` = ASP.Net (أما `.asp` = Active Server Pages).",
+    "`.aspx` = ASP.Net.",
+    1,
+    0
+  ],
+  [
+    25,
+    "server",
+    "The .cfm extension refers to:",
+    [
+      "Adobe ColdFusion",
+      "ASP.Net",
+      "JavaServer Pages",
+      "PHP"
+    ],
+    "`.cfm` = Adobe ColdFusion.",
+    "`.cfm` = Adobe ColdFusion.",
+    1,
+    0
+  ],
+  [
+    25,
+    "server",
+    "What is the FIRST step in utilizing server-side processing?",
+    [
+      "The web page invokes server-side processing by a form or hyperlink",
+      "The server returns a page",
+      "The script accesses a database",
+      "The browser closes"
+    ],
+    "أول خطوة: الصفحة تستدعي المعالجة بفورم أو رابط.",
+    "First, the page invokes processing via a form or link.",
+    0,
+    0
+  ],
+  [
+    25,
+    "server",
+    "Server-side scripts use direct execution, meaning the script is run by:",
+    [
+      "The web server itself or an extension module",
+      "The user's browser",
+      "The monitor",
+      "The CSS file"
+    ],
+    "direct execution: السيرفر نفسه أو وحدة إضافية تشغّل السكربت.",
+    "Direct execution: the server or an extension runs the script.",
+    0,
+    0
+  ],
+  [
+    25,
+    "server",
+    "Which is a common use of server-side scripting?",
+    [
+      "Searching a database",
+      "Changing text color",
+      "Drawing a horizontal line",
+      "Adding alt text"
+    ],
+    "من استخداماته: البحث في قاعدة بيانات.",
+    "A common use is searching a database.",
+    0,
+    0
+  ],
+  [
+    3,
+    "cssov",
+    "A style sheet is:",
+    [
+      "A collection of style rules applied to HTML elements",
+      "A collection of HTML tags",
+      "A server-side script",
+      "A type of table"
+    ],
+    "الـ style sheet مجموعة قواعد تنطبق على عناصر HTML.",
+    "A style sheet is a collection of style rules.",
+    0,
+    0
+  ],
+  [
+    3,
+    "cssov",
+    "The word \"cascading\" means:",
+    [
+      "Multiple style rules can be applied to the same HTML element",
+      "Styles only apply to the first element",
+      "Styles fall from the top of the page",
+      "Only one style per page"
+    ],
+    "cascading يعني أكثر من قاعدة تنطبق على نفس العنصر.",
+    "Cascading: multiple rules can apply to one element.",
+    0,
+    0
+  ],
+  [
+    3,
+    "cssov",
+    "Which is an advantage of CSS?",
+    [
+      "Style is separate from structure",
+      "Larger documents",
+      "Harder maintenance",
+      "Less layout control"
+    ],
+    "ميزة CSS: فصل الشكل عن الهيكل.",
+    "CSS separates style from structure.",
+    0,
+    0
+  ],
+  [
+    3,
+    "cssov",
+    "A client wants to change the background color of 50 pages. With an external CSS file you change:",
+    [
+      "Only one file",
+      "All 50 pages",
+      "Every image",
+      "The server software"
+    ],
+    "مع ملف CSS خارجي تعدل ملف واحد بس.",
+    "With external CSS you change one file.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "How many methods do web developers use to incorporate CSS?",
+    [
+      "Four: inline, embedded, external, imported",
+      "Two",
+      "Three: inline, block, external",
+      "Five"
+    ],
+    "أربع طرق: inline وembedded وexternal وimported.",
+    "Four methods: inline, embedded, external, imported.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "Inline styles are coded:",
+    [
+      "In the body, as the style attribute of an HTML tag",
+      "In the head inside a style element",
+      "In a separate .css file",
+      "Using @import"
+    ],
+    "inline يكتب في `style` داخل الوسم في الـ body.",
+    "Inline uses the style attribute in the body.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "Inline styles apply to:",
+    [
+      "Only the specific element that contains them",
+      "The entire web page",
+      "All pages in the site",
+      "Only the head"
+    ],
+    "inline ينطبق على العنصر نفسه بس.",
+    "Inline applies only to that element.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "Embedded (internal) styles are defined:",
+    [
+      "Within a style element in the head section",
+      "In the body using the style attribute",
+      "In a .css file",
+      "In a meta tag"
+    ],
+    "embedded داخل `<style>` في الـ head.",
+    "Embedded styles go in a style element in head.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "Embedded styles apply to:",
+    [
+      "The entire web page document",
+      "Only one element",
+      "Every website",
+      "Only images"
+    ],
+    "embedded ينطبق على الصفحة كاملة.",
+    "Embedded applies to the whole page.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "Which directive imports an external style sheet?",
+    [
+      "`@import`",
+      "`@link`",
+      "`@include`",
+      "`@css`"
+    ],
+    "`@import` يستورد ملف CSS.",
+    "`@import` imports a style sheet.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "Each CSS rule contains:",
+    [
+      "A selector and a declaration",
+      "A tag and an attribute",
+      "A property only",
+      "A link and a href"
+    ],
+    "القاعدة = selector + declaration.",
+    "A rule is a selector plus a declaration.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "A declaration consists of:",
+    [
+      "A property and the value assigned to it",
+      "A selector and a tag",
+      "An id and a class",
+      "A file name"
+    ],
+    "الـ declaration = property: value.",
+    "A declaration is a property and value.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "In inline CSS, multiple properties are separated by:",
+    [
+      "A semicolon (;)",
+      "A comma (,)",
+      "A period (.)",
+      "A hash (#)"
+    ],
+    "في inline الخصائص تنفصل بـ `;`.",
+    "Inline properties are separated by semicolons.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstypes",
+    "Which is correct inline CSS for a red h1?",
+    [
+      "`<h1 style=\"color:#ff0000\">`",
+      "`<h1 color=\"#ff0000\">`",
+      "`<h1 css=\"color:red\">`",
+      "`<h1 style=\"#ff0000\">`"
+    ],
+    "الصحيح: `<h1 style=\"color:#ff0000\">`.",
+    "Correct: `<h1 style=\"color:#ff0000\">`.",
+    0,
+    0
+  ],
+  [
+    3,
+    "color",
+    "The CSS `color` property configures:",
+    [
+      "The text (foreground) color",
+      "The background color",
+      "The border color only",
+      "The link URL"
+    ],
+    "`color` لون النص (الأمامي).",
+    "`color` sets the text color.",
+    1,
+    0
+  ],
+  [
+    3,
+    "color",
+    "Computer monitors display color as intensities of:",
+    [
+      "Red, green, and blue",
+      "Cyan, magenta, yellow",
+      "Black and white",
+      "Hue only"
+    ],
+    "الشاشات تعرض الألوان بشدة الأحمر والأخضر والأزرق.",
+    "Monitors use red, green, blue intensities.",
+    1,
+    0
+  ],
+  [
+    3,
+    "color",
+    "RGB values range from:",
+    [
+      "0 to 255",
+      "0 to 100",
+      "1 to 16",
+      "0 to FF only in decimal"
+    ],
+    "قيم RGB من 0 إلى 255.",
+    "RGB values range 0–255.",
+    1,
+    0
+  ],
+  [
+    3,
+    "color",
+    "Hex value pairs range from:",
+    [
+      "00 to FF",
+      "00 to 99",
+      "0 to 255",
+      "AA to ZZ"
+    ],
+    "أزواج hex من 00 إلى FF.",
+    "Hex pairs range 00–FF.",
+    1,
+    0
+  ],
+  [
+    3,
+    "color",
+    "`#FFFFFF` is:",
+    [
+      "White",
+      "Black",
+      "Red",
+      "Blue"
+    ],
+    "`#FFFFFF` أبيض (كل الألوان كاملة).",
+    "`#FFFFFF` is white.",
+    1,
+    0
+  ],
+  [
+    3,
+    "color",
+    "`#000000` is:",
+    [
+      "Black",
+      "White",
+      "Green",
+      "Grey"
+    ],
+    "`#000000` أسود (ولا لون).",
+    "`#000000` is black.",
+    0,
+    0
+  ],
+  [
+    3,
+    "color",
+    "`#0000FF` is:",
+    [
+      "Blue",
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "`#0000FF` أزرق: الزوج الأخير هو الأزرق.",
+    "`#0000FF` is blue (last pair).",
+    0,
+    0
+  ],
+  [
+    3,
+    "color",
+    "The web-safe color palette contains:",
+    [
+      "216 colors",
+      "256 colors",
+      "16.7 million colors",
+      "100 colors"
+    ],
+    "لوحة الألوان الآمنة فيها 216 لون.",
+    "The web-safe palette has 216 colors.",
+    0,
+    0
+  ],
+  [
+    3,
+    "color",
+    "Which hex values are used in web-safe colors?",
+    [
+      "00, 33, 66, 99, CC, FF",
+      "00, 11, 22, 33, 44, 55",
+      "00, 50, A0, FF",
+      "Any value"
+    ],
+    "قيمها: 00 و33 و66 و99 وCC وFF.",
+    "Web-safe hex values: 00, 33, 66, 99, CC, FF.",
+    0,
+    0
+  ],
+  [
+    3,
+    "color",
+    "`p { color: #F00; }` uses which color syntax?",
+    [
+      "Shorthand hexadecimal",
+      "Color name",
+      "RGB triplet",
+      "HSL"
+    ],
+    "`#F00` hex مختصر.",
+    "`#F00` is shorthand hex.",
+    0,
+    0
+  ],
+  [
+    3,
+    "color",
+    "`rgb(255,0,0)` is which color type?",
+    [
+      "Decimal color value (RGB triplet)",
+      "HSL",
+      "Hexadecimal",
+      "Color name"
+    ],
+    "`rgb(255,0,0)` قيمة عشرية (RGB).",
+    "`rgb(255,0,0)` is a decimal RGB value.",
+    0,
+    0
+  ],
+  [
+    3,
+    "color",
+    "HSL stands for:",
+    [
+      "Hue, Saturation, and Lightness",
+      "High Screen Level",
+      "Hex Shade Light",
+      "Hue, Shadow, Line"
+    ],
+    "HSL = Hue وSaturation وLightness.",
+    "HSL = Hue, Saturation, Lightness.",
+    0,
+    0
+  ],
+  [
+    3,
+    "color",
+    "When choosing text and background colors, accessibility requires:",
+    [
+      "Sufficient contrast",
+      "Same colors",
+      "Only web-safe colors",
+      "Only black and white"
+    ],
+    "الوصول يحتاج تباين كافي بين النص والخلفية.",
+    "Accessibility needs sufficient contrast.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "Which property configures the boldness of text?",
+    [
+      "font-weight",
+      "font-style",
+      "font-size",
+      "text-transform"
+    ],
+    "`font-weight` للسماكة.",
+    "`font-weight` sets boldness.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "Which property configures italic text?",
+    [
+      "font-style",
+      "font-weight",
+      "text-decoration",
+      "font-family"
+    ],
+    "`font-style` للمائل.",
+    "`font-style` sets italics.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "Arial and Verdana belong to which font family?",
+    [
+      "sans-serif",
+      "serif",
+      "monospace",
+      "cursive"
+    ],
+    "Arial وVerdana عائلة sans-serif.",
+    "Arial, Verdana are sans-serif.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "Times New Roman and Georgia belong to:",
+    [
+      "serif",
+      "sans-serif",
+      "fantasy",
+      "monospace"
+    ],
+    "Times New Roman وGeorgia عائلة serif.",
+    "Times New Roman, Georgia are serif.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "Courier New belongs to:",
+    [
+      "monospace",
+      "serif",
+      "cursive",
+      "fantasy"
+    ],
+    "Courier New عائلة monospace.",
+    "Courier New is monospace.",
+    1,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "Why configure a list of fonts ending with a generic family?",
+    [
+      "Not everyone has the same fonts installed",
+      "To make text bigger",
+      "CSS requires exactly three fonts",
+      "To validate the page"
+    ],
+    "مو كل الأجهزة فيها نفس الخطوط، فنختم بعائلة عامة.",
+    "Not everyone has the same fonts, so end with a generic family.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "For accessibility, font sizes should use:",
+    [
+      "em or percentage",
+      "Only pt",
+      "Only px",
+      "Images of text"
+    ],
+    "للوصول استخدم `em` أو النسبة المئوية.",
+    "Use em or percentage font sizes.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "`line-height: 200%;` configures:",
+    [
+      "Double-spaced text",
+      "Text twice as big",
+      "Bold text",
+      "A shadow"
+    ],
+    "`line-height: 200%` مسافة مزدوجة بين الأسطر.",
+    "`line-height: 200%` is double spacing.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "Which property indents the first line of text?",
+    [
+      "text-indent",
+      "text-align",
+      "margin-left",
+      "letter-spacing"
+    ],
+    "`text-indent` يزيح أول سطر.",
+    "`text-indent` indents the first line.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "To remove the underline from hyperlinks:",
+    [
+      "`a { text-decoration: none; }`",
+      "`a { text-transform: none; }`",
+      "`a { font-style: none; }`",
+      "`a { underline: off; }`"
+    ],
+    "`text-decoration: none` يشيل خط الرابط.",
+    "`text-decoration: none` removes underlines.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "`h3 { text-transform: uppercase; }` configures:",
+    [
+      "The capitalization of text",
+      "Text color",
+      "Font size",
+      "Space between words"
+    ],
+    "`text-transform` يتحكم بحالة الأحرف.",
+    "`text-transform` sets capitalization.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "Which property configures space between characters?",
+    [
+      "letter-spacing",
+      "word-spacing",
+      "line-height",
+      "text-indent"
+    ],
+    "`letter-spacing` المسافة بين الحروف.",
+    "`letter-spacing` spaces characters.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "In `text-shadow: 3px 2px 5px #666;` the value 5px is:",
+    [
+      "The blur radius",
+      "The horizontal offset",
+      "The vertical offset",
+      "The color"
+    ],
+    "الترتيب: أفقي، عمودي، blur، لون، فـ 5px هو الـ blur.",
+    "Order: horizontal, vertical, blur, color — 5px is the blur.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "In text-shadow, a positive horizontal offset places the shadow:",
+    [
+      "On the right",
+      "On the left",
+      "Above",
+      "Below"
+    ],
+    "الإزاحة الأفقية الموجبة تحط الظل يمين.",
+    "A positive horizontal offset puts the shadow on the right.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "If the text-shadow blur radius is omitted, it defaults to:",
+    [
+      "0 (a sharp shadow)",
+      "5px",
+      "10px",
+      "It is required"
+    ],
+    "إذا ما حددت الـ blur يصير 0 (ظل حاد).",
+    "Omitted blur defaults to 0.",
+    0,
+    0
+  ],
+  [
+    3,
+    "csstext",
+    "To set page margins to zero:",
+    [
+      "`body { margin: 0 }`",
+      "`body { margin: 0px-none }`",
+      "`body { padding: auto }`",
+      "`body { margin: none-px }`"
+    ],
+    "`body { margin: 0 }` يصفر الهوامش.",
+    "`body { margin: 0 }` zeroes margins.",
+    0,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "Which are the CSS selector types covered?",
+    [
+      "Element, class, id, and descendant",
+      "Only element",
+      "Tag, attribute, link",
+      "Head, body, footer"
+    ],
+    "الأنواع: element وclass وid وdescendant.",
+    "Selector types: element, class, id, descendant.",
+    1,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "A class selector is configured with:",
+    [
+      "`.classname`",
+      "`#classname`",
+      "`*classname`",
+      "`@classname`"
+    ],
+    "الـ class بنقطة: `.classname`.",
+    "Class selectors start with a dot.",
+    1,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "An id selector is configured with:",
+    [
+      "`#idname`",
+      "`.idname`",
+      "`$idname`",
+      "`@idname`"
+    ],
+    "الـ id بـ `#`.",
+    "Id selectors start with #.",
+    1,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "Which selector applies a rule uniquely to a single area on a page?",
+    [
+      "id selector",
+      "class selector",
+      "element selector",
+      "descendant selector"
+    ],
+    "الـ id لعنصر واحد فريد في الصفحة.",
+    "An id selector targets one unique area.",
+    1,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "Given `.feature { color: #C70000; }`, how do you apply it?",
+    [
+      "`<li class=\"feature\">`",
+      "`<li id=\"feature\">`",
+      "`<li style=\"feature\">`",
+      "`<li feature>`"
+    ],
+    "نطبقه بـ `class=\"feature\"`.",
+    "Apply it with `class=\"feature\"`.",
+    1,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "`div p { color: blue; }` is an example of a:",
+    [
+      "Descendant (contextual) selector",
+      "Class selector",
+      "Id selector",
+      "Inline style"
+    ],
+    "`div p` descendant: كل p داخل div.",
+    "`div p` is a descendant selector.",
+    0,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "An advantage of descendant (contextual) selectors is that they:",
+    [
+      "Reduce the number of classes and ids needed in the HTML",
+      "Increase file size",
+      "Only work inline",
+      "Replace HTML"
+    ],
+    "الـ descendant يقلل الـ classes والـ ids في HTML.",
+    "Descendant selectors reduce needed classes/ids.",
+    0,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "The `<span>` element displays:",
+    [
+      "Inline, with no extra space above or below",
+      "As a block with space above and below",
+      "Only in the head",
+      "As a table"
+    ],
+    "`<span>` inline بدون مسافة فوق وتحت.",
+    "`<span>` is inline with no extra space.",
+    0,
+    0
+  ],
+  [
+    3,
+    "selectors",
+    "Difference between div and span:",
+    [
+      "div is block display with space; span is inline with no extra space",
+      "They are identical",
+      "span is a block element",
+      "div cannot contain other elements"
+    ],
+    "div block مع مسافة، وspan inline بدون مسافة.",
+    "div is block; span is inline.",
+    0,
+    0
+  ],
+  [
+    3,
+    "external",
+    "An external style sheet file:",
+    [
+      "Has a .css extension and contains only style rules, no HTML tags",
+      "Must contain html and body tags",
+      "Has a .html extension",
+      "Is placed in the body"
+    ],
+    "ملف CSS الخارجي امتداده `.css` وفيه قواعد بس بدون HTML.",
+    "External CSS has a .css extension and only rules.",
+    1,
+    0
+  ],
+  [
+    3,
+    "external",
+    "Which tag links an external style sheet?",
+    [
+      "`<link rel=\"stylesheet\" href=\"color.css\">`",
+      "`<style src=\"color.css\">`",
+      "`<css href=\"color.css\">`",
+      "`<a href=\"color.css\">`"
+    ],
+    "الربط بـ `<link rel=\"stylesheet\" href=\"color.css\">`.",
+    "Link it with `<link rel=\"stylesheet\" href=\"...\">`.",
+    1,
+    0
+  ],
+  [
+    3,
+    "external",
+    "The `<link>` element is placed in:",
+    [
+      "The head section",
+      "The body section",
+      "The footer",
+      "The external CSS file"
+    ],
+    "`<link>` يكون في الـ head.",
+    "`<link>` goes in the head.",
+    1,
+    0
+  ],
+  [
+    3,
+    "external",
+    "The value of the rel attribute for a style sheet is:",
+    [
+      "stylesheet",
+      "style",
+      "css",
+      "icon"
+    ],
+    "قيمة rel هي `stylesheet`.",
+    "rel is `stylesheet`.",
+    1,
+    0
+  ],
+  [
+    3,
+    "external",
+    "Which CSS centers page content?",
+    [
+      "`#container { margin-left: auto; margin-right: auto; width: 80%; }`",
+      "`#container { text-align: middle; }`",
+      "`#container { center: true; }`",
+      "`#container { margin: center; }`"
+    ],
+    "التوسيط: `margin-left: auto; margin-right: auto` مع عرض محدد.",
+    "Center with auto left/right margins and a width.",
+    1,
+    0
+  ],
+  [
+    3,
+    "external",
+    "In the cascade, which has the HIGHEST precedence?",
+    [
+      "Inline styles",
+      "Embedded styles",
+      "External styles",
+      "Browser defaults"
+    ],
+    "inline أعلى أولوية.",
+    "Inline styles have the highest precedence.",
+    0,
+    0
+  ],
+  [
+    3,
+    "external",
+    "In the cascade, which has the LOWEST precedence?",
+    [
+      "Browser defaults",
+      "Inline styles",
+      "Embedded styles",
+      "External styles"
+    ],
+    "إعدادات المتصفح أقل أولوية.",
+    "Browser defaults have the lowest.",
+    0,
+    0
+  ],
+  [
+    3,
+    "external",
+    "The correct cascade order from lowest to highest is:",
+    [
+      "Browser defaults → External → Embedded → Inline",
+      "Inline → Embedded → External → Browser",
+      "External → Inline → Embedded → Browser",
+      "Embedded → External → Inline → Browser"
+    ],
+    "الترتيب: المتصفح ← external ← embedded ← inline.",
+    "Order: browser defaults → external → embedded → inline.",
+    0,
+    0
+  ],
+  [
+    3,
+    "external",
+    "If an external file says p is blue and an embedded style says p is red, the paragraph is:",
+    [
+      "Red",
+      "Blue",
+      "Purple",
+      "Black"
+    ],
+    "embedded أقوى من external، فيطلع أحمر.",
+    "Embedded beats external, so red.",
+    0,
+    0
+  ],
+  [
+    3,
+    "external",
+    "CSS can be validated using:",
+    [
+      "The W3C CSS Validator (jigsaw.w3.org/css-validator)",
+      "GIMP",
+      "FTP",
+      "The DNS"
+    ],
+    "التحقق بـ W3C CSS Validator.",
+    "Validate with the W3C CSS Validator.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What does HTML stand for?",
+    [
+      "Hyper Text Markup Language",
+      "Home Tool Markup Language",
+      "Hyperlinks and Text Markup Language"
+    ],
+    "HTML = Hyper Text Markup Language.",
+    "HTML = Hyper Text Markup Language.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Who is making the Web standards?",
+    [
+      "The World Wide Web Consortium",
+      "Microsoft",
+      "Mozilla",
+      "Google"
+    ],
+    "W3C هي اللي تضع معايير الويب.",
+    "The W3C makes web standards.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Choose the correct HTML element for the largest heading:",
+    [
+      "<h1>",
+      "<head>",
+      "<h6>",
+      "<heading>"
+    ],
+    "`h1` أكبر عنوان و`h6` أصغر.",
+    "`h1` is the largest heading.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML element for inserting a line break?",
+    [
+      "<br>",
+      "<break>",
+      "<lb>"
+    ],
+    "`<br>` سطر جديد ووسم مفرد.",
+    "`<br>` inserts a line break.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML for adding a background color?",
+    [
+      "<body style=\"background-color:yellow;\">",
+      "<body bg=\"yellow\">",
+      "<background>yellow</background>"
+    ],
+    "inline CSS: `style=\"background-color:yellow;\"`.",
+    "Use inline CSS background-color.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Choose the correct HTML element to define important text",
+    [
+      "<strong>",
+      "<i>",
+      "<important>",
+      "<b>"
+    ],
+    "`<strong>` للنص المهم، و`<b>` شكل بس.",
+    "`<strong>` marks important text.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Choose the correct HTML element to define emphasized text",
+    [
+      "<em>",
+      "<italic>",
+      "<i>"
+    ],
+    "`<em>` للتأكيد، و`<i>` شكل بس.",
+    "`<em>` marks emphasized text.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML for creating a hyperlink?",
+    [
+      "<a href=\"http://www.w3schools.com\">W3Schools</a>",
+      "<a>http://www.w3schools.com</a>",
+      "<a url=\"http://www.w3schools.com\">W3Schools.com</a>",
+      "<a name=\"http://www.w3schools.com\">W3Schools.com</a>"
+    ],
+    "الرابط في `href` داخل `<a>`.",
+    "Links use `<a href=\"...\">`.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which character is used to indicate an end tag?",
+    [
+      "/",
+      "^",
+      "*",
+      "<"
+    ],
+    "وسم الإغلاق فيه `/` مثل `</p>`.",
+    "End tags use `/`.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "How can you open a link in a new tab/browser window?",
+    [
+      "<a href=\"url\" target=\"_blank\">",
+      "<a href=\"url\" target=\"new\">",
+      "<a href=\"url\" new>"
+    ],
+    "`target=\"_blank\"` يفتح الرابط في تبويب جديد.",
+    "`target=\"_blank\"` opens a new tab.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which of these elements are all <table> elements?",
+    [
+      "<table><tr><td>",
+      "<table><tr><tt>",
+      "<thead><body><tr>",
+      "<table><head><tfoot>"
+    ],
+    "عناصر الجدول: `table` و`tr` و`td`. انتبه `thead` مو `head`.",
+    "Table elements: table, tr, td.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Inline elements are normally displayed without starting a new line.",
+    [
+      "True",
+      "False"
+    ],
+    "صح: inline مثل `strong` و`span` تكمل بنفس السطر.",
+    "True: inline elements don't start a new line.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "How can you make a numbered list?",
+    [
+      "<ol>",
+      "<ul>",
+      "<dl>",
+      "<list>"
+    ],
+    "`<ol>` قائمة مرقمة.",
+    "`<ol>` makes a numbered list.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "How can you make a bulleted list?",
+    [
+      "<ul>",
+      "<dl>",
+      "<ol>",
+      "<list>"
+    ],
+    "`<ul>` قائمة نقاط.",
+    "`<ul>` makes a bulleted list.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML for making a checkbox?",
+    [
+      "<input type=\"checkbox\">",
+      "<checkbox>",
+      "<input type=\"check\">",
+      "<check>"
+    ],
+    "`<input type=\"checkbox\">`.",
+    "Checkbox: `<input type=\"checkbox\">`.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML for making a text input field?",
+    [
+      "<input type=\"text\">",
+      "<textinput type=\"text\">",
+      "<textfield>",
+      "<input type=\"textfield\">"
+    ],
+    "`<input type=\"text\">`.",
+    "Text field: `<input type=\"text\">`.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML for making a drop-down list?",
+    [
+      "<select>",
+      "<input type=\"dropdown\">",
+      "<input type=\"list\">",
+      "<list>"
+    ],
+    "`<select>` قائمة منسدلة.",
+    "`<select>` makes a drop-down list.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML for making a text area?",
+    [
+      "<textarea>",
+      "<input type=\"textbox\">",
+      "<input type=\"textarea\">"
+    ],
+    "`<textarea>` عنصر مستقل حاوي، مو input.",
+    "`<textarea>` is its own container element.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML for inserting an image?",
+    [
+      "<img src=\"image.gif\" alt=\"MyImage\">",
+      "<image src=\"image.gif\" alt=\"MyImage\">",
+      "<img alt=\"MyImage\">image.gif</img>",
+      "<img href=\"image.gif\" alt=\"MyImage\">"
+    ],
+    "`img` مع `src` و`alt` وبدون إغلاق.",
+    "`<img src alt>` inserts an image.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML for inserting a background image?",
+    [
+      "<body style=\"background-image:url(background.gif)\">",
+      "<background img=\"background.gif\">",
+      "<body bg=\"background.gif\">"
+    ],
+    "CSS: `background-image:url(...)`.",
+    "Use CSS background-image:url(...).",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "An <iframe> is used to display a web page within a web page.",
+    [
+      "True",
+      "False",
+      "There is no such thing as an <iframe>"
+    ],
+    "صح: `iframe` يعرض صفحة داخل صفحة.",
+    "True: iframe embeds a page.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "HTML comments start with <!-- and end with -->",
+    [
+      "True",
+      "False"
+    ],
+    "صح: التعليق `<!-- -->`.",
+    "True: comments use `<!-- -->`.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Block elements are normally displayed without starting a new line.",
+    [
+      "False",
+      "True"
+    ],
+    "خطأ: block مثل `p` و`div` تبدأ بسطر جديد.",
+    "False: block elements start on a new line.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which HTML element defines the title of a document?",
+    [
+      "<title>",
+      "<meta>",
+      "<head>"
+    ],
+    "`<title>` عنوان الصفحة داخل head.",
+    "`<title>` defines the document title.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+    [
+      "alt",
+      "src",
+      "title",
+      "longdesc"
+    ],
+    "`alt` نص بديل للصورة.",
+    "`alt` gives alternate text.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which doctype is correct for HTML5?",
+    [
+      "<!DOCTYPE html>",
+      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 5.0//EN\" \"http://www.w3.org/TR/html5/strict.dtd\">",
+      "<!DOCTYPE HTML5>"
+    ],
+    "`<!DOCTYPE html>` هو doctype حق HTML5.",
+    "HTML5 doctype is `<!DOCTYPE html>`.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which HTML element is used to specify a footer for a document or section?",
+    [
+      "<footer>",
+      "<section>",
+      "<bottom>"
+    ],
+    "`<footer>` تذييل.",
+    "`<footer>` defines a footer.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "In HTML, you can embed SVG elements directly into an HTML page.",
+    [
+      "True",
+      "False"
+    ],
+    "صح: SVG يندمج مباشرة في HTML.",
+    "True: SVG can be embedded directly.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML element for playing video files?",
+    [
+      "<video>",
+      "<media>",
+      "<movie>"
+    ],
+    "`<video>` للفيديو.",
+    "`<video>` plays video.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "What is the correct HTML element for playing audio files?",
+    [
+      "<audio>",
+      "<sound>",
+      "<mp3>"
+    ],
+    "`<audio>` للصوت.",
+    "`<audio>` plays audio.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "The HTML global attribute, \"contenteditable\" is used to:",
+    [
+      "Specify whether the content of an element should be editable or not",
+      "Return the position of the first found occurrence of content inside a string",
+      "Update content from the server",
+      "Specifies a context menu for an element"
+    ],
+    "`contenteditable` يحدد هل المحتوى قابل للتعديل.",
+    "contenteditable sets whether content is editable.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "In HTML, onblur and onfocus are:",
+    [
+      "Event attributes",
+      "Style attributes",
+      "HTML elements"
+    ],
+    "`onblur` و`onfocus` سمات أحداث.",
+    "onblur and onfocus are event attributes.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Graphics defined by SVG is in which format?",
+    [
+      "XML",
+      "HTML",
+      "CSS"
+    ],
+    "SVG مبني على XML.",
+    "SVG is XML-based.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "The HTML <canvas> element is used to:",
+    [
+      "draw graphics",
+      "manipulate data in MySQL",
+      "create draggable elements",
+      "display database records"
+    ],
+    "`<canvas>` للرسم.",
+    "`<canvas>` draws graphics.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "In HTML, which attribute is used to specify that an input field must be filled out?",
+    [
+      "required",
+      "placeholder",
+      "formvalidate",
+      "validate"
+    ],
+    "`required` يخلي الحقل إجباري.",
+    "`required` makes a field mandatory.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which input type defines a slider control?",
+    [
+      "range",
+      "search",
+      "controls",
+      "slider"
+    ],
+    "`type=\"range\"` = slider.",
+    "`range` defines a slider.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which HTML element is used to display a scalar measurement within a range?",
+    [
+      "<meter>",
+      "<gauge>",
+      "<measure>",
+      "<range>"
+    ],
+    "`<meter>` قياس ضمن مدى.",
+    "`<meter>` displays a scalar measurement.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which HTML element defines navigation links?",
+    [
+      "<nav>",
+      "<navigation>",
+      "<navigate>"
+    ],
+    "`<nav>` روابط التنقل.",
+    "`<nav>` defines navigation links.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "In HTML, what does the <aside> element define?",
+    [
+      "Content aside from the page content",
+      "The ASCII character-set",
+      "A navigation list to be shown at the left side of the page"
+    ],
+    "`<aside>` محتوى جانبي.",
+    "`<aside>` is content aside from the main content.",
+    0,
+    0
+  ],
+  [
+    90,
+    "lhtml",
+    "Which HTML element is used to specify a header for a document or section?",
+    [
+      "<header>",
+      "<head>",
+      "<top>",
+      "<section>"
+    ],
+    "`<header>` رأس الصفحة أو القسم، وhead للمعلومات. فخ!",
+    "`<header>` is a page/section header (not head).",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "What does CSS stand for?",
+    [
+      "Cascading Style Sheets",
+      "Creative Style Sheets",
+      "Computer Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "CSS = Cascading Style Sheets.",
+    "CSS = Cascading Style Sheets.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "What is the correct HTML for referring to an external style sheet?",
+    [
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">",
+      "<style src=\"mystyle.css\">",
+      "<stylesheet>mystyle.css</stylesheet>"
+    ],
+    "`<link rel=\"stylesheet\" ... href=\"mystyle.css\">`.",
+    "Use `<link rel=\"stylesheet\" href=\"...\">`.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Where in an HTML document is the correct place to refer to an external style sheet?",
+    [
+      "In the <head> section",
+      "In the <body> section",
+      "At the end of the document"
+    ],
+    "الربط يكون في `<head>`.",
+    "External sheets are referenced in the head.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Which HTML tag is used to define an internal style sheet?",
+    [
+      "<style>",
+      "<css>",
+      "<script>"
+    ],
+    "`<style>` للـ internal style sheet.",
+    "`<style>` defines an internal sheet.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Which HTML attribute is used to define inline styles?",
+    [
+      "style",
+      "class",
+      "styles",
+      "font"
+    ],
+    "`style` للـ inline.",
+    "The style attribute defines inline styles.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Which is the correct CSS syntax?",
+    [
+      "body {color: black;}",
+      "body:color=black;",
+      "{body;color:black;}",
+      "{body:color=black;}"
+    ],
+    "الصيغة: `selector { property: value; }`.",
+    "Syntax: `selector { property: value; }`.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you insert a comment in a CSS file?",
+    [
+      "/* this is a comment */",
+      "' this is a comment",
+      "// this is a comment",
+      "// this is a comment //"
+    ],
+    "تعليق CSS بـ `/* */`.",
+    "CSS comments use `/* */`.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Which property is used to change the background color?",
+    [
+      "background-color",
+      "color",
+      "bgcolor"
+    ],
+    "`background-color` للخلفية.",
+    "`background-color` changes the background.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you add a background color for all <h1> elements?",
+    [
+      "h1 {background-color:#FFFFFF;}",
+      "h1.all {background-color:#FFFFFF;}",
+      "all.h1 {background-color:#FFFFFF;}"
+    ],
+    "`h1 {background-color:#FFFFFF;}`.",
+    "Use an h1 element selector.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Which CSS property is used to change the text color of an element?",
+    [
+      "color",
+      "fgcolor",
+      "text-color"
+    ],
+    "`color` لون النص.",
+    "`color` sets text color.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Which CSS property controls the text size?",
+    [
+      "font-size",
+      "text-size",
+      "font-style",
+      "text-style"
+    ],
+    "`font-size` حجم النص.",
+    "`font-size` sets text size.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "What is the correct CSS syntax for making all the <p> elements bold?",
+    [
+      "p {font-weight:bold;}",
+      "p {text-size:bold;}",
+      "<p style=\"font-size:bold;\">",
+      "<p style=\"text-size:bold;\">"
+    ],
+    "`p {font-weight:bold;}`.",
+    "`p {font-weight:bold;}` bolds paragraphs.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you display hyperlinks without an underline?",
+    [
+      "a {text-decoration:none;}",
+      "a {underline:none;}",
+      "a {text-decoration:no-underline;}",
+      "a {decoration:no-underline;}"
+    ],
+    "`a {text-decoration:none;}`.",
+    "`a {text-decoration:none;}` removes underlines.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you make each word in a text start with a capital letter?",
+    [
+      "text-transform:capitalize",
+      "You can't do that with CSS",
+      "transform:capitalize",
+      "text-style:capitalize"
+    ],
+    "`text-transform:capitalize`.",
+    "`text-transform:capitalize` capitalizes words.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Which property is used to change the font of an element?",
+    [
+      "font-family",
+      "font-weight",
+      "font-style"
+    ],
+    "`font-family` نوع الخط.",
+    "`font-family` changes the font.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you make the text bold?",
+    [
+      "font-weight:bold;",
+      "font:bold;",
+      "style:bold;"
+    ],
+    "`font-weight:bold;`.",
+    "`font-weight:bold;` makes text bold.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you display a border like this: top = 10px, bottom = 5px, left = 20px, right = 1px?",
+    [
+      "border-width:10px 1px 5px 20px;",
+      "border-width:10px 5px 20px 1px;",
+      "border-width:10px 20px 5px 1px;",
+      "border-width:5px 20px 10px 1px;"
+    ],
+    "الترتيب مع عقارب الساعة: top right bottom left = 10px 1px 5px 20px.",
+    "Clockwise: top, right, bottom, left = 10px 1px 5px 20px.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "Which property is used to change the left margin of an element?",
+    [
+      "margin-left",
+      "indent",
+      "padding-left"
+    ],
+    "`margin-left` الهامش اليسار.",
+    "`margin-left` sets the left margin.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "When using the padding property; are you allowed to use negative values?",
+    [
+      "No",
+      "Yes"
+    ],
+    "لا، الـ padding ما يقبل قيم سالبة (الـ margin يقبل).",
+    "No, padding can't be negative.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you make a list that lists its items with squares?",
+    [
+      "list-style-type: square;",
+      "list: square;",
+      "list-type: square;"
+    ],
+    "`list-style-type: square;`.",
+    "`list-style-type: square;` uses squares.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you select an element with id 'demo'?",
+    [
+      "#demo",
+      "*demo",
+      ".demo",
+      "demo"
+    ],
+    "`#demo` للـ id.",
+    "`#demo` selects id demo.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you select elements with class name 'test'?",
+    [
+      ".test",
+      "#test",
+      "test",
+      "*test"
+    ],
+    "`.test` للـ class.",
+    "`.test` selects class test.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you select all p elements inside a div element?",
+    [
+      "div p",
+      "div + p",
+      "div.p"
+    ],
+    "`div p` كل p داخل div.",
+    "`div p` selects p inside div.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "How do you group selectors?",
+    [
+      "Separate each selector with a comma",
+      "Separate each selector with a plus sign",
+      "Separate each selector with a space"
+    ],
+    "تجمع المحددات بفاصلة، والمسافة تعني descendant.",
+    "Group selectors with commas.",
+    0,
+    0
+  ],
+  [
+    91,
+    "lcss",
+    "What is the default value of the position property?",
+    [
+      "static",
+      "absolute",
+      "fixed",
+      "relative"
+    ],
+    "القيمة الافتراضية لـ position هي `static`.",
+    "Default position is static.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "Inside which HTML element do we put the JavaScript?",
+    [
+      "<script>",
+      "<javascript>",
+      "<js>",
+      "<scripting>"
+    ],
+    "JavaScript داخل `<script>`.",
+    "JavaScript goes in `<script>`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "What is the correct JavaScript syntax to change the content of <p id=\"demo\">?",
+    [
+      "document.getElementById(\"demo\").innerHTML = \"Hello World!\";",
+      "document.getElement(\"p\").innerHTML = \"Hello World!\";",
+      "document.getElementByName(\"p\").innerHTML = \"Hello World!\";",
+      "#demo.innerHTML = \"Hello World!\";"
+    ],
+    "`document.getElementById(\"demo\").innerHTML = ...`.",
+    "Use getElementById(...).innerHTML.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "Where is the correct place to insert a JavaScript?",
+    [
+      "Both the <head> section and the <body> section are correct",
+      "The <body> section",
+      "The <head> section"
+    ],
+    "تقدر تحطه في الـ head أو الـ body.",
+    "Scripts can go in head or body.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+    [
+      "<script src=\"xxx.js\">",
+      "<script href=\"xxx.js\">",
+      "<script name=\"xxx.js\">"
+    ],
+    "`<script src=\"xxx.js\">`.",
+    "External scripts use `<script src>`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "The external JavaScript file must contain the <script> tag.",
+    [
+      "False",
+      "True"
+    ],
+    "خطأ: ملف js فيه كود بس بدون `<script>`.",
+    "False: external JS has no script tag.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How do you write \"Hello World\" in an alert box?",
+    [
+      "alert(\"Hello World\");",
+      "msg(\"Hello World\");",
+      "msgBox(\"Hello World\");",
+      "alertBox(\"Hello World\");"
+    ],
+    "`alert(\"Hello World\");`.",
+    "`alert(\"Hello World\");`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How do you create a function in JavaScript?",
+    [
+      "function myFunction()",
+      "function = myFunction()",
+      "function:myFunction()"
+    ],
+    "`function myFunction()`.",
+    "Declare with `function myFunction()`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How do you call a function named \"myFunction\"?",
+    [
+      "myFunction()",
+      "call function myFunction()",
+      "call myFunction()"
+    ],
+    "`myFunction()`.",
+    "Call it with `myFunction()`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How to write an IF statement in JavaScript?",
+    [
+      "if (i == 5)",
+      "if i = 5",
+      "if i = 5 then",
+      "if i == 5 then"
+    ],
+    "`if (i == 5)`.",
+    "`if (i == 5)`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How to write an IF statement for executing some code if \"i\" is NOT equal to 5?",
+    [
+      "if (i != 5)",
+      "if i =! 5 then",
+      "if i <> 5",
+      "if (i <> 5)"
+    ],
+    "`if (i != 5)`.",
+    "`if (i != 5)`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How does a WHILE loop start?",
+    [
+      "while (i <= 10)",
+      "while i = 1 to 10",
+      "while (i <= 10; i++)"
+    ],
+    "`while (i <= 10)`.",
+    "`while (i <= 10)`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How does a FOR loop start?",
+    [
+      "for (i = 0; i <= 5; i++)",
+      "for i = 1 to 5",
+      "for (i = 0; i <= 5)",
+      "for (i <= 5; i++)"
+    ],
+    "`for (i = 0; i <= 5; i++)`.",
+    "`for (i = 0; i <= 5; i++)`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How can you add a comment in a JavaScript?",
+    [
+      "//This is a comment",
+      "'This is a comment",
+      "<!--This is a comment-->"
+    ],
+    "`//` تعليق سطر.",
+    "`//` is a one-line comment.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How to insert a comment that has more than one line?",
+    [
+      "/*This comment has more than one line*/",
+      "<!--This comment has more than one line-->",
+      "//This comment has more than one line//"
+    ],
+    "`/* */` تعليق متعدد الأسطر.",
+    "`/* */` spans multiple lines.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "What is the correct way to write a JavaScript array?",
+    [
+      "var colors = [\"red\", \"green\", \"blue\"]",
+      "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")",
+      "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")",
+      "var colors = \"red\", \"green\", \"blue\""
+    ],
+    "المصفوفة بأقواس مربعة.",
+    "Arrays use square brackets.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How do you round the number 7.25, to the nearest integer?",
+    [
+      "Math.round(7.25)",
+      "round(7.25)",
+      "Math.rnd(7.25)",
+      "rnd(7.25)"
+    ],
+    "`Math.round(7.25)` = 7.",
+    "`Math.round(7.25)` = 7.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How do you find the number with the highest value of x and y?",
+    [
+      "Math.max(x, y)",
+      "ceil(x, y)",
+      "Math.ceil(x, y)",
+      "top(x, y)"
+    ],
+    "`Math.max(x, y)`.",
+    "`Math.max(x, y)` gives the larger.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "What is the correct JavaScript syntax for opening a new window called \"w2\"?",
+    [
+      "w2 = window.open(\"http://www.w3schools.com\");",
+      "w2 = window.new(\"http://www.w3schools.com\");"
+    ],
+    "`window.open(...)`.",
+    "Open windows with `window.open`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "JavaScript is the same as Java.",
+    [
+      "False",
+      "True"
+    ],
+    "خطأ: JavaScript وJava لغتين مختلفتين.",
+    "False: JavaScript is not Java.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How can you detect the client's browser name?",
+    [
+      "navigator.appName",
+      "client.navName",
+      "browser.name"
+    ],
+    "`navigator.appName`.",
+    "`navigator.appName` gives the browser name.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "Which event occurs when the user clicks on an HTML element?",
+    [
+      "onclick",
+      "onchange",
+      "onmouseclick",
+      "onmouseover"
+    ],
+    "`onclick` عند الضغط.",
+    "`onclick` fires on click.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "How do you declare a JavaScript variable?",
+    [
+      "var carName;",
+      "variable carName;",
+      "v carName;"
+    ],
+    "`var carName;`.",
+    "Declare with `var`.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "Which operator is used to assign a value to a variable?",
+    [
+      "=",
+      "-",
+      "*",
+      "x"
+    ],
+    "`=` للإسناد و`==` للمقارنة.",
+    "`=` assigns; `==` compares.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "What will the following code return: Boolean(10 > 9)",
+    [
+      "true",
+      "false",
+      "NaN"
+    ],
+    "10 > 9 صحيح فيرجع `true`.",
+    "10 > 9 is true.",
+    0,
+    0
+  ],
+  [
+    92,
+    "ljs",
+    "Is JavaScript case-sensitive?",
+    [
+      "Yes",
+      "No"
+    ],
+    "نعم، JavaScript حساسة لحالة الأحرف.",
+    "Yes, JavaScript is case-sensitive.",
+    0,
+    0
+  ]
+];
+
+export const CH_NAMES = {
+  "1": "Introduction to the Internet and WWW",
+  "2": "HTML Basics (Part 1)",
+  "3": "Configuring Color and Text with CSS",
+  "4": "Visual Elements and Graphics",
+  "25": "HTML Basics (Part 2): Tables & Forms"
+};
+
+export const CHS = [
+  1,
+  2,
+  25,
+  3,
+  4
+];
+
+export const EX = {
+  "tables": "الجدول مثل جدول الحصص: tr صف لكل يوم، td خانة لكل حصة، th عناوين الأعمدة، وcolspan مثل حصة مدتها حصتين.",
+  "tacc": "thead عناوين الجدول، tbody البيانات، tfoot المجموع تحت. والـ id/headers مثل إنك تكتب على كل خانة اسم العمود حقها عشان قارئ الشاشة يفهم.",
+  "forms": "الفورم مثل ورقة طلب في مطعم: action هو المطبخ اللي تروح له الورقة، وmethod هو كيف توصل: get مكتوبة على الظرف من برّا (في الرابط)، وpost داخل الظرف (أأمن).",
+  "inputs": "radio مثل اختيار المقاس: واحد بس. checkbox مثل الإضافات على البرجر: تاخذ اللي تبي. وأزرار الراديو يربطها نفس الـ name مثل عائلة وحدة.",
+  "h5in": "label مثل اللوحة اللي على الباب، والـ for فيها رقم الغرفة (id) اللي تشير له. تضغط على اللوحة ويفتح الباب.",
+  "select": "select مثل منيو بخيارات ثابتة. datalist مثل بحث قوقل: تكتب وهو يقترح، وتقدر تكتب شي مو موجود.",
+  "fieldset": "fieldset مثل مربع في الاستمارة الورقية مكتوب فوقه «بيانات العميل»، والعنوان هذا هو legend.",
+  "server": "المتصفح يطلب، والسيرفر مثل المحاسب ورا الكاونتر: ينفذ السكربت (php)، يشيّك قاعدة البيانات، ويرجّع لك إيصال.",
+  "cssov": "HTML هيكل البيت، وCSS الدهان والأثاث. لو تبي تغيّر لون كل الغرف تعدّل ملف واحد بدل ما تدهن كل غرفة لحالها.",
+  "csstypes": "inline ملصق على قطعة وحدة، embedded تعليمات لغرفة كاملة، external كتالوج للبيت كله، وimported كتالوج داخل كتالوج.",
+  "color": "الـ hex ثلاث أزواج: أحمر، أخضر، أزرق. FF يعني «كامل»، 00 يعني «ولا شي». #FF0000 أحمر كامل بدون أخضر وأزرق.",
+  "csstext": "text-shadow مثل وصف مكان الظل: كم يمين، كم تحت، كم مغبّش، وبأي لون. وبنفس هالترتيب.",
+  "selectors": "النقطة (.) مثل زي موحّد يلبسه أكثر من شخص. والـ # مثل رقم الهوية لشخص واحد بس.",
+  "external": "الأولوية مثل الأوامر: إعدادات المتصفح كلام عام، الملف الخارجي قرار الشركة، الـ embedded قرار المدير، والـ inline كلام المدير المباشر لك. الأقرب يغلب.",
+  "inet": "الإنترنت مثل شبكة الطرق اللي تربط المدن كلها، والويب مثل المحلات اللي على هالطرق. الطرق موجودة قبل المحلات، والإيميل والـ FTP يمشون على نفس الطرق بدون ما يدخلون المحلات.",
+  "web": "IETF مثل لجنة تكتب أنظمة المرور، والـ RFC هي كتب الأنظمة، والـ IAB المشرف على اللجنة، وICANN مثل إدارة توزيع أرقام اللوحات وأسماء الشوارع.",
+  "intra": "Intranet مثل الممرات الداخلية للشركة للموظفين بس. Extranet مثل بوابة خاصة تفتحها للموردين يدخلون منها لجزء محدد.",
+  "access": "Universal Design مثل المنحدر عند باب المبنى: يخدم صاحب الكرسي المتحرك، ويخدم أبو العربية، ويخدمك أنت وأنت شايل أغراض، بدون ما يحتاج أحد تعديل خاص.",
+  "net": "LAN مثل الشبكة داخل بيتك أو مبنى الكلية. WAN مثل شبكة تربط فروع بنك في مدن مختلفة.",
+  "cs": "المتصفح مثل الزبون في المطعم يطلب، والـ web server مثل المطبخ: مفتوح طول الوقت، يستقبل الطلب ويرجّع الأكل مع رقم الطلب (status code).",
+  "proto": "البروتوكولات مثل لغات التعامل: HTTP لطلب صفحات الويب، FTP لنقل الكراتين الكبيرة، SMTP لإرسال الرسائل، وPOP3 أو IMAP لاستلامها.",
+  "tcpip": "TCP يقسّم الرسالة لطرود مرقمة ويتأكد إنها وصلت سليمة، وIP هو عنوان البيت اللي ينكتب على كل طرد. والـ DNS مثل دليل الأسماء: تقول google.com ويعطيك الرقم.",
+  "uri": "URI مثل «هوية أي شي»، والـ URL نوع منها يقول «وين مكانه بالضبط». والـ TLD آخر كلمة في العنوان مثل .sa.",
+  "markup": "HTML يقول للمتصفح «هذا عنوان وهذي فقرة» (العرض)، وXML يقول «هذا اسم طالب وهذي درجته» (البيانات). XML ما جا يطرد HTML، جا يفصل البيانات عن الشكل.",
+  "hover": "الـ DTD مثل أول سطر في الخطاب يقول «هذا خطاب رسمي نسخة كذا»، عشان المتصفح يعرف كيف يقرا الباقي.",
+  "elements": "الصفحة مثل الإنسان: head هو الهوية (الاسم title، والترميز meta) وما تشوفه، وbody هو الجسم اللي تشوفه.",
+  "text": "h1 عنوان الجريدة الكبير، h2 عناوين الأقسام، والفقرات p هي المقالات. br مثل Enter داخل نفس الفقرة.",
+  "phrase": "التداخل مثل الشنط: تحط شنطة صغيرة داخل كبيرة، فلازم تقفل الصغيرة قبل الكبيرة. آخر وحدة فتحتها هي أول وحدة تقفلها.",
+  "lists": "ol مثل خطوات الوصفة (مرقمة)، ul مثل قائمة المشتريات (نقاط)، وdl مثل القاموس: كلمة (dt) وتحتها معناها (dd).",
+  "struct": "الصفحة مثل العمارة: header اللوحة اللي فوق، nav المصعد والدرج للتنقل، main الشقق، footer الأرضية فيها معلومات المالك.",
+  "links": "الرابط المطلق مثل عنوان كامل لمدينة ثانية (فيه http). الرابط النسبي مثل «الغرفة اللي جنبي» داخل نفس البيت.",
+  "graphics": "GIF مثل ملصق شعار بسيط وألوانه قليلة وممكن يتحرك. JPEG مثل صورة كاميرا بألوان كثيرة بس يضيع شوي من جودتها. PNG يجمع الحسنتين مع شفافية.",
+  "img": "الـ alt مثل وصف الصورة لشخص على التلفون ما يشوفها. «شعار الشركة» وصف مفيد، أما «logo.gif» فما يفيده بشي.",
+  "figmeter": "meter مثل عدّاد البنزين: قيمة بين أقل وأعلى. progress مثل شريط التحميل: وين وصلت من الكامل.",
+  "imap": "خريطة الصورة مثل خريطة مول تضغط على أي محل فيها وتروح له. والـ favicon شعار صغير على باب التبويب.",
+  "optimize": "الصورة الكبيرة مثل شاحنة في طريق ضيق: تبطّئ الكل. صغّرها لمقاسها الفعلي، لأن البطء هو السبب الأول لخروج الزائر."
+};
+
+export const HOT_POINTS = [
+  {
+    "ch": 1,
+    "en": "Internet = <b>network of networks</b> (TCP/IP); the Web = graphical interface on top of it (Tim Berners-Lee, 1990). ARPANET → US Department of Defense.",
+    "ar": "الإنترنت شبكة الشبكات (TCP/IP)، والويب واجهة رسومية فوقه (تيم بيرنرز-لي 1990). وARPANET تابعة لوزارة الدفاع الأمريكية."
+  },
+  {
+    "ch": 1,
+    "en": "<b>IETF</b> develops protocols, <b>RFC</b> = standards documents, <b>IAB</b> guides IETF, <b>ICANN</b> = names & numbers (non-profit), <b>W3C</b> = HTML/CSS (Recommendations).",
+    "ar": "IETF تطور البروتوكولات، وRFC وثائق المعايير، وIAB يوجّه الـ IETF، وICANN للأسماء والأرقام (غير ربحية)، وW3C لـ HTML وCSS (Recommendations)."
+  },
+  {
+    "ch": 1,
+    "en": "Intranet = inside the organization; extranet = shared securely with partners. Accessibility: WAI, <b>WCAG</b>, Section 508 (government), ADA, <b>Universal Design</b>.",
+    "ar": "Intranet داخل المؤسسة، وExtranet مشترك بأمان مع الشركاء. الوصول: WAI وWCAG وSection 508 (للحكومة) وADA وUniversal Design."
+  },
+  {
+    "ch": 1,
+    "en": "Protocols: HTTP (web), FTP (upload, resume, large files), <b>SMTP</b> send, <b>POP3/IMAP</b> receive, MIME attachments. TCP = integrity + packets; IP = routing; DNS = name ↔ IP.",
+    "ar": "البروتوكولات: HTTP للويب، FTP للرفع والملفات الكبيرة والاستكمال، SMTP للإرسال، POP3 وIMAP للاستلام، MIME للمرفقات. TCP للسلامة والتقسيم، IP للتوجيه، DNS للاسم ↔ IP."
+  },
+  {
+    "ch": 1,
+    "en": "URL is a type of URI; TLD = right-most part; ccTLD = 2 letters (.sa); gTLD (.edu, .com). XML separates data from presentation; XHTML = HTML 4 + XML.",
+    "ar": "الـ URL نوع من URI، والـ TLD آخر جزء يمين، ccTLD حرفين (.sa)، وgTLD مثل .edu و.com. XML يفصل البيانات عن العرض، وXHTML = HTML 4 + XML."
+  },
+  {
+    "ch": 2,
+    "en": "Template: `<!DOCTYPE html>` + html (lang) + head (title, `<meta charset=\"utf-8\">`) + body. Void elements: `br`, `hr`, `img`, `input`, `meta`, `link`.",
+    "ar": "القالب: <!DOCTYPE html> ثم html (مع lang) ثم head (title وmeta charset) ثم body. والعناصر المفردة: br وhr وimg وinput وmeta وlink."
+  },
+  {
+    "ch": 2,
+    "en": "h1 largest … h6; headings/p/blockquote/div = <b>block</b>; phrase elements = <b>inline</b>. `strong` (importance) vs `b`; `em` vs `i`; `sub` below, `sup` above. Nesting: last opened, first closed.",
+    "ar": "h1 الأكبر لين h6. العناوين وp وblockquote وdiv = block، وعناصر الـ phrase = inline. strong أهمية وb شكل، em تأكيد وi شكل، sub تحت وsup فوق. والتداخل: آخر مفتوح أول مقفول."
+  },
+  {
+    "ch": 2,
+    "en": "Lists: `ol` (type=\"A\", start, reversed), `ul` bullets, `dl` with `dt` term + `dd` description (indented). Entities: `&copy;` `&amp;` `&nbsp;` `&quot;` `&mdash;`.",
+    "ar": "القوائم: ol (type=\"A\" وstart وreversed)، ul نقاط، dl مع dt للمصطلح وdd للوصف (مزاح). الرموز: &copy; و&amp; و&nbsp; و&quot; و&mdash;."
+  },
+  {
+    "ch": 2,
+    "en": "HTML5 structure: `header` (≠ head), `nav`, `main`, `footer`, `div`. Links: absolute (http://…) vs relative (own site), `mailto:`; comment `<!-- -->`; W3C validator.",
+    "ar": "هيكل HTML5: header (مو head) وnav وmain وfooter وdiv. الروابط: مطلق (http://) أو نسبي (داخل موقعك)، وmailto:، والتعليق <!-- -->، والتحقق بـ W3C validator."
+  },
+  {
+    "ch": 25,
+    "en": "Tables: `tr`, `td`, `th` (bold, centered), `caption`; `colspan`/`rowspan`; `thead`/`tbody`/`tfoot`; accessibility: th + caption, id on th ↔ headers on td.",
+    "ar": "الجداول: tr وtd وth (عريض ووسط) وcaption، وcolspan وrowspan، وthead وtbody وtfoot، وللوصول: th وcaption، وid على th مع headers على td."
+  },
+  {
+    "ch": 25,
+    "en": "Form: `action` = where, `method` = how; default <b>get</b> (data in URL); <b>post</b> = entity body (more secure). Submit sends <b>name=value</b> pairs.",
+    "ar": "الفورم: action وين، وmethod كيف، والافتراضي get (البيانات في الرابط)، وpost في الجسم (أأمن). وزر الإرسال يرسل أزواج name=value."
+  },
+  {
+    "ch": 25,
+    "en": "Radio = exactly one, grouped by the <b>same name</b>; checkbox = one or more; `checked` (input) vs `selected` (option); size/maxlength; password; type=image submit.",
+    "ar": "radio واحد بالضبط ويجمعهم نفس الـ name، وcheckbox واحد أو أكثر. checked للـ input وselected للـ option، وsize وmaxlength، وpassword، وtype=image زر إرسال."
+  },
+  {
+    "ch": 25,
+    "en": "HTML5 inputs: email, tel, url, search, <b>range</b> (slider), <b>number</b> (spinner), <b>date</b> (calendar), <b>color</b>. `label for` = input `id`; placeholder, required.",
+    "ar": "مدخلات HTML5: email وtel وurl وsearch وrange (شريط) وnumber (أسهم) وdate (تقويم) وcolor. وlabel for = id الحقل، وplaceholder وrequired."
+  },
+  {
+    "ch": 25,
+    "en": "`textarea` (rows, cols); `select` = drop-down (multiple, selected); `datalist` = suggestions via input `list`; `fieldset` + `legend`. Server: CGI, .php, .jsp, .aspx (ASP.Net), .cfm.",
+    "ar": "textarea (rows وcols)، select قائمة منسدلة (multiple وselected)، datalist اقتراحات عن طريق list في الـ input، وfieldset مع legend. السيرفر: CGI و.php و.jsp و.aspx (ASP.Net) و.cfm."
+  },
+  {
+    "ch": 3,
+    "en": "CSS: 4 ways — <b>inline</b> (style attribute), <b>embedded</b> (`<style>` in head), <b>external</b> (`<link rel=\"stylesheet\">` in head), <b>imported</b> (@import). Rule = selector { property: value; }.",
+    "ar": "CSS بأربع طرق: inline (خاصية style)، embedded (<style> في head)، external (<link rel=\"stylesheet\"> في head)، imported (@import). والقاعدة: selector { property: value; }."
+  },
+  {
+    "ch": 3,
+    "en": "Cascade (low → high): <b>browser defaults → external → embedded → inline</b>. Selectors: element, `.class`, `#id` (unique), descendant `div p`. span inline vs div block.",
+    "ar": "الأولوية من الأضعف للأقوى: المتصفح ← external ← embedded ← inline. المحددات: العنصر، .class، #id (فريد)، والـ descendant مثل div p. وspan inline وdiv block."
+  },
+  {
+    "ch": 3,
+    "en": "Color: hex pairs 00–FF (#FF0000 red, #FFFFFF white), rgb 0–255, shorthand #F00, web-safe <b>216</b> (00 33 66 99 CC FF), HSL; contrast for accessibility.",
+    "ar": "الألوان: أزواج hex من 00 لـ FF (#FF0000 أحمر و#FFFFFF أبيض)، rgb من 0 لـ 255، المختصر #F00، الآمنة 216 (00 33 66 99 CC FF)، وHSL، والتباين مهم للوصول."
+  },
+  {
+    "ch": 3,
+    "en": "Fonts: serif (Times, Georgia), sans-serif (Arial, Verdana), monospace (Courier). Use em/%. `text-shadow: h v blur color` (blur default 0); text-decoration: none; line-height 200% = double.",
+    "ar": "الخطوط: serif (Times وGeorgia)، sans-serif (Arial وVerdana)، monospace (Courier)، واستخدم em أو %. text-shadow: أفقي عمودي blur لون (الـ blur افتراضياً 0)، وtext-decoration: none، وline-height 200% = مسافة مزدوجة."
+  },
+  {
+    "ch": 4,
+    "en": "(Chapter 4) GIF 256 colors, animation, lossless; JPEG photos, 16.7M, lossy, no transparency; PNG lossless + transparency. alt = meaning; decorative alt=\"\"; meter (value, min, max) vs progress (value, max).",
+    "ar": "(شابتر 4) GIF: 256 لون ويتحرك وبدون فقد. JPEG: للصور، 16.7 مليون لون، فيه فقد، وبدون شفافية. PNG: بدون فقد ومع شفافية. alt = المعنى، والزخرفية alt=\"\". meter (value وmin وmax) وprogress (value وmax)."
+  }
+];
+
+export const EXTRA_NAMES = {
+  "lhtml": "Important · HTML",
+  "lcss": "Important · CSS",
+  "ljs": "Important · JavaScript"
+};
+
+export const FIGS = {
+  "inet": [
+    [
+      "img/web_826c_5.webp",
+      "Internet",
+      "الإنترنت"
+    ],
+    [
+      "img/web_826c_6.webp",
+      "ARPANET / The TCP/IP protocol suite",
+      "الإنترنت"
+    ]
+  ],
+  "web": [
+    [
+      "img/web_826c_11.webp",
+      "Internet Standards & Coordination (1 of 2)",
+      "الويب وجهات المعايير"
+    ]
+  ],
+  "intra": [
+    [
+      "img/web_826c_13.webp",
+      "Intranet & Extranets",
+      "الإنترانت والإكسترانت"
+    ]
+  ],
+  "access": [
+    [
+      "img/web_826c_16.webp",
+      "Web Accessibility",
+      "معايير الويب وإمكانية الوصول"
+    ],
+    [
+      "img/web_826c_17.webp",
+      "Web Accessibility & the Law",
+      "معايير الويب وإمكانية الوصول"
+    ]
+  ],
+  "net": [
+    [
+      "img/web_826c_24.webp",
+      "Networks",
+      "الشبكات"
+    ]
+  ],
+  "cs": [
+    [
+      "img/web_826c_30.webp",
+      "Web Server",
+      "نموذج العميل والخادم"
+    ],
+    [
+      "img/web_826c_29.webp",
+      "Web Client",
+      "نموذج العميل والخادم"
+    ]
+  ],
+  "proto": [
+    [
+      "img/web_826c_34.webp",
+      "2. HTTP - Hypertext Transfer Protocol",
+      "البروتوكولات"
+    ],
+    [
+      "img/web_826c_36.webp",
+      "3. E-Mail Protocols",
+      "البروتوكولات"
+    ]
+  ],
+  "tcpip": [
+    [
+      "img/web_826c_41.webp",
+      "IP Address",
+      "TCP/IP والعناوين والـ DNS"
+    ],
+    [
+      "img/web_826c_38.webp",
+      "5. TCP/IP Transmission Control Protocol/",
+      "TCP/IP والعناوين والـ DNS"
+    ]
+  ],
+  "uri": [
+    [
+      "img/web_826c_45.webp",
+      "Uniform Resource Identifier",
+      "العناوين والنطاقات"
+    ]
+  ],
+  "markup": [
+    [
+      "img/web_826c_51.webp",
+      "Markup Languages (1 of 4)",
+      "لغات الترميز"
+    ]
+  ],
+  "hover": [
+    [
+      "img/web_9ee5_4.webp",
+      "2.1 HTML5",
+      "مقدمة HTML والـ DTD"
+    ]
+  ],
+  "elements": [
+    [
+      "img/web_9ee5_8.webp",
+      "2.3 Elements",
+      "العناصر وهيكل الصفحة"
+    ]
+  ],
+  "text": [
+    [
+      "img/web_9ee5_29.webp",
+      "2.10 Blockquote Element",
+      "العناوين والفقرات"
+    ]
+  ],
+  "phrase": [
+    [
+      "img/web_9ee5_31.webp",
+      "2.11 Phrase Elements",
+      "عناصر النص المضمّن والتداخل الصحيح"
+    ]
+  ],
+  "lists": [
+    [
+      "img/web_9ee5_40.webp",
+      "The Type, Start, and Reversed Attributes",
+      "القوائم"
+    ],
+    [
+      "img/web_49f6_36.webp",
+      "2.12 Ordered List",
+      "القوائم"
+    ]
+  ],
+  "struct": [
+    [
+      "img/web_49f6_48.webp",
+      "2.16 Structural Element: Div Element",
+      "الرموز الخاصة والهيكل"
+    ]
+  ],
+  "links": [
+    [
+      "img/web_9ee5_54.webp",
+      "Relative Hyperlinks",
+      "الروابط والتعليقات والتحقق"
+    ],
+    [
+      "img/web_49f6_56.webp",
+      "2.17 Site Map",
+      "الروابط والتعليقات والتحقق"
+    ]
+  ],
+  "tables": [
+    [
+      "img/web_ce81_6.webp",
+      "HTML Table Elements",
+      "الجداول"
+    ]
+  ],
+  "tacc": [
+    [
+      "img/web_ce81_12.webp",
+      "Accessibility and Tables",
+      "وصول الجداول وتقسيمها"
+    ]
+  ],
+  "forms": [
+    [
+      "img/web_ce81_19.webp",
+      "Overview of Forms (1 of 2)",
+      "النماذج"
+    ],
+    [
+      "img/web_ce81_22.webp",
+      "HTML Using Forms (1 of 2)",
+      "النماذج"
+    ]
+  ],
+  "inputs": [
+    [
+      "img/web_ce81_26.webp",
+      "Input element",
+      "أنواع الإدخال"
+    ]
+  ],
+  "h5in": [
+    [
+      "img/web_ce81_36.webp",
+      "8. Email Text Box",
+      "مدخلات HTML5 والـ label"
+    ],
+    [
+      "img/web_ce81_37.webp",
+      "9. Telephone Number Text Box",
+      "مدخلات HTML5 والـ label"
+    ]
+  ],
+  "select": [
+    [
+      "img/web_ce81_45.webp",
+      "Select List (1 of 2)",
+      "مربع النص والقوائم"
+    ],
+    [
+      "img/web_ce81_50.webp",
+      "Datalist vs Select elements",
+      "مربع النص والقوائم"
+    ]
+  ],
+  "fieldset": [
+    [
+      "img/web_ce81_52.webp",
+      "Fieldset and Legend Elements (1 of 2)",
+      "تجميع عناصر الفورم"
+    ]
+  ],
+  "server": [
+    [
+      "img/web_ce81_56.webp",
+      "Server-Side Scripting",
+      "المعالجة على السيرفر"
+    ],
+    [
+      "img/web_ce81_55.webp",
+      "CGI Common Gateway Interface",
+      "المعالجة على السيرفر"
+    ]
+  ],
+  "cssov": [
+    [
+      "img/web_f556_4.webp",
+      "3.1 Overview of Cascading Style Sheets (CS",
+      "مقدمة CSS ومميزاتها"
+    ]
+  ],
+  "csstypes": [
+    [
+      "img/web_f556_9.webp",
+      "3.1 Cascading Style Sheets (2 of 2)",
+      "أنواع CSS وطريقة كتابته"
+    ],
+    [
+      "img/web_f556_11.webp",
+      "3.1 The background-color and The color",
+      "أنواع CSS وطريقة كتابته"
+    ]
+  ],
+  "color": [
+    [
+      "img/web_f556_19.webp",
+      "3.2 Web-Safe Color Palette",
+      "الألوان"
+    ],
+    [
+      "img/web_f556_17.webp",
+      "3.2 Using Color on Web Pages",
+      "الألوان"
+    ]
+  ],
+  "csstext": [
+    [
+      "img/web_f556_34.webp",
+      "3.5 The Font-Family Property",
+      "تنسيق النص"
+    ],
+    [
+      "img/web_f556_40.webp",
+      "3.5 More CSS Text Properties (2 of 2)",
+      "تنسيق النص"
+    ]
+  ],
+  "selectors": [
+    [
+      "img/web_f556_45.webp",
+      "3.6 CSS Descendant Selector",
+      "المحددات والـ span"
+    ]
+  ],
+  "external": [
+    [
+      "img/web_f556_48.webp",
+      "3.8 External Style Sheets (1 of 2)",
+      "الملف الخارجي والأولوية"
+    ],
+    [
+      "img/web_f556_49.webp",
+      "3.8 External Style Sheets (2 of 2)",
+      "الملف الخارجي والأولوية"
+    ]
+  ],
+  "graphics": [
+    [
+      "img/web_4113_7.webp",
+      "4.2 JPEG",
+      "الخط الأفقي وأنواع الصور"
+    ],
+    [
+      "img/web_4113_6.webp",
+      "4.2 GIF",
+      "الخط الأفقي وأنواع الصور"
+    ]
+  ],
+  "img": [
+    [
+      "img/web_4113_13.webp",
+      "4.3 Accessibility & Images",
+      "عنصر الصورة"
+    ]
+  ],
+  "figmeter": [
+    [
+      "img/web_4113_17.webp",
+      "4.4 HTML5 Meter Element",
+      "عناصر HTML5 المرئية"
+    ],
+    [
+      "img/web_4113_16.webp",
+      "4.4 HTML5 Figure and Figcaption Elements",
+      "عناصر HTML5 المرئية"
+    ]
+  ],
+  "imap": [
+    [
+      "img/web_4113_20.webp",
+      "4.6 Image Map",
+      "خرائط الصور والأيقونة"
+    ]
+  ],
+  "optimize": [
+    [
+      "img/web_4113_33.webp",
+      "FYI: 4.7 Guidelines for Using Images",
+      "تحسين الصور وإرشاداتها"
+    ],
+    [
+      "img/web_4113_27.webp",
+      "FYI: Image Optimization",
+      "تحسين الصور وإرشاداتها"
+    ]
+  ]
+};

@@ -1,0 +1,20 @@
+/* Shared tokens, typography, and layout. Backgrounds are static. */
+:root{
+  --pitch:#121318; --pitch-2:#1a1c23; --pitch-3:#252832; --deep:#0c0d11;
+  --chalk:#eef0f5; --muted:#a3a8b6; --line:#eef0f533;
+  --score:#ffd166; --score-ink:#10131a; --red:#ff6b6b; --good:#7ee0a1;
+  --stripe:#121318;
+  --f-display:"Lalezar","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{background:var(--pitch)}
+body{font-family:var(--f-body);font-size:16px;line-height:1.65;margin:0;color:var(--chalk);background:var(--stripe);background-color:var(--pitch);background-attachment:fixed;min-height:100vh;transition:background-color .4s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--deep)}
+.wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 64px}
+.en{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate;font-size:.88em;color:var(--score)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--score);outline-offset:2px}

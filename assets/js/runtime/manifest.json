@@ -1,0 +1,13 @@
+{
+  "version": "2.0.1",
+  "outputs": {
+    "assets/js/runtime/net.js": "5d8813d96c3ffecc98ca44e438c0ef3afc0cecbcbc77de15f36b217d8755d5c7",
+    "assets/js/runtime/os.js": "7d7cdd162f354ae69500a2f8572c39f13fc354d268d17893f78d22c281609415",
+    "assets/js/runtime/algo.js": "6d1c64c974b8229e3039f0f6b678df219d5962cbc718e39287eb452e663531af",
+    "assets/js/runtime/web.js": "8bfcd2e1e569a2a7ec4b63a28547925d214034d108d74b5c1b921b57fabffc15",
+    "assets/js/runtime/pl.js": "43c5727cc5ca2850a444a4347f65caa36d7af940fcaf7d6fd36a84817bcab413",
+    "assets/js/runtime/sc.js": "a717336decaf8e980984d70080bd6dfed059a5bcd665372a5c00a64985c52beb",
+    "assets/js/runtime/app.js": "a432315f407caa282bdedf39998f42b23d8b75fe0bcaa04893bee71e1cd37712",
+    "index.html": "6fece7220be7ad4666213de64d7d442a5bc990bc5470170b4d69958ebc907248"
+  }
+}

@@ -1,0 +1,44 @@
+/* Labs (shared) */
+.lab{display:grid;gap:14px}
+.ptable-wrap{overflow-x:auto}
+table.pt{border-collapse:collapse;width:100%;direction:ltr;font-variant-numeric:tabular-nums;min-width:420px}
+table.pt th,table.pt td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:center}
+table.pt th{font-size:.78rem;color:var(--muted);font-weight:500}
+table.pt input{width:64px;background:var(--pitch-2);color:var(--chalk);border:1px solid var(--line);border-radius:6px;padding:4px 6px;font-family:var(--f-mono);text-align:center}
+table.pt .x{background:transparent;border:0;color:var(--red);font-size:1.1rem}
+.ctrls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ctrls label{font-size:.85rem;color:var(--muted);display:flex;gap:6px;align-items:center}
+select,.ctrls input{background:var(--pitch-2);color:var(--chalk);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font:inherit}
+.ctrls input{width:96px}
+.inp{background:var(--pitch-2);color:var(--chalk);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;box-sizing:border-box;max-width:100%}
+.gantt{direction:ltr;position:relative;padding-bottom:24px;overflow-x:auto}
+.gbar{display:flex;height:46px;border:1.5px solid var(--chalk);border-radius:6px;overflow:hidden;min-width:420px}
+.gseg{display:grid;place-items:center;font-family:var(--f-mono);font-weight:700;font-size:.85rem;border-inline-end:1.5px solid var(--chalk);color:#14110d;min-width:0;overflow:hidden}
+.gseg:last-child{border-inline-end:0}
+.gseg.idle{background:repeating-linear-gradient(45deg,transparent 0 6px,var(--line) 6px 8px);color:var(--muted)}
+.gticks{position:relative;height:20px;min-width:420px}
+.gticks span{position:absolute;transform:translateX(-50%);font-family:var(--f-mono);font-size:.75rem;color:var(--muted);top:4px}
+.guess{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.guess input{width:110px;background:var(--pitch-2);color:var(--chalk);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font-family:var(--f-mono)}
+.formula{font-family:var(--f-mono);direction:ltr;text-align:left;font-size:.88rem;color:var(--chalk);background:var(--deep);border-radius:8px;padding:8px 12px;overflow-x:auto;line-height:1.7}
+.formula b{color:var(--score)}
+.editor{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:10px}
+.pane{min-width:0;display:grid;grid-template-rows:auto 1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.pane-h{font-size:.75rem;color:var(--muted);padding:4px 10px;background:var(--deep);border-bottom:1px solid var(--line)}
+#codeIn{width:100%;min-height:260px;resize:vertical;border:0;background:var(--pitch-2);color:var(--chalk);font-family:var(--f-mono);font-size:.85rem;line-height:1.5;padding:10px;text-align:left;tab-size:2}
+#prev{width:100%;min-height:260px;border:0;background:#fff;color-scheme:light}
+.checks{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:4px}
+.checks li{font-size:.92rem;padding:4px 10px;border-radius:6px}
+.checks li.y{background:color-mix(in srgb,var(--good) 14%,transparent);color:var(--good)}
+.checks li.n{background:color-mix(in srgb,var(--red) 14%,transparent);color:var(--red)}
+pre.sol{background:var(--deep);border-radius:8px;padding:10px 12px;font-family:var(--f-mono);font-size:.85rem;text-align:left;overflow-x:auto;margin:6px 0 10px;white-space:pre}
+.recur{font-family:var(--f-mono);font-size:1.15rem;text-align:center;background:var(--deep);border-radius:8px;padding:10px;margin:6px 0;overflow-x:auto}
+ol.steps{margin:10px 0 0;padding-inline-start:22px;display:grid;gap:4px;direction:ltr;text-align:left;font-size:.95rem}
+ol.steps b{color:var(--score)}
+.arr{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.arr .cell{display:grid;place-items:center;width:44px;height:52px;border:1.5px solid var(--line);border-radius:8px;background:var(--pitch-2);font-family:var(--f-mono)}
+.arr .cell small{font-size:.65rem;color:var(--muted)}
+.arr .cell.le{background:color-mix(in srgb,var(--good) 18%,transparent);border-color:var(--good)}
+.arr .cell.cur{outline:2px solid var(--chalk)}
+.arr .cell.pv{border-color:var(--score);color:var(--score)}
+.arr .cell.done{background:var(--score);color:var(--score-ink)}
